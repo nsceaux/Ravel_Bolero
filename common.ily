@@ -37,3 +37,46 @@
     \override TupletBracket.bracket-visibility = #'if-no-beam
   }
 }
+
+global = { \include "notes/global.ily" }
+
+themeA = {
+  do''4(~ do''8 si'16 do'' re'' do'' si' la' |
+  do''8) do''16( la' do''4~ do''8 si'16 do'' |
+  la' sol' mi' fa' sol'2~ |
+  sol'16) fa'( mi' re' mi' fa' sol' la' sol'4~ |
+  sol'4~ sol'16 la' si' la' sol' fa' mi' re') |
+  mi'( re' do'8~ do') do'16( re' mi'8-_ fa'-_ |
+  re'4 sol'2~ |
+  sol'~ sol'8) r |
+  re''4(~ re''8. do''16 si' la' si' do'') |
+  re''( do'' si'8~ si'16 do'' si' la') do''( si' la' fa'~ |
+  fa'8) fa'16-.( fa'-.) fa'8-.( la'-.) do''16( la' si' sol' |
+  fa'8) fa'16-.( fa'-.) fa'8-.( la'-.) si'16( sol' la' fa' |
+  re'8) re'16( do' re'4~ re'8) re'16-.( re'-.) |
+  re'8-.( fa'-.) la'16( fa' sol' mi' re'8) re'16( do' |
+  re'4~ re'8) re'16( do' re'8 mi'16 fa' |
+  sol'2~ sol'16 fa' mi' re' |
+  do'8) r r4 r |
+}
+
+themeB = {
+  sib'4(~ sib'16 la' sol' fa' sib' do'' la' sol' |
+  sib'8 la'16 sol' sib'4-> la'16 sib' la' sol'~ |
+  sol'4~ sol'16 fa' mi' re' mi'4~ |
+  mi') r8 sib'^_( do''^_ reb''~ |
+  reb'' reb''4)^_ reb''8^_( reb''^_ reb''^_ |
+  \tuplet 3/2 { reb''8^_ reb''^_ reb''^_) } reb''8^>( do''16 sib') reb''8(^> do''16 sib') |
+  reb''16( do'' sib' lab') sol'^>( fa' mi'8~ mi'4~ |
+  mi'2~ mi'8) r |
+  re'!4.( mi'8) re'16( mi' fa'8~ |
+  fa'4) sol'8( lab' \tuplet 3/2 { fa'-_ sol'-_ mi'-_) } |
+  re'16( mi' re' do'~ do'8)[ \breathe sib]->(~ sib4~ |
+  sib16 do' sib do' re' mi' re' do' re' do' sib lab) |
+  sib->( lab sol8~ sol8)[ \breathe fa]->~ fa4~ |
+  fa~ fa16 sol( fa mib~ mib4~ |
+  mib) fa16( mib fa reb~ reb4~ |
+  reb~ reb16) reb( mib reb) fa( mib reb do~ |
+  %% 3
+  do4) r r |
+}

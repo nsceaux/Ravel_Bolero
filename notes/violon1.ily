@@ -1,3 +1,4 @@
-\clef "treble" R2.*74 |
-%% 4
-R2.*18 |
+\clef "treble" R2.*92 |
+%% 5
+<< { s4_"Div." <>\p ^"pizz." }
+  \repeat unfold 9 { r4 <re' re'' mi''> <si re' re''> | } >>

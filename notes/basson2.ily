@@ -7,3 +7,12 @@ r4 r \clef "tenor" <>\mp \tuplet 3/2 { sol'16 sol' sol' } sol'8-. |
 sol'-. sol'16*2/3 sol' sol' sol'8-. sol'16*2/3 sol' sol' sol'8-. sol'-. |
 sol'-. sol'16*2/3 sol' sol' sol'8-. sol'16*2/3 sol' sol' sol'8-. sol'16*2/3 sol' sol' |
 sol'8-. r r4 r |
+\repeat unfold 3 {
+  r4 r sol'16*2/3 sol' sol' sol'8-. |
+  sol'-. sol'16*2/3 sol' sol' sol'8-. sol'16*2/3 sol' sol' sol'8-. sol'-. |
+  sol'-. sol'16*2/3 sol' sol' sol'8-. sol'16*2/3 sol' sol' sol'8-. sol'16*2/3 sol' sol' |
+  sol'8-. r r4 r |
+}
+r4 r sol'16*2/3 sol' sol' sol'8-. |
+%% 5
+sol'-. r r4 r4 |
