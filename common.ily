@@ -20,8 +20,8 @@
          ly:optimal-breaking))
 }
 \language "italiano"
-\include "stylesheet.ily"
-\include "commands.ily"
+\include "lib/stylesheet.ily"
+\include "lib/commands.ily"
 
 \layout {
   \context {
