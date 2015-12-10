@@ -76,19 +76,6 @@
         } <<
           { \include "global.ily" } { \include "cb.ily" }
           \repeat unfold 20 { s2.*4\break }
-           %{
-            s2.*4\break s\pageBreak
-            s\break s\break s\pageBreak
-            s\break s\break s\pageBreak
-            s\break s\pageBreak
-            s\break s\pageBreak
-            s\break s\pageBreak
-            s\break s\pageBreak
-            s\break s\pageBreak
-            s\break s\pageBreak
-            s\break s\pageBreak
-            s\break s\pageBreak
-%}
         >>
       >>
     >>

@@ -7,7 +7,7 @@
 %% 1
 \footnoteHere #'(0 . 0) \markup {
   Manuscript autographe, violoncelles :
-  \raise #-1 \epsfile #Y #4 #"notes/violoncelles-mes21.eps"
+  \raise #-1 \epsfile #Y #4 #"captures/violoncelles-mes21.eps"
   (9 fois)
 }
 \repeat unfold 9 {
