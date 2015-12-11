@@ -10,3 +10,13 @@
 \repeat unfold 18 { <do sol>4 <sol sol sol'> do | }
 %% 4
 \repeat unfold 18 { <do sol>4 do' <do do'> | }
+%% 5
+\repeat unfold 18 { <do sol>4 <sol sol' do''> <do sol sol' do'> | }
+%% 6
+<< { s4 <>\mp }
+  \repeat unfold 15 { <do sol>4 <sol re'> <do do'> | } >>
+<do sol> do' <do sib> |
+<do sol> sib <do lab> |
+<do sol> lab <do sol> |
+%% 7
+\repeat unfold 18 { <do sol>4 <sol sol' do''> <do sol sol' do''> | }

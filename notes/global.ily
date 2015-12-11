@@ -6,3 +6,6 @@
 \mark\markup\box 3 s2.*18
 \mark\markup\box 4 s2.*18
 \mark\markup\box 5 s2.*18
+\mark\markup\box 6 s2.*18
+\mark\markup\box 7 s2.*18
+\mark\markup\box 8 s2.*18

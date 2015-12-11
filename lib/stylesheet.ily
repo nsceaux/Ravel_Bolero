@@ -155,4 +155,8 @@
     \description "Like StaffGroup, but without brackets"
     \remove "System_start_delimiter_engraver"
   }
+  \context {
+    \StaffGroup
+    \accepts "StaffGroupNoBracket"
+  }
 }

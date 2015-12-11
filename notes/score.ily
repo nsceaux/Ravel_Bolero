@@ -15,6 +15,17 @@
         shortInstrumentName = \markup\tiny "Htb.d’am."
         \haraKiriFirst
       } << \transpose la do \global { \include "hautbois-amour.ily" } >>
+      \new StaffGroup \with { \haraKiriFirst } <<
+        \new StaffGroupNoBracket \with {
+          shortInstrumentName = \markup\tiny Hautb.
+        } <<
+          \new Staff << \global { \include "hautbois1.ily" } >>
+          \new Staff << \global { \include "hautbois2.ily" } >>
+        >>
+        \new Staff \with {
+          shortInstrumentName = \markup\tiny Cor A.
+        } << \transpose fa do \global { \include "cor-anglais.ily" } >>
+      >>
       %% Clarinettes
       \new Staff \with {
         instrumentName = \markup { Petite clarinette }
@@ -37,12 +48,37 @@
       >>
     >>
     \new StaffGroupNoBracket <<
-      %% Trompette
+      %% Cor
       \new Staff \with {
-        instrumentName = "Trompette"
+        instrumentName = \markup { Cors en fa }
+        shortInstrumentName = \markup\tiny Cor
+        \haraKiriFirst
+      } << \transpose fa do \global { \include "cor.ily" } >>
+      %% Trompette
+      \new StaffGroup \with {
+        instrumentName = "Trompettes"
         shortInstrumentName = \markup\tiny Tromp.
         \haraKiriFirst
-      } << \global { \include "trompette.ily" } >>
+      } <<
+        \new Staff << \global { \include "trompette1.ily" } >>
+        \new Staff << \global { \include "trompette2.ily" } >>
+      >>
+      %% Saxophones
+      \new StaffGroup \with { \haraKiriFirst } <<
+        \new Staff \with {
+          shortInstrumentName = \markup\tiny\center-column { Sax. sopranino }
+          \haraKiriFirst
+        } << \transpose fa do \global { \include "sax-sopranino.ily" } >>
+        \new Staff \with {
+          shortInstrumentName = \markup\tiny\center-column { Sax. soprano }
+          \haraKiriFirst
+        } << \transpose sib do \global { \include "sax-soprano.ily" } >>
+        \new Staff \with {
+          instrumentName = "Saxophone ténor"
+          shortInstrumentName = \markup\tiny Sax. T.
+          \haraKiriFirst
+        } << \transpose sib do \global { \include "sax-tenor.ily" } >>
+      >>
       %% Tambours
       \new DrumStaff \with {
         drumStyleTable = #percussion-style
@@ -62,14 +98,20 @@
     >>
     \new StaffGroupNoBracket <<
       %% Violons
-      \new Staff \with {
+      \new StaffGroup \with {
         instrumentName = \markup { \concat { P \super rs } violons }
         shortInstrumentName = \markup\tiny {
-          \concat { P \super rs } \concat { V \super ons }
+          \concat { 1 \super rs } \concat { V \super ons }
         }
-        \consists "Metronome_mark_engraver"
-        \consists "Mark_engraver"
-      } << \global { \include "violon1.ily" } >>
+      } <<
+        \new Staff \with {
+          \consists "Metronome_mark_engraver"
+          \consists "Mark_engraver"
+        } << \global { \include "violon1.ily" } >>
+        \new Staff \with { \haraKiriFirst } <<
+          \global { \include "violon1-2.ily" }
+        >>
+      >>
       \new StaffGroup \with {
         instrumentName = \markup { \concat { 2 \super ds } violons }
         shortInstrumentName = \markup\tiny {
@@ -99,7 +141,7 @@
           shortInstrumentName = \markup\tiny C.B.
         } <<
           \global { \include "cb.ily" }
-          \repeat unfold 30 {
+          \repeat unfold 40 {
             s2.\noBreak s2.\noBreak s2.\noBreak s2.
           }
         >>
