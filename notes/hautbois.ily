@@ -11,7 +11,7 @@
     s4 do''8-> s sib'-> s |
     s4 sib'8-> s lab'-> s |
     s4 lab'8-> s sol'-> s | }
-  { r4 s8\p r s r | \repeat unfold 17 { r4 s8 r s r } }
+  { r4 \grace s8\p s8 r s r | \repeat unfold 17 { r4 s8 r s r } }
 >>
 %% 8
 R2.*18

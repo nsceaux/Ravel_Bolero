@@ -54,7 +54,7 @@
 >>
 <<
   \tag #'(flute1 flutes) {
-    <>^"1°" r4 mi'8-> r re'-> r |
+    r4 <>^"1°" mi'8-> r re'-> r |
     r4 re'8-> r do'-> r |
     \repeat unfold 2 { r4 do'8-> r do'-> r | }
   }

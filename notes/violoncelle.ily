@@ -49,13 +49,17 @@ do4 r <sol, sol>8 sol |
 <do, sol, mi>4 r <sol, sol>8 sol |
 %% 6
 << { s2 <>\mp }
-  \repeat unfold 7 {
+  \repeat unfold 5 {
     <do, sol, mi>4 r <sol, sol> |
     <do, sol, mi>4 r <sol, sol>8 sol | } >>
+<do, sol, re>4 r <sol, sol> |
+<do, sol, re>4 r <sol, sol>8 sol |
 <do, sol, mi>4 r <sol, sol> |
-<do, sol, mi>4 sol <sol, sol>8 sol |
-<do, sol, mi>4 sol <sol, sol> |
-<do, sol, mi>4 sol <sol, sol>8 sol |
+<do, sol, mi>4 r <sol, sol>8 sol |
+<do, sol, mi>4 r <sol, sol> |
+<do, sol, re>4 sol <sol, sol>8 sol |
+<do, sol, sol>4 sol <sol, sol> |
+<do, sol, sol>4 sol <sol, sol>8 sol |
 %% 7
 \repeat unfold 9 {
   <do, sol, mi>4 r <sol, sol> |
