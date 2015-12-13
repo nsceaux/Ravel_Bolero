@@ -3,7 +3,7 @@
   \set subdivideBeams = ##t
   \set baseMoment = #(ly:make-moment 1/8)
   <<
-    \repeat unfold 80 {
+    \repeat unfold 100 {
       tamb8 \tuplet 3/2 { 16 16 16 } 8 \tuplet 3/2 { 16 16 16 } 8 8 |
       8 \tuplet 3/2 { 16 16 16 } 8 \tuplet 3/2 { 16 16 16 16 16 16 16 16 16 } |
     }

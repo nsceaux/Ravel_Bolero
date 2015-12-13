@@ -9,3 +9,5 @@
 %% 7
 \repeat unfold 18 { do4 r sol, | }
 %% 8
+<< { s2 <>\mf } \repeat unfold 18 { do4 r sol, | } >>
+%% 9

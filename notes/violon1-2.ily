@@ -1,14 +1,14 @@
 \clef "treble" R2.*92 |
 %% 5
-<< { s4 <>\p ^"pizz." }
+<< { s4 \grace s8\p ^"pizz." }
   \repeat unfold 7 { r4 <do' mi'> <do' re' si'> | } >> |
 r4 <do' mi'> <si mi'> |
 \repeat unfold 9 { r4 <do' fa'> <do' re' si'> | }
-r4 <do' mi> <sol re' do''> |
+r4 <do' mi'> <sol re' do''> |
 %% 6
 R2.*18 |
 %% 7
-<< { s4 <>\mp ^"pizz." }
+<< { s4 \grace s8\mp ^"pizz." }
   \repeat unfold 10 { r4 <do' mi'> <sib re' sib'> | } >>
 r4 <do' fa'> <si! re' si'!> |
 r4 <do' fa'> <si re' si'> |

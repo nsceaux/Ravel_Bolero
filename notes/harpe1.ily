@@ -12,3 +12,12 @@ r4 <sol sib do'> <sol lab do'> |
 r4 <sol lab do'> <sol do'> |
 %% 4
 \revertNoHaraKiri R2.*18 |
+%% 5
+R2.*18
+%% 6
+R2.*18
+%% 7
+R2.*18
+%% 8
+<< { s4 <>\mf } \repeat unfold 18 { r4 sol'2 | } >>
+

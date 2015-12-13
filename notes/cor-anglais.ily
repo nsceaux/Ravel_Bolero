@@ -6,4 +6,6 @@ r4 re''8-> r mib''-> r |
 r4 mib''8-> r re''-> r |
 \repeat unfold 2 { r4 re''8-> r re''-> r | }
 %% 8
+R2.*18 |
+%% 9
 

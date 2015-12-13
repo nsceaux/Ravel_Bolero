@@ -3,7 +3,7 @@
 \noHaraKiri
 r4
 \once\override Staff.TextScript.extra-offset = #'(-1 . -1.5)
-<re mi>\p ^\markup\twoOpens
+\grace s8\p <re mi>4 ^\markup\twoOpens
 \once\override Staff.TextScript.extra-offset = #'(0.2 . 1.5)
 <do re>_\markup\twoOpens
 \repeat unfold 9 {
@@ -38,4 +38,13 @@ r4 <lab,\open do\open> <sol,\open do\open>
 %% 3
 R2.*18 |
 %% 4
-\revertNoHaraKiri R2.*18 |
+\revertNoHaraKiri R2.*18
+%% 5
+R2.*18
+%% 6
+R2.*18
+%% 7
+R2.*18
+%% 8
+\repeat unfold 18 { r4 sol2 | }
+%% 9
