@@ -2,7 +2,7 @@
 \header {
   copyrightYear = "2015"
   composer = "Maurice Ravel"
-  title = "BOLERO"
+  date = "1928"
 }
 
 %% Staff size
@@ -21,8 +21,10 @@
 }
 \language "italiano"
 \include "lib/stylesheet.ily"
-\include "lib/commands.ily"
 
+\paper {
+  bookTitleMarkup = \nenuvarBookTitleMarkup
+}
 \layout {
   \context {
     \Voice

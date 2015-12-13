@@ -1,3 +1,5 @@
+\include "commands.ily"
+\include "toc-columns.ily"
 
 %% Font
 \paper {
@@ -6,9 +8,39 @@
                   #:factor (/ staff-height pt 20)))
 }
 
-%%
-%% Footers
-%%
+%%%
+%%% Title page
+%%%
+\paper {
+  nenuvarBookTitleMarkup =
+  \markup\when-property #'header:title \abs-fontsize #12 \column {
+    \null \null \null \null \null \null
+    \fill-line { \fontsize #6 \italic \fromproperty #'header:composer }
+    \null \null \null \null \null \null
+    \fontsize #12 \fill-line {
+                 \apply-fromproperty #make-smallCaps-markup #'header:title }
+    \null \null \null \null \null \null
+    \fill-line { \postscript #(format #f "~a 0 moveto ~a 0 rlineto stroke"
+                               (/ -400 16)
+                               (/ 800 16))
+                             }
+    \null \null \null \null \null \null
+    \fill-line { \fontsize #4 \fromproperty #'header:date }
+    \null
+    %\on-the-fly #(lambda (layout props arg)
+    %               (if (*part*)
+    %                   (interpret-markup layout props
+    %                     (markup #:column (#:null #:null
+    %                                       #:fill-line (#:fontsize 4 (*part-name*)))))
+    %                   empty-stencil))
+    \null \null \null \null
+    \fill-line { \fontsize #2 \fromproperty #'header:editions }
+    \fill-line { \fontsize #2 \fromproperty #'header:arrangement }
+  }
+}
+%%%
+%%% Footers
+%%%
 #(define-markup-command (tagline-vspacer layout props) ()
    (interpret-markup
     layout props
@@ -112,6 +144,23 @@
   ragged-last-bottom = ##f
 }
 
+%%%
+%%% TOC
+%%%
+\paper {
+  tocTitleMarkup = \markup \column {
+    \vspace #2
+    \fontsize #6 \fill-line { \paper-prop #'tocTitle "TABLE DES MATIÈRES" }
+    \vspace #2
+  }
+  tocItemMarkup = \markup {
+    \toc-filled-line
+    ""
+    \fromproperty #'toc:text
+    \fromproperty #'toc:page
+  }
+
+}
 %%%
 %%% Foot notes
 %%%

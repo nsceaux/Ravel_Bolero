@@ -113,3 +113,31 @@ footnoteHere =
    (with-location #f
      #{ <>-\tweak footnote-music #(make-footnote-here-music offset note)
         ^\markup\transparent\box "1" #}))
+
+%%%
+%%% Markup commands
+%%%
+#(define-markup-list-command (with-line-width-ratio layout props width-ratio args)
+  (number? markup-list?)
+  (let* ((line-width (chain-assoc-get 'line-width props))
+         (new-line-width (* width-ratio line-width))
+         (indent (* 0.5 (- line-width new-line-width)))
+         (stencils (interpret-markup-list layout
+                     (cons `((line-width . ,new-line-width)) props)
+                     args)))
+    (interpret-markup-list layout props
+      (map (lambda (stencil)
+             (markup #:hspace indent #:stencil stencil))
+           stencils))))
+
+#(define-markup-command (when-property layout props symbol markp) (symbol? markup?)
+  (if (chain-assoc-get symbol props)
+      (interpret-markup layout props markp)
+      (ly:make-stencil '()  '(1 . -1) '(1 . -1))))
+
+#(define-markup-command (apply-fromproperty layout props fn symbol)
+  (procedure? symbol?)
+  (let ((m (chain-assoc-get symbol props)))
+    (if (markup? m)
+        (interpret-markup layout props (fn m))
+        empty-stencil)))

@@ -232,7 +232,7 @@
           shortInstrumentName = \markup\tiny C.B.
         } <<
           \global { \include "cb.ily" }
-          \repeat unfold 50 {
+          \repeat unfold 84 {
             s2.\noBreak \grace s8 s2.\noBreak
             \grace s8 s2.\noBreak \grace s8 s2.\pageBreak \grace s8
           }
