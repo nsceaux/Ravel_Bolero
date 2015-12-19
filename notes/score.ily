@@ -134,9 +134,9 @@
             instrumentName = \markup\center-column {
               \smallCaps 3 Saxophones
               \fontsize#-2 \column {
-                Sopranino en Fa,
-                Soprano en Si ♭,
-                Ténor en Si ♭.
+                Sopranino en Fa
+                Soprano en Si ♭
+                Ténor en Si ♭
               }
             }
             shortInstrumentName = \markup\tiny Sax. T.

@@ -1,4 +1,4 @@
-\clef "treble" \transposition mi
+\clef "treble" \transposition lab'
 R2.*146
 %% 8
 R2.*2

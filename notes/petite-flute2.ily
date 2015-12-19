@@ -1,4 +1,4 @@
-\clef "treble" \transposition sol
+\clef "treble" \transposition fa
 R2.*146
 %% 8
 R2.*2
