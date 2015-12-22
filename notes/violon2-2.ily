@@ -16,3 +16,8 @@ R2.*18
 \repeat unfold 9 { r4 do' do' | }
 r4 do' <do' re'> |
 %% 9
+\repeat unfold 9 {
+  <sol sol'>4 q q8 q |
+  q4 q sol16*2/3( sol' do'' sol''8) |
+}
+%% 10

@@ -48,3 +48,5 @@ R2.*18
 %% 8
 \repeat unfold 18 { r4 sol2 | }
 %% 9
+\repeat unfold 18 { r4 sol' sol | }
+%% 10

@@ -7,7 +7,7 @@
 
 %% Staff size
 #(set-global-staff-size
-  (cond ((not (symbol? (ly:get-option 'part))) 16)
+  (cond ((not (symbol? (ly:get-option 'part))) 11)
         (else 18)))
 
 %% Line/page breaking algorithm

@@ -1,6 +1,6 @@
 \clef "treble" \transposition sib,
 R2.*112 |
-<< { <>^\markup\center-align Solo
+<< { <>^\markup\whiteout\center-align Solo
     _\markup { \dynamic mp \italic { espressivo, vibrato } }
     s2. |
     s8) s8( s2 |

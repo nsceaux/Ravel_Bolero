@@ -25,3 +25,11 @@ r4 <do' mi'> q |
 \repeat unfold 9 { r4 <re' fa'> <si re'> | }
 r4 <do' mi'> <do' re'> |
 %% 9
+r8 \tuplet 3/2 { sol16( sol' do'' } sol''8) sol16*2/3_( sol' do'' sol''8) sol'' |
+sol''8 sol16*2/3( sol' do'' sol''8) sol16*2/3( sol' do'' sol''8) sol16*2/3( sol' do'' |
+\repeat unfold 8 {
+  sol''8) sol16*2/3( sol' do'' sol''8) sol16*2/3_( sol' do'' sol''8) sol'' |
+  sol''8 sol16*2/3( sol' do'' sol''8) sol16*2/3( sol' do'' sol''8) sol16*2/3( sol' do'' |
+}
+%% 10
+sol''4)

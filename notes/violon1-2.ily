@@ -19,3 +19,9 @@ r q <do' lab'> |
 r q <sol sol' do''> |
 %% 8
 R2.*18 |
+%% 9
+\repeat unfold 7 { r4 <do' mi' do''> <do' re' si'> | }
+r4 <do' mi' do''> <do' si'> |
+\repeat unfold 9 { r4 <do' fa'> <si re' si'> | }
+r4 <mi' do''> <sol sol' do''> |
+%% 10

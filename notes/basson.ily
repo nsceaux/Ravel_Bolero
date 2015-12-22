@@ -47,15 +47,46 @@ R2.*18
 %% 7
 \clef "bass" R2.*18
 %% 8
-\twoVoices #'(basson1 basson2 bassons) <<
-  { \repeat unfold 7 { s4 mi'8-> s re'8-> s | }
-    s4 mi'8-> s mi'-> s |
-    \repeat unfold 9 { s4 fa'8-> s re'-> s | }
-    s4 mi'8-> s re'-> s | }
-  { \repeat unfold 7 { s4 do'8-> s do'-> s | }
-    s4 do'8-> s si-> s |
-    \repeat unfold 9 { s4 re'8-> s si-> s | }
-    s4 do'8-> s do'-> s | }
-  { r4 \grace s8\mf s8 r s r | \repeat unfold 17 { r4 s8 r s r | } }
+<< { s4 \grace s8\mf }
+  \repeat unfold 7 <<
+    \tag #'(basson1 bassons) { s4 mi'8 s re' s | }
+    \tag #'(basson2 bassons) { s4 do'8 s do' s | }
+    { r4 s8-> r s-> r | }
+  >>
+>>
+<<
+  \tag #'(basson1 bassons) { s4 mi'8 s mi' s | }
+  \tag #'(basson2 bassons) { s4 do'8 s si s | }
+  { r4 s8-> r s-> r | }
+>>
+\repeat unfold 9 <<
+  \tag #'(basson1 bassons) { s4 fa'8 s re' s | }
+  \tag #'(basson2 bassons) { s4 re'8 s si s | }
+  { r4 s8-> r s-> r | }
+>>
+<<
+  \tag #'(basson1 bassons) { s4 mi'8-> s re'-> s | }
+  \tag #'(basson2 bassons) { s4 do'8-> s do'-> s | }
+  { r4 s8-> r s-> r | }
 >>
 %% 9
+\repeat unfold 7 <<
+  \tag #'(basson1 bassons) { s4 mi'8 s re' s | }
+  \tag #'(basson2 bassons) { s4 do'8 s do' s | }
+  { r4 s8-> r s-> r | }
+>>
+<<
+  \tag #'(basson1 bassons) { s4 mi'8 s mi' s | }
+  \tag #'(basson2 bassons) { s4 do'8 s do' s | }
+  { r4 s8-> r s-> r | }
+>>
+\repeat unfold 9 <<
+  \tag #'(basson1 bassons) { s4 fa'8 s re' s | }
+  \tag #'(basson2 bassons) { s4 do'8 s si s | }
+  { r4 s8-> r s-> r | }
+>>
+<<
+  \tag #'(basson1 bassons) { s4 mi'8-> s re'-> s | }
+  \tag #'(basson2 bassons) { s4 re'8-> s do'-> s | }
+  { r4 s8-> r s-> r | }
+>>

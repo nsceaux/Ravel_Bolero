@@ -44,9 +44,9 @@
             shortInstrumentName = \markup\tiny Hautb.
           } <<
             \global \keepWithTag #'hautbois { \include "hautbois.ily" }
-            { \noHaraKiri s2.*74 % 4
-              \revertNoHaraKiri s2.*18 % 5
-              s2.*5 \noHaraKiri s2.*13 % 6
+            { \noHaraKiri s2.*73 \revertNoHaraKiri s2. % 4
+              s2.*18 % 5
+              s2.*7 \noHaraKiri s2.*10 % 6
             }
           >>
           \new Staff \with {
@@ -57,39 +57,38 @@
           } << \transpose fa do \global { \include "cor-anglais.ily" } >>
         >>
         %% Clarinettes
-        \new Staff \with {
-          shortInstrumentName = \markup\tiny { \concat { P \super te } Cl. }
-          \haraKiriFirst
-        } << \transpose mib do \global { \include "petite-clarinette.ily" } >>
-        \new Staff \with {
-          instrumentName = \markup\center-column {
-            \smallCaps Clarinettes
-            \fontsize#-2 \column {
-              Petite Cl. en Mi ♭
-              2 Cl. en Si ♭
-              Cl. basse en Si ♭
+        \new StaffGroup \with { \haraKiriFirst } <<
+          \new Staff \with {
+            shortInstrumentName = \markup\tiny { \concat { P \super te } Cl. }
+          } << \transpose mib do \global { \include "petite-clarinette.ily" } >>
+          \new Staff \with {
+            instrumentName = \markup\center-column {
+              \smallCaps Clarinettes
+              \fontsize#-2 \column {
+                Petite Cl. en Mi ♭
+                2 Cl. en Si ♭
+                Cl. basse en Si ♭
+              }
             }
-          }
-          shortInstrumentName = \markup\tiny Clar.
-          \haraKiriFirst
-        } <<
-          \transpose sib do \global
-          { \include "clarinette.ily" }
-          { \noHaraKiri s2.*55 \revertNoHaraKiri s2. % 3
-            s2.*18 % 4
-            s2.*3 \noHaraKiri s2.*15 % 5
-            s2.*18 % 6
-            s2.*18 % 7
-            s2.*15 \revertNoHaraKiri s2.*3 % 8
-            s2.*18 % 9
-            s2. \noHaraKiri s2.*17 % 10
-          }
+            shortInstrumentName = \markup\tiny Clar.
+          } <<
+            \transpose sib do \global
+            \keepWithTag #'clarinettes { \include "clarinette.ily" }
+            { \noHaraKiri s2.*55 \revertNoHaraKiri s2. % 3
+              s2.*18 % 4
+              s2.*7 \noHaraKiri s2.*8 % 5
+              s2.*18 % 6
+              s2.*18 % 7
+              s2.*17 \revertNoHaraKiri s2. % 8
+              s2.*18 % 9
+              s2.*18 % 10
+            }
+          >>
+          \new Staff \with {
+            instrumentName = \markup { Clarinette basse }
+            shortInstrumentName = \markup\tiny Cl.B.
+          } << \transpose sib do \global { \include "clarinette-basse.ily" } >>
         >>
-        \new Staff \with {
-          instrumentName = \markup { Clarinette basse }
-          shortInstrumentName = \markup\tiny Cl.B.
-          \haraKiriFirst
-        } << \transpose sib do \global { \include "clarinette-basse.ily" } >>
         %% Bassons
         \new Staff \with {
           instrumentName = \markup\center-column {
@@ -105,12 +104,17 @@
       %% Cuivres, saxophones, percussions
       \new StaffGroupNoBracket <<
         %% Cor
-        \new Staff \with {
+        \new StaffGroup \with {
           instrumentName = \markup { 4 \smallCaps Cors en fa }
           shortInstrumentName = \markup\tiny Cors
-        } << \global \keepWithTag #'cors { \include "cor.ily" } >>
+        } <<
+          \new Staff << \global \keepWithTag #'cors { \include "cor.ily" } >>
+          \new Staff \with { \haraKiriFirst } <<
+            \global \keepWithTag #'cors { \include "cor34.ily" }
+          >>
+        >>
         %% Trompette
-        \new Staff \with {
+        \new StaffGroup \with {
           instrumentName = \markup\center-column {
             \smallCaps Trompettes
             \fontsize#-2 \column {
@@ -119,7 +123,14 @@
             }
           }
           shortInstrumentName = \markup\tiny Tromp.
-        } << \global \keepWithTag #'trompettes { \include "trompette.ily" } >>
+        } <<
+          \new Staff <<
+            \global \keepWithTag #'trompettes { \include "trompette.ily" }
+          >>
+          \new Staff \with { \haraKiriFirst } <<
+            \global { \include "trompette3.ily" }
+          >>
+        >>
         %% Saxophones
         \new StaffGroup \with { \haraKiriFirst } <<
           \new Staff \with {
@@ -144,9 +155,9 @@
           } <<
             \transpose sib do \global
             { \include "sax-tenor.ily" }
-            { \noHaraKiri s2.*128
-              \revertNoHaraKiri s2.*20
-              \noHaraKiri }
+            { \noHaraKiri s2.*128 % 7
+              \revertNoHaraKiri s2.*18 % 8
+              s2.*7 \noHaraKiri }
           >>
         >>
         %% Trombonnes
@@ -215,11 +226,14 @@
         >>
       >>
       %% Altos
-      \new Staff \with {
+      \new StaffGroup \with {
         instrumentName = \markup\smallCaps Altos
         shortInstrumentName = \markup\tiny Altos
       } <<
-        \global { \include "alto.ily" }
+        \new Staff << \global { \include "alto.ily" } >>
+        \new Staff \with { \haraKiriFirst } <<
+          \global { \include "alto2.ily" }
+        >>
       >>
       %% Violoncelles, contrebasses
       \new StaffGroup <<
@@ -232,10 +246,8 @@
           shortInstrumentName = \markup\tiny C.B.
         } <<
           \global { \include "cb.ily" }
-          \repeat unfold 84 {
-            s2.\noBreak \grace s8 s2.\noBreak
-            \grace s8 s2.\noBreak \grace s8 s2.\pageBreak \grace s8
-          }
+          { s2.*7\break s2.*7\break s2.*6\break
+            \repeat unfold 54 { s2.*6\break } }
         >>
       >>
     >>
@@ -248,6 +260,7 @@
     \context {
       \Score
       \override InstrumentName.baseline-skip = #2.5
+      \override NonMusicalPaperColumn #'line-break-permission = ##f
     }
   }
   \midi { }

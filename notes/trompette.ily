@@ -39,13 +39,35 @@
 <<
   \tag #'(trompette1 trompettes) {
     \tag #'trompettes \stemUp
-    <>\mp ^"1°" \rythmique 
+    <>\mp ^"1°" \rythmique
     %% 8
-    r8 r4 r |
+    \stemNeutral r8 r4 r |
     R2.*17 |
   }
   \tag #'trompette2 { r8 r4 r | R2.*17 | R2.*18 }
 >>
 %% 9
-R2.*18 |
-  
+<<
+  { s4^"(Sord.)" \grace s8\mf \stemNeutral }
+  \repeat unfold 7 <<
+    \tag #'(trompette1 trompettes) { s4 mi''8 s re'' }
+    \tag #'(trompette2 trompettes) { s4 do''8 s do'' }
+    { r4 s8-> r s-> r }
+  >>
+>>
+<<
+  \tag #'(trompette1 trompettes) { s4 mi''8 s mi'' }
+  \tag #'(trompette2 trompettes) { s4 do''8 s si' }
+  { r4 s8-> r s-> r }
+>>
+\repeat unfold 9 <<
+  \tag #'(trompette1 trompettes) { s4 fa''8 s re'' }
+  \tag #'(trompette2 trompettes) { s4 do''8 s si' }
+  { r4 s8-> r s-> r }
+>>
+<<
+  \tag #'(trompette1 trompettes) { s4 mi''8 s re'' }
+  \tag #'(trompette2 trompettes) { s4 re''8 s do'' }
+  { r4 s8-> r s-> r }
+>>
+%% 10

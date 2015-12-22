@@ -24,3 +24,11 @@
 %% 8
 << { s4 \grace s8\mf }
   \repeat unfold 18 { <do sol>4 <sol sol sol'> <do sol sol'> | } >>
+%% 9
+r8 \tuplet 3/2 { do16( sol sol' } do''8) do16*2/3( sol sol' do''8) do'' |
+do''8 do16*2/3( sol sol' do''8) do16*2/3( sol sol' do''8) do16*2/3( sol sol' |
+\repeat unfold 8 {
+  do''8) do16*2/3( sol sol' do''8) do16*2/3( sol sol' do''8) do'' |
+  do''8 do16*2/3( sol sol' do''8) do16*2/3( sol sol' do''8) do16*2/3( sol sol' |
+}
+do''8)

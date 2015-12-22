@@ -35,22 +35,24 @@
     <>\pp ^"1°"
     <<
       { \transpose do do' \themeA r8 }
-      \tag #'flutes { s2.*16 | \voiceOne \new Voice { \voiceTwo r4 } \oneVoice }
+      \tag #'flutes { s2.*16 | \voiceOne \new Voice { \voiceTwo r4 } }
     >>
   }
   \tag #'flute2 { R2.*18 | r4 }
 >>
 %% 6
-\twoVoices #'(flute1 flute2 flutes) <<
-  { mi'8-> s re'-> s |
-    \repeat unfold 9 { s4 mi'8-> s re'-> s | }
-    \repeat unfold 2 { s4 fa'8-> s re'-> s | }
-    \repeat unfold 2 { s4 mi'8-> s re'-> s | }
+\grace s8\p <<
+  \tag #'(flute1 flutes) {
+    mi'8 s re' s |
+    \repeat unfold 9 { s4 mi'8 s re' s | }
+    \repeat unfold 2 { s4 fa'8 s re' s | }
+    \repeat unfold 2 { s4 mi'8 s re' s | }
   }
-  { do'8-> s do'-> s |
-    \repeat unfold 13 { s4 do'8-> s do'-> s | }
+  \tag #'(flute2 flutes) {
+    do'8 s do' s |
+    \repeat unfold 13 { s4 do'8 s do' s | }
   }
-  { \grace s8\p s8 r s r \repeat unfold 13 { r4 s8 r s r } }
+  { \oneVoice s8-> r s-> r \repeat unfold 13 { r4 s8-> r s-> r } }
 >>
 <<
   \tag #'(flute1 flutes) {

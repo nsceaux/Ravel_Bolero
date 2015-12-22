@@ -72,7 +72,7 @@
   maintainerWeb = "http://nicolas.sceaux.free.fr"
   copyright = \markup\copyright
   license = "Creative Commons Attribution-ShareAlike 4.0 License"
-  shortcopyright = \markup { \copyright — \license }
+  shortcopyright = \markup\fontsize#-1 { \copyright — \license }
   longcopyright = \markup\column {
     \vspace #1
     \fill-line { \copyright }
