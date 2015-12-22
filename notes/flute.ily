@@ -66,8 +66,9 @@ R2.*18 |
 <<
   \tag #'(flute1 flutes) {
     r8^"1°" <>\mp \rythmique
+    r8 r4 r |
+    R2.*17
   }
-  \tag #'flute2 {
-
-  }
+  \tag #'flute2 { R2.*18 R2.*18 }
 >>
+%% 10

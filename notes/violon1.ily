@@ -9,6 +9,7 @@ r4 <re' re'' mi''> <do' re' re''> |
 %% 6
 R2.*18 |
 %% 7
+\once\override Staff.TextScript.padding = #2
 << { s4_"Div." \grace s8\mp ^"pizz." }
   \repeat unfold 10 { r4 <re' re'' mi''> <do' re' re''> | } >>
 \repeat unfold 2 { r4 <re' re'' fa''> <do' re' re''> | }

@@ -66,7 +66,7 @@ themeBI = {
   sib'4(~ sib'16 la' sol' fa' sib' do'' la' sol' |
   sib'8 la'16 sol' sib'4-> la'16 sib' la' sol'~ |
   sol'4~ sol'16 fa' mi' re' mi'4~ |
-  mi') r8 sib'^_( do''^_ reb''~ |
+  mi') r8 sib'\noBeam^_( do''^_ reb''~ |
   reb'' reb''4)^_ reb''8\noBeam^_( reb''^_ reb''^_ |
   \tuplet 3/2 { reb''8^_ reb''^_ reb''^_) }
   \once\override Script.avoid-slur = #'outside
@@ -80,7 +80,7 @@ themeBI = {
   re'!4.( mi'8) re'16( mi' fa'8~ |
   fa'4) sol'8( lab' \tuplet 3/2 { fa'-_ sol'-_ mi'-_) } |
   re'16( mi' re' do'~ do'8) \breathe sib->(~ sib4~ |
-  sib16 do' sib do' re' mi' re' do' re' do' sib lab) |
+  sib!16 do' sib do' re' mi' re' do' re' do' sib lab) |
   \once\override Script.avoid-slur = #'outside
   sib->( lab sol8~ sol8)
 }
@@ -88,8 +88,8 @@ themeBI = {
 themeBII = {
   fa8->~ fa4~ |
   fa~ fa16 sol( fa mib~ mib4~ |
-  mib) fa16( mib fa reb~ reb4~ |
-  reb~ reb16) reb( mib reb fa mib reb do~ |
+  mib!) fa16( mib fa reb~ reb4~ |
+  reb!~ reb16) reb( mib reb fa mib reb do~ |
   do4) r r |
 }
 

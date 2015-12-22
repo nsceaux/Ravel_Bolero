@@ -21,5 +21,6 @@
 <do sol> lab <do sol> |
 %% 7
 \repeat unfold 18 { <do sol>4 <sol sol' do''> <do sol sol' do''> | }
-%%
-\repeat unfold 18 { <do sol>4 <sol sol sol'> <do sol sol'> | }
+%% 8
+<< { s4 \grace s8\mf }
+  \repeat unfold 18 { <do sol>4 <sol sol sol'> <do sol sol'> | } >>

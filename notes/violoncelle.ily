@@ -61,15 +61,25 @@ do4 r <sol, sol>8 sol |
 <do, sol, sol>4 sol <sol, sol> |
 <do, sol, sol>4 sol <sol, sol>8 sol |
 %% 7
-\repeat unfold 9 {
+\repeat unfold 7 {
   <do, sol, mi>4 r <sol, sol> |
   <do, sol, mi>4 r <sol, sol>8 sol |
 }
+<do, sol, mi>4 r <sol, sol> |
+<do, sol, re>4 r <sol, sol>8 sol |
+<do, sol, sol>4 r <sol, sol> |
+<do, sol, sol>4 r <sol, sol>8 sol |
 %% 8
 << { s2 <>\mf }
-  \repeat unfold 9 {
+  \repeat unfold 4 {
     <do, sol, mi>4 r <sol, sol> |
     <do, sol, mi>4 r <sol, sol>8 sol |
   }
 >>
+\repeat unfold 4 {
+  <do, sol, re>4 r <sol, sol> |
+  <do, sol, re>4 r <sol, sol>8 sol |
+}
+<do, sol, re>4 r <sol, sol> |
+<do, sol, mi>4 r <sol, sol>8 sol |
 %% 9

@@ -4,7 +4,7 @@ R2.*2
 <<
   \filterMusic #'(SlurEvent) \themeA
   { s2.(
-    s8) s4.( s8) s(
+    s8) s4.( s8) s_(
     s2.*2
     s4 s16) s8.( s4
     s s8) s8( s4
