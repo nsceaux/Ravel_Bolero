@@ -32,4 +32,14 @@ sol''8 sol16*2/3( sol' do'' sol''8) sol16*2/3( sol' do'' sol''8) sol16*2/3( sol'
   sol''8 sol16*2/3( sol' do'' sol''8) sol16*2/3( sol' do'' sol''8) sol16*2/3( sol' do'' |
 }
 %% 10
-sol''4)
+sol''4) <re' sol'> <si sol'> |
+r4 <re' sol'> <si sol'> |
+\repeat unfold 8 { r4 <re' sol'> <sib sol'> }
+r4 <re' sol'> <si! sol'> |
+r4 <re' sol'> <si sol'> |
+\repeat unfold 2 { r4 <re' sol'> <sib sol'> }
+r4 <re' sol'> <lab sol'> |
+r4 <lab sol'> <sib sol'> |
+r4 <sib sol'> <lab sol'> |
+r4 <lab sol'> <sol sol'> |
+%% 11

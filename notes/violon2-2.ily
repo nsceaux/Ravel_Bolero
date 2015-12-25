@@ -21,3 +21,11 @@ r4 do' <do' re'> |
   q4 q sol16*2/3( sol' do'' sol''8) |
 }
 %% 10
+<sol sol'>4 <do' mi'> <do' re'> |
+\repeat unfold 9 { r4 <do' mi'> <do' re'> }
+\repeat unfold 2 { r4 <do' fa'> <do' re'> }
+\repeat unfold 3 { r4 <do' mi'> <do' re'> }
+r4 <do' re'> do' |
+r4 do' do' |
+r do' do' |
+%% 11

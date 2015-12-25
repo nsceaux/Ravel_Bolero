@@ -90,16 +90,22 @@
           } << \transpose sib do \global { \include "clarinette-basse.ily" } >>
         >>
         %% Bassons
-        \new Staff \with {
-          instrumentName = \markup\center-column {
-            \smallCaps Bassons
-            \fontsize#-2 \column {
-              2 Bassons
-              Contrebasson
+        \new StaffGroup <<
+          \new Staff \with {
+            instrumentName = \markup\center-column {
+              \smallCaps Bassons
+              \fontsize#-2 \column {
+                2 Bassons
+                Contrebasson
+              }
             }
-          }
-          shortInstrumentName = \markup\tiny\concat { B \super ons }
-        } << \global \keepWithTag #'bassons { \include "basson.ily" } >>
+            shortInstrumentName = \markup\tiny\concat { B \super ons }
+          } << \global \keepWithTag #'bassons { \include "basson.ily" } >>
+          \new Staff \with {
+            shortInstrumentName = \markup\tiny\concat { C.B \super on }
+            \haraKiriFirst
+          } << \global { \include "contrebasson.ily" } >>
+        >>
       >>
       %% Cuivres, saxophones, percussions
       \new StaffGroupNoBracket <<
@@ -163,8 +169,9 @@
         %% Trombonnes
         \new Staff \with {
           instrumentName = \markup\smallCaps 3 Trombones
+          shortInstrumentName = \markup\tiny Tromb.
           \haraKiri
-        } << \global >>
+        } << \global { \include "trombone.ily" } >>
         %% Tuba
         \new Staff \with {
           instrumentName = \markup\smallCaps Tuba
@@ -247,7 +254,10 @@
         } <<
           \global { \include "cb.ily" }
           { s2.*7\break s2.*7\break s2.*6\break
-            \repeat unfold 54 { s2.*6\break } }
+            \repeat unfold 26 { s2.*6\break }
+            s2.*6 \break \grace s8
+            \repeat unfold 20 { s2.*6\break }
+          }
         >>
       >>
     >>

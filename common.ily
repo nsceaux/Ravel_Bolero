@@ -67,7 +67,7 @@ themeBI = {
   sib'8 la'16 sol' sib'4-> la'16 sib' la' sol'~ |
   sol'4~ sol'16 fa' mi' re' mi'4~ |
   mi') r8 sib'\noBeam^_( do''^_ reb''~ |
-  reb'' reb''4)^_ reb''8\noBeam^_( reb''^_ reb''^_ |
+  reb''! reb''4)^_ reb''8\noBeam^_( reb''^_ reb''^_ |
   \tuplet 3/2 { reb''8^_ reb''^_ reb''^_) }
   \once\override Script.avoid-slur = #'outside
   reb''8^>( do''16 sib')

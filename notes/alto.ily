@@ -31,4 +31,14 @@ do''8 do16*2/3( sol sol' do''8) do16*2/3( sol sol' do''8) do16*2/3( sol sol' |
   do''8) do16*2/3( sol sol' do''8) do16*2/3( sol sol' do''8) do'' |
   do''8 do16*2/3( sol sol' do''8) do16*2/3( sol sol' do''8) do16*2/3( sol sol' |
 }
-do''8)
+%% 10
+<< { do''8) \rythmique }
+  { s8 s16*2/3-.(^"arco" s-. s-.) s8-. s16*2/3-.( s-. s-.) s8-. s-. |
+    sol8-. s16*2/3-.( s-. s-.) s8-. s16*2/3-.( s-. s-.) s-.( s-. s-.) s-.( s-. s-.) |
+    \repeat unfold 8 {
+      sol8-. s16*2/3-.( s-. s-.) s8-. s16*2/3-.( s-. s-.) s8-. s-. |
+      sol8-. s16*2/3-.( s-. s-.) s8-. s16*2/3-.( s-. s-.) s-.( s-. s-.) s-.( s-. s-.)
+    }
+  }
+>>
+%% 11

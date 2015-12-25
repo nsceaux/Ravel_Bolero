@@ -75,3 +75,27 @@ R2.*2
     s8)
   }
 >>
+%% 10
+<<
+  \tag #'(clarinette1 clarinettes) {
+    s8 fad' s mi' s |
+    \repeat unfold 14 { s4 fad'8 s mi' s | }
+    s4 mi'8 s re' s |
+    s4 re'8 s re' s |
+    s4 re'8 s re' s |
+  }
+  \tag #'(clarinette2 clarinettes) {
+    s8 re' s dod' s |
+    s4 re'8 s dod' s |
+    \repeat unfold 8 { s4 re'8 s do' s | }
+    s4 re'8 s dod'! s |
+    s4 re'8 s dod' s |
+    \repeat unfold 2 { s4 re'8 s do' s | }
+    s4 re'8 s re' s |
+    s4 re'8 s do' s |
+    s4 do'8 s sib s |
+    s4 sib8 s la s |
+  }
+  { r8 s-> r s-> r \repeat unfold 17 { r4 s8-> r s-> r } }
+>>
+%% 11

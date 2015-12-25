@@ -50,3 +50,10 @@ R2.*18 |
 %% 9
 r4 r |
 R2.*17 |
+%% 10
+<<
+  \tag #'cor1 { R2.*18 }
+  \tag #'(cor2 cors) {
+    r8 ^\markup "2°" \grace s8\mf \transpose do sol, \rythmique r8
+  }
+>>

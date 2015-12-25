@@ -28,3 +28,5 @@ r4 <sol sol' do'' mi''> <si mi' do'' mi''> |
 \repeat unfold 9 { r4 <re' re'' fa''> <do' re' re''> } |
 r4 <sol sol' do'' mi''> <do' re' re''> |
 %% 10
+R2.*18 |
+%% 11

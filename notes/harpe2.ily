@@ -50,3 +50,5 @@ R2.*18
 %% 9
 \repeat unfold 18 { r4 sol' sol | }
 %% 10
+\repeat unfold 18 { <do, do>4 r r }
+%% 11

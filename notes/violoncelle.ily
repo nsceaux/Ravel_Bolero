@@ -94,3 +94,16 @@ do4 r <sol, sol>8 sol |
 <do, sol, re>4 r <sol, sol> |
 <do, sol, mi> r <sol, sol>8 sol |
 %% 10
+\repeat unfold 5 {
+  <do, sol, mi>4 sol <do, sol, sol> |
+  <do, sol, mi> sol <do, sol, sol>8 sol, |
+}
+<do, sol, re>4 sol <do, sol, sol> |
+<do, sol, re> sol <do, sol, sol>8 sol |
+<do, sol, mi>4 sol <do, sol, sol> |
+<do, sol, mi> sol <do, sol, sol>8 sol |
+<do, sol, mi>4 sol <do, sol, sol> |
+<do, sol, re> sol <do, sol, sol>8 sol |
+<do, sol, sol>4 sol <do, sol, sol> |
+<do, sol, sol> sol <do, sol, sol>8 sol |
+%% 11
