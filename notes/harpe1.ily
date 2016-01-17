@@ -4,8 +4,12 @@
 %% 3
 r4 <do' re' mi'>\mp <sib do' re'> |
 \repeat unfold 9 { r4 <do' re' mi'> <sib do' re'> | }
-\repeat unfold 2 { r4 <do' re' fa'> <si! do' re'> | }
+<>^\markup { \smallCaps Si \raise#0.8 \musicglyph#"accidentals.natural" }
+r4 <do' re' fa'> <si! do' re'> |
+r4 <do' re' fa'> <si do' re'> |
+<>^\markup { \smallCaps Si \raise#0.6 \musicglyph#"accidentals.flat" }
 \repeat unfold 2 { r4 <do' re' mi'> <sib do' re'> | }
+<>^\markup { \smallCaps La \raise#0.6 \musicglyph#"accidentals.flat" }
 r4 <do' re' mi'> <lab do' re'> |
 r4 <lab do' re'> <sol sib do'> |
 r4 <sol sib do'> <sol lab do'> |
@@ -24,10 +28,14 @@ R2.*18
 << { s4 \grace s8\mf } \repeat unfold 18 { r4 sol'' sol' | } >>
 %% 10
 \repeat unfold 2 { r4 <do' re' mi'> <si do' re'> | }
+<>^\markup { \smallCaps Si \raise#0.6 \musicglyph#"accidentals.flat" }
 \repeat unfold 8 { r4 <do' re' mi'> <sib do' re'> | }
+<>^\markup { \smallCaps Si \raise#0.8 \musicglyph#"accidentals.natural" }
 r4 <do' re' fa'> <si! do' re'> |
 r4 <do' re' fa'> <si do' re'> |
+<>^\markup { \smallCaps Si \raise#0.6 \musicglyph#"accidentals.flat" }
 \repeat unfold 2 { r4 <do' re' mi'> <sib do' re'> | }
+<>^\markup { \smallCaps La \raise#0.6 \musicglyph#"accidentals.flat" }
 r4 <do' re' mi'> <lab do' re'> |
 r4 <lab do' re'> <sol sib do'> |
 r4 <sol sib do'> <sol lab do'> |
