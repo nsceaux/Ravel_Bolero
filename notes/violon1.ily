@@ -30,3 +30,15 @@ r4 <sol sol' do'' mi''> <do' re' re''> |
 %% 10
 R2.*18 |
 %% 11
+\grace s4\f
+\repeat unfold 10 { sol4 <re' re'' mi''> <sib re' re''> | }
+sol <re' re'' fa''> <si! re' re''> |
+sol <re' re'' fa''> <si re' re''> |
+\repeat unfold 2 { sol4 <re' re'' mi''> <sib re' re''> | }
+sol4 <re' re'' mi''> <do' lab' do''> |
+sol <do' lab' re''> <sib sol' do''> |
+sol <sib sol' do''> <lab sol' do''> |
+sol <lab sol' do''> <sol sol' do''> |
+%% 12
+R2.*18 |
+%% 13

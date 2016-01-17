@@ -43,3 +43,12 @@ r4 <lab sol'> <sib sol'> |
 r4 <sib sol'> <lab sol'> |
 r4 <lab sol'> <sol sol'> |
 %% 11
+r8\f <>^"arco"
+<< \rythmique
+  \repeat unfold 9 {
+    s16*2/3-.( s-. s-.) s8 s16*2/3-.( s-. s-.) s4 |
+    s8 s16*2/3-.( s-. s-.) s8 s16*2/3-.( s-. s-.) s-.( s-. s-.) s-.( s-. s-.) |
+    s8
+  }
+>>
+%% 12

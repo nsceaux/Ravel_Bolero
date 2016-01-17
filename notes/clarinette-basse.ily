@@ -14,3 +14,21 @@ R2.*146
 mi'8-> r la'-> r la-> r |
 \repeat unfold 2 { re'8-> r la'-> r la-> r | }
 %% 11
+<<
+  { s4 \grace s4\f }
+  \repeat unfold 5 {
+    fad'8-> r la'-> r la-> r |
+    fad'8-> r la'-> r la-> la-> |
+  }
+>>
+mi'8-> r la'-> r la-> r |
+mi'8-> r la'-> r la-> la-> |
+fad'8-> r la'-> r la-> r |
+fad'8-> r la'-> r la-> la-> |
+fad'8-> r la'-> r la-> la-> |
+mi'8-> r la'-> r la-> r |
+re'8-> r la'-> r la-> r |
+re'8-> r la'-> r la-> la-> |
+%% 12
+R2.*18
+%% 13

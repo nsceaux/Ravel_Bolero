@@ -29,3 +29,12 @@ r4 <do' re'> do' |
 r4 do' do' |
 r do' do' |
 %% 11
+r8\f <>^"arco"
+<< \transpose do do, \rythmique
+  \repeat unfold 9 {
+    s16*2/3-.( s-. s-.) s8 s16*2/3-.( s-. s-.) s4 |
+    s8 s16*2/3-.( s-. s-.) s8 s16*2/3-.( s-. s-.) s-.( s-. s-.) s-.( s-. s-.) |
+    s8
+  }
+>>
+%% 12

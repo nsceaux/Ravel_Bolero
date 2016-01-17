@@ -20,14 +20,9 @@
             \haraKiriFirst
             shortInstrumentName = \markup\tiny { \concat { P \super tes } Fl. }
           } <<
-            \new Staff <<
-              \transpose do mi \global
-              { \include "petite-flute1.ily" }
-            >>
-            \new Staff <<
-              \transpose do sol \global
-              { \include "petite-flute2.ily" }
-            >>
+            \new Staff << \transpose do mi \global { \include "petite-flute1.ily" } >>
+            \new Staff << \transpose do sol \global { \include "petite-flute2.ily" } >>
+            \new Staff << \global { \include "petite-flute3.ily" } >>
           >>
         >>
         %% Hautbois
@@ -137,6 +132,12 @@
             \global { \include "trompette3.ily" }
           >>
         >>
+        %% Trombonnes
+        \new Staff \with {
+          instrumentName = \markup\smallCaps 3 Trombones
+          shortInstrumentName = \markup\tiny Tromb.
+          \haraKiri
+        } << \global { \include "trombone.ily" } >>
         %% Saxophones
         \new StaffGroup \with { \haraKiriFirst } <<
           \new Staff \with {
@@ -166,12 +167,6 @@
               s2.*7 \noHaraKiri }
           >>
         >>
-        %% Trombonnes
-        \new Staff \with {
-          instrumentName = \markup\smallCaps 3 Trombones
-          shortInstrumentName = \markup\tiny Tromb.
-          \haraKiri
-        } << \global { \include "trombone.ily" } >>
         %% Tuba
         \new Staff \with {
           instrumentName = \markup\smallCaps Tuba
@@ -254,9 +249,14 @@
         } <<
           \global { \include "cb.ily" }
           { s2.*7\break s2.*7\break s2.*6\break
-            \repeat unfold 26 { s2.*6\break }
-            s2.*6 \break \grace s8
-            \repeat unfold 20 { s2.*6\break }
+            %% 1
+            \repeat unfold 9 { s2.*6\break s2.*6\break s2.*6\break }
+            %% 10
+            \grace s8 { s2.*6\break s2.*6\break s2.*6\break }
+            %% 11
+            \grace s4 { s2.*5\break s2.*5\break s2.*4\break s2.*4\break }
+            %% 12
+            \repeat unfold 7 { s2.*6\break s2.*6\break s2.*6\break }
           }
         >>
       >>

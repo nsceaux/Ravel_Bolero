@@ -52,3 +52,5 @@ R2.*18
 %% 10
 \repeat unfold 18 { <do, do>4 r r }
 %% 11
+\repeat unfold 18 { <do, do>4 r r }
+%% 12

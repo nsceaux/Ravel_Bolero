@@ -15,4 +15,5 @@
 %% 10
 \repeat unfold 18 { do4 r sol, | }
 %% 11
-
+<< { s2 <>\f } \repeat unfold 18 { do4 r sol, | } >>
+%% 12

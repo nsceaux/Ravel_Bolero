@@ -73,3 +73,10 @@
 %% 10
 << { s8 s^"senza Sord." } R2.*18 >>
 %% 11
+<<
+  \tag #'(trompette1 trompettes) {
+    \tag #'trompettes <>^"1°"
+    r8 <>\f \rythmique
+  }
+  \tag #'trompette2 R2.*18
+>>

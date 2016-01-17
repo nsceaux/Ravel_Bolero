@@ -57,3 +57,7 @@ R2.*17 |
     r8 ^\markup "2°" \grace s8\mf \transpose do sol, \rythmique r8
   }
 >>
+%% 11
+r4 r |
+R2.*17 |
+%% 12

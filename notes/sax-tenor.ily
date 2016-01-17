@@ -21,3 +21,32 @@ R2.*18
 %% 10
 R2.*18
 %% 11
+R2.*2
+<>\f <<
+  \transpose sib do''
+  \filterMusic #'(SlurEvent ArticulationEvent) \themeB
+  { s2.(
+    s8) s( s2->
+    s2.
+    s4.) s8(-_ s-_ s-_
+    s s4)-_ s8(-_ s-_ s-_
+    s8*2/3-_ s-_ s)-_ s8.(-> s16) \acciaccatura do'''8\glissando s8.(-> s16)
+    \acciaccatura do'''8\glissando s8.( s16)
+    \once \override Script.avoid-slur = #'outside s2->(
+    s2 s4)
+    s4.( s8) s4(
+    s4) s( s8*2/3-_ s-_ s)-_
+    s4.
+    \once \override Script.avoid-slur = #'outside
+    s4.(->
+    s2 s8. s16)
+    s4( s8)
+    \once \override Script.avoid-slur = #'outside
+    s4.(->
+    s4 s16) s8.( s4
+    s4) s2(
+    s4 s16) s8.( s4
+    s)
+  }
+>>
+%% 12

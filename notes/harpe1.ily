@@ -33,3 +33,15 @@ r4 <lab do' re'> <sol sib do'> |
 r4 <sol sib do'> <sol lab do'> |
 r4 <sol lab do'> <sol do'> |
 %% 11
+<>\f \repeat unfold 10 { r4 <do'' re'' mi''> <sib' do'' re''> }
+<>^\markup { \smallCaps Si \raise#0.8 \musicglyph#"accidentals.natural" }
+r4 <do'' re'' fa''> <si'! do'' re''> |
+r4 <do'' re'' fa''> <si' do'' re''> |
+<>^\markup { \smallCaps Si \raise#0.6 \musicglyph#"accidentals.flat" }
+\repeat unfold 2 { r4 <do'' re'' mi''> <sib' do'' re''> }
+<>^\markup { \smallCaps La \raise#0.6 \musicglyph#"accidentals.flat" }
+r4 <do'' re'' mi''> <lab' do'' re''> |
+r4 <lab' do'' re''> <sol' sib' do''> |
+r4 q <sol' lab' do''> |
+r4 q <sol' do''> |
+%% 12

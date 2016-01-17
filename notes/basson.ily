@@ -93,3 +93,24 @@ R2.*18
 %% 10
 R2.*18
 %% 11
+\grace s4\f <<
+  \tag #'(basson1 bassons) {
+    \repeat unfold 10 { sol,8 s mi' s re' s | }
+    \repeat unfold 2 { sol,8 s fa' s re' s | }
+    \repeat unfold 2 { sol,8 s mi' s re' s | }
+    sol,8 s mi' s re' s |
+    sol,8 s re' s do' s |
+    sol,8 s do' s do' s |
+    sol,8 s do' s do' s |
+  }
+  \tag #'(basson2 bassons) {
+    \repeat unfold 10 { do,8 s do' s sib s | }
+    \repeat unfold 2 { do,8 s do' s si! s | }
+    \repeat unfold 2 { do,8 s do' s sib s | }
+    do,8 s do' s do' s |
+    do,8 s do' s sib s |
+    do,8 s sib s lab s |
+    do,8 s lab s sol s |
+  }
+  \repeat unfold 18 { s8-> r s-> r s-> r | }
+>>

@@ -95,6 +95,38 @@ themeBII = {
 
 themeB = { \themeBI \breathe \themeBII }
 
+themeBsixteI = {
+  sol''4(~ sol''16 fa'' mi'' re'' sol'' la'' fa'' mi'' |
+  sol''8) fa''16( mi'' sol''4 fa''16 sol'' fa'' mi''~ |
+  mi''4~ mi''16 re'' do'' sib' do''4~ |
+  do''4) r8 sol''\noBeam^_( la''^_ sib''^_~ |
+  sib''! sib''4)^_ sib''8\noBeam^_( sib''^_ sib''^_ |
+  \tuplet 3/2 { sib''8^_ sib''8^_ sib''8^_) }
+  \once\override Script.avoid-slur = #'outside
+  sib''8^>( la''16 sol'')
+  \once \override Script.avoid-slur = #'outside
+  sib''8(^> la''16 sol'') |
+  sib''16( la'' sol'' fa'')
+  \once \override Script.avoid-slur = #'outside
+  mi''16^>( re'' do''!8~ do''4~ |
+  do''2~ do''8) r |
+  la'!4.( si'8) la'16( si' do''8~ |
+  do''4) re''8( fa'' \tuplet 3/2 { si'8-_ re''8-_ si'-_) } |
+  la'!16( do'' la' sol'~ sol'8) sol'->(~ sol'4~ |
+  sol'16 la' sol' la' sib' do'' sib' la' sib' la' sol' mi') |
+  \once \override Script.avoid-slur = #'outside
+  sol'8->([ mi']~ mi')
+}
+themeBsixteII = {
+  \once \override Script.avoid-slur = #'outside
+  fa'(->~ fa'4~ |
+  fa'4~ fa'16) sol'( fa' mib'~ mib'4~ |
+  mib'!4) fa'16( mib' fa' reb'~ reb'4~ |
+  reb'!~ reb'16) reb'( mib' reb') fa'( mib' reb' do'~ |
+  do'4)
+}
+themeBsixte = { \themeBsixteI \themeBsixteII }
+
 rythmique =
 #(define-music-function (parser location) ()
    #{

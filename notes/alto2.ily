@@ -12,3 +12,5 @@
   <do do'>8-. sol16*2/3-.( sol-. sol-.) sol8-. sol16*2/3-.( sol-. sol-.) sol-.( sol-. sol-.) sol-.( sol-. sol-.)
 }
 %% 11
+R2.*18
+%% 12

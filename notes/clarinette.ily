@@ -99,3 +99,34 @@ R2.*2
   { r8 s-> r s-> r \repeat unfold 17 { r4 s8-> r s-> r } }
 >>
 %% 11
+R2.*2
+<>\f <<
+  \tag #'(clarinette1 clarinettes) \transpose sib do''
+  \filterMusic #'(SlurEvent BreathingEvent ArticulationEvent) \themeBI
+  \tag #'(clarinette2 clarinettes) \transpose sib do'
+  \filterMusic #'(SlurEvent BreathingEvent ArticulationEvent) \themeBI
+  { s2.(
+    s8) s( s2
+    s2.
+    s4.) s8(-_ s-_ s-_
+    s s4)-_ s8(-_ s-_ s-_
+    s8*2/3-_ s-_ s)-_ s8.(-> s16) s8.(-> s16)
+    s2.(
+    s2 s4)
+    s4.( s8) s4(
+    s4) s( s8*2/3-_ s-_ s)-_
+    s4( s8) \once \override Script.avoid-slur = #'outside s4.(->
+    s2 s8. s16)
+    s4(-> s8)
+  }
+>>
+\tag #'clarinettes <>^"à 2"
+\transpose sib do' {
+  \once \override Script.avoid-slur = #'outside
+  do'->](~ do'4~ |
+  do'~ do'16) re'( do' sib~ sib4~ |
+  sib4) do'16( sib do' lab~ lab4~ |
+  lab!~ lab16) lab( sib lab) do'( sib lab sol~ |
+  sol4)
+}
+%% 12
