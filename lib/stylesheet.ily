@@ -46,38 +46,21 @@
     layout props
     #{ \markup\abs-fontsize #10 \with-color #white \char ##x01C0 #}))
 
-#(define-markup-command (copyright layout props) ()
-  (let* ((maintainer (chain-assoc-get 'header:maintainer props))
-         (this-year (+ 1900 (tm:year (gmtime (current-time)))))
-         (year (string->number (or (chain-assoc-get 'header:copyrightYear props)
-                                   (number->string this-year)))))
-    (interpret-markup layout props
-     (markup "Copyright ©" 
-             (if (= year this-year)
-                 (format #f "~a" this-year)
-                 (format #f "~a-~a" year this-year))
-             maintainer))))
-
 #(define-markup-command (today layout props) ()
   (let ((today (gmtime (current-time))))
    (interpret-markup layout props
-     (format #f "~a-~a-~a"
+     (format #f "~a-~2,'0d-~2,'0d"
              (+ 1900 (tm:year today))
              (1+ (tm:mon today))
              (tm:mday today)))))
 
 \header {
-  maintainer = "Nicolas Sceaux"
+  maintainer = "Éditions Nicolas Sceaux"
   maintainerEmail = "nicolas.sceaux@gmail.com"
   maintainerWeb = "http://nicolas.sceaux.free.fr"
-  copyright = \markup\copyright
-  license = "Creative Commons Attribution-ShareAlike 4.0 License"
-  shortcopyright = \markup\fontsize#-1 { \copyright — \license }
-  longcopyright = \markup\column {
-    \vspace #1
-    \fill-line { \copyright }
-    \fill-line { \license }
-  }
+  license = "Creative Commons Zero 1.0 Universal License"
+  shortcopyright = \markup\fontsize#-1 { \maintainer — \license }
+
   tagline = \markup\sans\abs-fontsize #8 \override #'(baseline-skip . 0) {
     \right-column\bold {
       \with-url #"http://nicolas.sceaux.free.fr" {
@@ -88,18 +71,19 @@
     }
     \abs-fontsize #9 \with-color #(x11-color 'grey40) \raise #-0.7 \musicglyph #"clefs.petrucci.f"
     \column {
-      \line { \tagline-vspacer \copyright }
       \smaller\line {
         \tagline-vspacer
         Sheet music from
         \with-url #"http://nicolas.sceaux.free.fr"
-        \typewriter\smaller http://nicolas.sceaux.free.fr
+        http://nicolas.sceaux.free.fr
         typeset using \with-url #"http://lilypond.org" LilyPond
         on \concat { \today . }
       }
       \smaller\line {
         \tagline-vspacer \license
-        — free to download, distribute, modify and perform.
+      }
+      \smaller\line {
+        \tagline-vspacer Free to download, distribute, modify and perform!
       }
     }
   }
