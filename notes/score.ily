@@ -172,11 +172,19 @@
           instrumentName = \markup\smallCaps Tuba
           \haraKiri
         } << \global >>
+        %% Timbales
+        \new Staff \with {
+          shortInstrumentName = \markup\tiny Timb.
+          \haraKiriFirst
+        } << \global { \include "timbales.ily" } >>
         %% Tambours
         \new DrumStaff \with {
           drumStyleTable = #percussion-style
           \override StaffSymbol.line-count = #1
-          instrumentName = \markup\smallCaps 2 Tambours
+          instrumentName = \markup\center-column\smallCaps {
+            2 Tambours
+            Timbales
+          }
           shortInstrumentName = \markup\tiny Tamb.
         } << \global { \include "tambour.ily" } >>
       >>

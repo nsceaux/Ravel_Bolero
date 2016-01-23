@@ -114,3 +114,15 @@ R2.*18
   }
   \repeat unfold 18 { s8-> r s-> r s-> r | }
 >>
+%% 12
+\repeat unfold 9 <<
+  \tag #'(basson1 bassons) {
+    sol,8 s do' s do' s |
+    sol,8 s do' s \new Voice { \tag #'bassons \voiceOne do'-> r | }
+  }
+  \tag #'(basson2 bassons) {
+    do,8 s do s sol, s |
+    do, s do s \new Voice { \tag #'bassons \voiceTwo sol,-> sol,-> | }
+  }
+  { s8-> r s-> r s-> r | s8-> r s-> r s4 | }
+>>

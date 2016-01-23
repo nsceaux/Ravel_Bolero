@@ -17,3 +17,19 @@ R2.*17 |
   }
   \tag #'cor3 { R2.*18 }
 >>
+%% 12
+<<
+  \tag #'(cor3 cors) {
+    s8 si' s la' s |
+    \repeat unfold 7 { s4 si'8 s la' s }
+    \repeat unfold 9 { s4 do''8 s la' s }
+    s4 si'8 s la' s
+  }
+  \tag #'(cor4 cors) {
+    s8 la' s fad' s |
+    \repeat unfold 16 { s4 la'8 s fad' s }
+    s4 la'8 s sol' s
+  }
+  { r8 <>\f s-> r s-> r |
+    \repeat unfold 17 { r4 s8-> r s-> r } }
+>>

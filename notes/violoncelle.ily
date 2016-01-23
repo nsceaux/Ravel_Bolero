@@ -5,10 +5,6 @@
   do4 r <sol, sol>8 sol |
 }
 %% 1
-\footnoteHere #'(0 . 0) \markup {
-  Manuscript autographe, violoncelles, entre les marques 1 et 2 :
-  \raise #-1 \epsfile #Y #4 #"captures/violoncelles-mes21.eps"
-}
 \repeat unfold 9 {
   do4 r <sol, sol> |
   do4 r <sol, sol>8 sol |
@@ -123,3 +119,14 @@ do4 r <sol, sol>8 sol |
 <do, sol, sol>4 sol <do, sol, sol> |
 <do, sol, sol> sol <do, sol, sol>8 sol, |
 %% 12
+\repeat unfold 4 {
+  <do, sol, mi>4 sol <do, sol, sol> |
+  <do, sol, mi> sol <do, sol, sol>8 <sol, sol> |
+}
+\repeat unfold 4 {
+  <do, sol, re>4 sol <do, sol, sol> |
+  <do, sol, re> sol <do, sol, sol>8 <sol, sol> |
+}
+<do, sol, re>4 sol <do, sol, sol> |
+<do, sol, mi> sol <do, sol, sol>8 <sol, sol> |
+%% 13

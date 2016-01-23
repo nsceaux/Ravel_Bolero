@@ -80,3 +80,9 @@
   }
   \tag #'trompette2 R2.*18
 >>
+%% 12
+<<
+  \tag #'(trompette1 trompettes) { r8 r4 r4 | R2.*17 }
+  \tag #'trompette2 R2.*18
+>>
+%% 13

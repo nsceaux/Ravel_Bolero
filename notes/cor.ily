@@ -61,3 +61,9 @@ R2.*17 |
 r4 r |
 R2.*17 |
 %% 12
+r8 <>\f <<
+  \tag #'(cor1 cors) \transpose do sol \rythmique 
+  \tag #'(cor2 cors) \transpose do sol, \rythmique 
+>>
+%% 13
+r8

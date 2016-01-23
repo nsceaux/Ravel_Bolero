@@ -52,3 +52,10 @@ r8\f <>^"arco"
   }
 >>
 %% 12
+r8^"pizz." <sol mi' re'' sol''>4 <sol re' si' sol''> |
+\repeat unfold 5 { r4 <sol mi' re'' sol''>4 <sol re' si' sol''> | }
+r4 <sol re' re'' sol''>4 <sol re' si' sol''> |
+r4 <sol mi' re'' sol''>4 <sol mi' si' sol''> |
+\repeat unfold 9 { r4 <sol fa' re'' sol''>4 <sol re' si' sol''> | }
+r4 <sol mi' do'' sol''>4 <sol re' do'' sol''> |
+%% 13

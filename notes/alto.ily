@@ -42,3 +42,7 @@ do''8) sol'16*2/3-.(^"arco" sol'-. sol'-.) sol'8-. sol'16*2/3-.( sol'-. sol'-.) 
 << <sol sol'>8 \\ <do do'>8 >> r8*1/2^"pizz." s16\f <do sol sol' do''>4 q |
 \repeat unfold 17 { <do sol sol'> <do sol sol' do''> q | }
 %% 12
+\repeat unfold 7 { <do sol>4 <do do' re' do''> q | } |
+<do sol sol'>4 <do do' re' do''> <do do' mi' do''> |
+\repeat unfold 10 { <do sol sol'>4 <do do' re' do''> q | }
+%% 13

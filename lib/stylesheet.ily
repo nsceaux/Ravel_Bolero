@@ -193,3 +193,31 @@
     \accepts "StaffGroupNoBracket"
   }
 }
+
+%%%
+%%% Articulation overrides
+%%%
+\layout {
+  \context {
+    \Score
+    scriptDefinitions =
+    #(let ((script-alist (list-copy default-script-alist)))
+       (assoc-set! script-alist "accent"
+                   `((avoid-slur . outside)
+                     (padding . 0.20)
+                     (script-stencil . (feta . ("sforzato" . "sforzato")))
+                     (side-relative-direction . ,DOWN)))
+       (assoc-set! script-alist "portato"
+                   `((script-stencil . (feta . ("uportato" . "dportato")))
+                     (avoid-slur . around)
+                     (padding . 0.20)
+                     (side-relative-direction . ,DOWN)
+                     (quantize-position . #t)
+                     (toward-stem-shift . 1.0)
+                     (toward-stem-shift-in-column . 0.0)
+                     (skyline-horizontal-padding . 0.10)
+                     (script-priority . -100)
+                     ))
+       script-alist)
+  }
+}

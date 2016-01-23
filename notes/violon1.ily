@@ -40,5 +40,24 @@ sol <do' lab' re''> <sib sol' do''> |
 sol <sib sol' do''> <lab sol' do''> |
 sol <lab sol' do''> <sol sol' do''> |
 %% 12
-R2.*18 |
+R2.*2 |
+<>^"arco" <<
+  \filterMusic #'(SlurEvent ArticulationEvent) \transpose do do' \themeA
+  { s4. s16( s) s( s) s-.( s-.)
+    s8 s16( s) s4. s16( s)
+    s( s) s-_( s-_) s2
+    s16 s8( s16) s( s) s-_( s-_) s4
+    s4 s16 s8( s16) s( s) s-_( s-_)
+    \once \override Script.avoid-slur = #'outside
+    s->( s8.) s8 s16( s) s8-_( s-_)
+    s2.*2
+    s2 s16( s) s-_( s-_)
+    s( s) s8 s s16-_( s-_) s( s8.)
+    s8 s16(-. s-.) s4 s16( s) s-_( s-_)
+    s8 s16-.( s-.) s4 s16( s) s-_( s-_)
+    s8 s16( s) s4. s16-.( s-.) s4 s16( s) s-_( s-_) s8 s16( s)
+    s4. s16( s) s8 s16( s)
+    s2( s8. s16)
+  }
+>>
 %% 13

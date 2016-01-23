@@ -97,6 +97,34 @@ fa'(->~ fa'4~ |
 fa'4~ fa'16) sol'( fa' mib'~ mib'4~ |
 mib'!4) fa'16( mib' fa' reb'~ reb'4~ |
 reb'!~ reb'16) reb'( mib' reb') fa'( mib' reb' do'~ |
+%% 12
+do'4) \twoVoices #'(hautbois1 hautbois2 hautbois) <<
+  { do''8-> r do''-> r | r4 do''8-> r do''-> r | }
+  { r4 r | R2. }
+>>
+<<
+  \tag #'(hautbois1 hautbois) \filterMusic #'(SlurEvent) \transpose do do' \themeA
+  \tag #'(hautbois2 hautbois) \filterMusic #'(SlurEvent)\themeA
+  { s2.(
+    s8) s( s2
+    s2.
+    s16) s8.( s2
+    s4 s16) s8.( s4
+    s4 s8) s4.(
+    s2.
+    s2 s4)
+    s2( s8. s16)
+    s4..( s16) s4(
+    s8) s( s2
+    s8) s( s2
+    s8) s4.( s8) s(
+    s2 s8) s(
+    s4 s8) s4.(
+    s2.
+    s8)
+  }
+>>
 %% 13
-do'4)
+r8 r4 r |
+R2. |
 
