@@ -66,4 +66,19 @@ r8 <>\f <<
   \tag #'(cor2 cors) \transpose do sol, \rythmique 
 >>
 %% 13
-r8
+<<
+  \tag #'(cor1 cors) {
+    s8 si' s la' s |
+    \repeat unfold 7 { s4 si'8 s la' s }
+    \repeat unfold 9 { s4 do''8 s la' s }
+    s4 si'8 s la' s |
+  }
+  \tag #'(cor2 cors) {
+    s8 la' s fad' s |
+    \repeat unfold 16 { s4 la'8 s fad' s }
+    s4 la'8 s sol' s |
+  }
+  { r8 s-> r s-> r |
+    \repeat unfold 17 { r4 s8-> r s-> r } }
+>>
+%% 14

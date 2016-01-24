@@ -59,3 +59,25 @@ r4 <sol mi' re'' sol''>4 <sol mi' si' sol''> |
 \repeat unfold 9 { r4 <sol fa' re'' sol''>4 <sol re' si' sol''> | }
 r4 <sol mi' do'' sol''>4 <sol re' do'' sol''> |
 %% 13
+R2.*2 |
+<>^\markup\whiteout\right-align "arco " ^"Div." <<
+  \filterMusic #'(SlurEvent ArticulationEvent) \transpose do do' \themeA
+  \filterMusic #'(SlurEvent ArticulationEvent) \themeA
+  { s4. s16( s) s( s) s-_( s-_)
+    s8 s16( s) s4. s16( s)
+    s( s) s-_( s-_) s2
+    s16 s8( s16) s( s) s-_( s-_) s4
+    s4 s16 s8( s16) s( s) s-_( s-_)
+    \once \override Script.avoid-slur = #'outside
+    s->( s8.) s8 s16( s) s8-_( s-_)
+    s2.*2
+    s2 s16( s) s-_( s-_)
+    s( s) s8 s s16-_( s-_) s( s8.)
+    s8 s16(-. s-.) s4 s16( s) s-.( s-.)
+    s8 s16-.( s-.) s4 s16( s) s-_( s-_)
+    s8 s16( s) s4. s16-.( s-.) s4 s16( s) s-_( s-_) s8 s16( s)
+    s4. s16( s) s8 s16( s)
+    s2( s8. s16)
+  }
+>>
+%% 14

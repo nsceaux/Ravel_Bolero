@@ -14,3 +14,10 @@
 %% 11
 R2.*18
 %% 12
+R2.*18
+%% 13
+\repeat unfold 7 { <do sol sol'>4 <do sol re' do''> <do do' re' si'> }
+<do sol sol'>4 <do sol re' do''> <do sol mi' do''> |
+\repeat unfold 9 { <do sol sol'>4 <do do' fa' re''> <do do' re' si'> | }
+<do sol sol'>4 <do sol re' do''> <do do' re' si'> |
+%% 14

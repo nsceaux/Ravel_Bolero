@@ -127,4 +127,43 @@ do'4) \twoVoices #'(hautbois1 hautbois2 hautbois) <<
 %% 13
 r8 r4 r |
 R2. |
-
+<<
+  \tag #'(hautbois1 hautbois) \filterMusic #'(SlurEvent ArticulationEvent) \transpose do do' \themeA
+  \tag #'(hautbois2 hautbois) {
+    sol''4~ sol''8 fad''16 sol'' la'' sol'' fad'' mi'' |
+    sol''8 sol''16 mi'' sol''4~ sol''8 fad''16 sol'' |
+    mi'' re'' si' do''
+    \tag #'hautbois \once\voiceOne \new Voice { \tag #'hautbois \voiceTwo mi''4 re'' } |
+    mi''16 do'' si' la' si' do'' re'' mi'' re''4~ |
+    re''~ re''16 mi'' fad'' mi'' re'' do'' si' la' |
+    si' la' sol'8~ sol' sol'16 la' si'8 do'' |
+    la'4 re''2~ |
+    re''~ re''8 r |
+    la''4~ la''8. sol''16 fa'' mi'' fa'' sol'' |
+    la'' sol'' fa''8~ fa''16 sol'' fa'' mi'' sol'' fa'' mi'' do''~ |
+    do''8 do''16 do'' do''8 mi'' sol''16 mi'' fa'' re'' |
+    do''8 do''16 do'' do''8 mi'' fa''16 re'' mi'' do'' |
+    la'8 la'16 sol' la'4~ la'8 la'16 la' |
+    la'8 do'' mi''16 do'' re'' si' la'8 la'16 sol' |
+    la'4~ la'8 la'16 sol' la'8 si'16 do'' |
+    mi''2~ mi''16 do'' si' la' |
+    sol'8 }
+  { s2.(
+    s8) s( s2
+    s2.
+    s16) s8.( s2
+    s4 s16) s8.( s4
+    s4 s8) s4.(
+    s2.
+    s2 s4)
+    s2( s8. s16)
+    s4..( s16) s4(
+    s8) s16-.( s-. s8-. s-. s4
+    s8-.) s16-.( s-. s8-. s-. s4
+    s8) s4.( s8) s16-.( s-.
+    s8-. s-. s4 s8) s(
+    s4 s8) s4.(
+    s2.
+    s8) }
+>>
+%% 14

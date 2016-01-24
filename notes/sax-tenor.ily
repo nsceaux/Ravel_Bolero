@@ -46,9 +46,29 @@ R2.*2
     s4 s16) s8.( s4
     s4) s2(
     s4 s16) s8.( s4
-    s)
-  }
+    s) }
 >>
 %% 12
 R2.*17
 %% 13
+R2.*2 |
+<>\f <<
+  \filterMusic #'(SlurEvent ArticulationEvent) \transpose do re' \themeA
+  { s4. s(
+    s8) s16( s) s4. s8(
+    s2.
+    s16) s8.( s2
+    s4 s16) s8.( s4
+    s s8) s4.(
+    s2. s2 s4)
+    s2( s8. s16)
+    s4..( s16) s4(
+    s8) s16-.( s-. s8-. s-. s4
+    s8-.) s16-.( s-. s8-. s-. s4
+    s8) s4.( s8) s16-.( s-.
+    s8-. s-. s4 s8) s(
+    s4 s8) s4.(
+    s2.
+    s8) }
+>>
+%% 14

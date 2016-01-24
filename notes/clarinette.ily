@@ -158,6 +158,47 @@ R2.*2
   }
 >>
 %% 13
-r8 r4 r |
-R2. |
-
+r8 <<
+  \tag #'(clarinette1 clarinettes) { fad''8 s mi'' s | s4 fad''8 s mi'' s | }
+  \tag #'(clarinette2 clarinettes) { mi''8 s dod'' s | s4 mi''8 s dod'' s | }
+  { s8-> r s-> r | r4 s8-> r s-> r | }
+>>
+<<
+  \tag #'(clarinette1 clarinettes) \filterMusic #'(SlurEvent ArticulationEvent) \transpose do re' \themeA
+  \tag #'(clarinette2 clarinettes) \transpose do re {
+    mi''4~ mi''8 re''16 mi'' fad'' mi'' re'' do'' |
+    mi''8 mi''16 do'' mi''4~ mi''8 re''16 mi'' |
+    do'' si' sol' la' \tag #'clarinettes \once\voiceTwo do''2~ |
+    do''16 la' sol' fa' sol' la' si' do'' si'4~ |
+    si'4~ si'16 do'' re'' do'' si' la' sol' fa' |
+    sol' fa' mi'8~ mi'8 mi'16 fa' sol'8 la' |
+    fa'4 si'2~ |
+    si'~ si'8 r |
+    fa''4~ fa''8. mi''16 re'' do'' re'' mi'' |
+    fa'' mi'' re''8~ re''16 mi'' re'' do'' mi'' re'' do'' la'~ |
+    la'8 la'16-. la'-. la'8-. do''-. mi''16 do'' re'' si' |
+    la'8-. la'16-. la'-. la'8-. do''-. re''16 si' do'' la' |
+    fa'8 fa'16 mi' fa'4~ fa'8 fa'16-. fa'-. |
+    fa'8-. la'-. do''16 la' si' sol' fa'8 fa'16 mi' |
+    fa'4~ fa'8 fa'16 mi' fa'8 sol'16 la' |
+    do''2~ do''16 la' sol' fa' |
+    mi'8 }
+  { s2.(
+    s8) s( s2
+    s2.
+    s16) s8.( s2
+    s4 s16) s8.( s4
+    s4 s8) s4.(
+    s2.
+    s2 s4)
+    s2( s8. s16)
+    s4..( s16) s4(
+    s8) s16-.( s-. s8-. s-. s4
+    s8-.) s16-.( s-. s8-. s-. s4
+    s8) s4.( s8) s16-.( s-.
+    s8-. s-. s4 s8) s(
+    s4 s8) s4.(
+    s2.
+    s8) }
+>>
+%% 14

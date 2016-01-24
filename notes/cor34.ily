@@ -33,3 +33,8 @@ R2.*17 |
   { r8 <>\f s-> r s-> r |
     \repeat unfold 17 { r4 s8-> r s-> r } }
 >>
+%% 13
+r8 <<
+  \tag #'(cor3 cors) \transpose do sol \rythmique 
+  \tag #'(cor4 cors) \transpose do sol, \rythmique 
+>>

@@ -53,3 +53,10 @@ r4 <lab' do'' re''> <sol' sib' do''> |
 r4 q <sol' lab' do''> |
 r4 q <sol' do''> |
 %% 12
+R2.*18
+%% 13
+\repeat unfold 7 { r4 <do'' re'' mi'' sol''> <si' do'' re'' sol''> }
+r4 <do'' re'' mi'' sol''> <si' do'' mi'' sol''> |
+\repeat unfold 9 { r4 <do'' re'' fa'' sol''> <si' do'' re'' sol''> | }
+r4 <do'' re'' mi'' sol''> <do'' re'' sol''> |
+%% 14

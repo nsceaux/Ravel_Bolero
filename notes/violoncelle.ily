@@ -130,3 +130,15 @@ do4 r <sol, sol>8 sol |
 <do, sol, re>4 sol <do, sol, sol> |
 <do, sol, mi> sol <do, sol, sol>8 <sol, sol> |
 %% 13
+\repeat unfold 4 { <do, sol, mi do'>4 <sol mi'> <do, sol, sol> }
+\repeat unfold 2 {
+  <do, sol, mi do'>4 <sol mi'> <do, sol, sol> |
+  <do, sol, mi do'>4 <sol mi'> <do, sol, sol>8 <sol, sol> |
+}
+\repeat unfold 4 {
+  <do, sol, re do'>4 <sol do'> <do, sol, sol> |
+  <do, sol, re do'>4 <sol do'> <do, sol, sol>8 <sol, sol> |
+}
+<do, sol, re do'>4 <sol do'> <do, sol, sol> |
+<do, sol, mi do'>4 <sol mi'> <do, sol, sol>8 <sol, sol> |
+%% 14

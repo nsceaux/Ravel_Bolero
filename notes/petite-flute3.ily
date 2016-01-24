@@ -46,3 +46,23 @@ R2.*2
 %% 13
 r8 r4 r |
 R2. |
+<<
+  \filterMusic #'(SlurEvent ArticulationEvent) \transpose do do' \themeA
+  { s2.(
+    s8) s( s2
+    s2.
+    s16) s8.( s2
+    s4 s16) s8.( s4
+    s4 s8) s4.(
+    s2.
+    s2 s4)
+    s2( s8. s16)
+    s4..( s16) s4(
+    s8) s16-.( s-.) s8-.( s-.) s4(
+    s8-.) s16-.( s-.) s8-.( s-.) s4(
+    s8) s4.( s8) s16-.( s-.)
+    s8( s) s4( s8) s(
+    s4 s8) s4.(
+    s2.
+    s8) }
+>>

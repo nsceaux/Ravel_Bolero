@@ -61,7 +61,29 @@ R2.*2
   fa~ fa16) fa( sol fa) lab( sol fa mi!~ |
   mi4)
 }
-%% 13
+%% 12
 r4 r |
 R2.*17
+%% 13
+R2.*2 |
+<<
+  \transpose do sol \filterMusic #'(SlurEvent ArticulationEvent) \themeA
+  { s2.(
+    s8) s( s2
+    s2.
+    s16) s8.( s2
+    s4 s16) s8.( s4
+    s4 s8) s4.(
+    s2.
+    s2 s4)
+    s2( s8. s16)
+    s4..( s16) s4(
+    s8) s16-.( s-. s8-. s-. s4
+    s8-.) s16-.( s-. s8-. s-. s4
+    s8) s4.( s8) s16-.( s-.
+    s8-. s-. s4 s8) s(
+    s4 s8) s4.(
+    s2.
+    s8) }
+>>
 %% 14

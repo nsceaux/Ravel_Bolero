@@ -54,3 +54,10 @@ R2.*18
 %% 11
 \repeat unfold 18 { <do, do>4 r r }
 %% 12
+R2.*18
+%% 13
+\repeat unfold 7 { <do, do>4 <sol do' mi' sol'> <sol si re' sol'> }
+<do, do>4 <sol do' mi' sol'> q |
+\repeat unfold 9 { <do, do>4 <sol do' fa' sol'> <sol si re' sol'> | }
+<do, do>4 <sol do' mi' sol'> <sol do' re' sol'> |
+%% 14
