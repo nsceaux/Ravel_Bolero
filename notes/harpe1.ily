@@ -60,3 +60,17 @@ r4 <do'' re'' mi'' sol''> <si' do'' mi'' sol''> |
 \repeat unfold 9 { r4 <do'' re'' fa'' sol''> <si' do'' re'' sol''> | }
 r4 <do'' re'' mi'' sol''> <do'' re'' sol''> |
 %% 14
+\repeat unfold 2 { r4 <do'' re'' mi'' sol''> <si' do'' re'' sol''> }
+<>^\markup { \smallCaps Si \raise#0.6 \musicglyph#"accidentals.flat" }
+\repeat unfold 8 { r4 <do'' re'' mi'' sol''> <sib' do'' re'' sol''> }
+<>^\markup { \smallCaps Si \raise#0.8 \musicglyph#"accidentals.natural" }
+r4 <do'' re'' fa'' sol''> <si'! do'' re'' sol''> |
+r4 <do'' re'' fa'' sol''> <si' do'' re'' sol''> |
+<>^\markup { \smallCaps Si \raise#0.6 \musicglyph#"accidentals.flat" }
+\repeat unfold 2 { r4 <do'' re'' mi'' sol''> <sib' do'' re'' sol''> }
+<>^\markup { \smallCaps La \raise#0.6 \musicglyph#"accidentals.flat" }
+r4 <do'' re'' mi'' sol''> <lab' do'' re'' sol''> |
+r4 q <sib' do'' sol''> |
+r q <lab' do'' sol''> |
+r q <do'' sol''> |
+%% 15

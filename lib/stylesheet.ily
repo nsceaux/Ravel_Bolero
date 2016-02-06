@@ -206,6 +206,7 @@
                    `((avoid-slur . outside)
                      (padding . 0.20)
                      (script-stencil . (feta . ("sforzato" . "sforzato")))
+                     (quantize-position . #t)
                      (side-relative-direction . ,DOWN)))
        (assoc-set! script-alist "portato"
                    `((script-stencil . (feta . ("uportato" . "dportato")))

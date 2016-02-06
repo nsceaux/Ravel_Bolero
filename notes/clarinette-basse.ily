@@ -34,3 +34,13 @@ R2.*18
 %% 13
 \repeat unfold 18 { r4 la''8-> r la''-> r | }
 %% 14
+R2.*14 |
+r4 r8 <<
+  \transpose do re' \filterMusic #'(SlurEvent ArticulationEvent) \themeBII
+  { \once\override Script.avoid-slur = #'outside s4.(->
+    s4 s16) s8.( s4
+    s) s2(
+    s4 s16) s8( s16) s4(
+    s) }
+>>
+%% 15

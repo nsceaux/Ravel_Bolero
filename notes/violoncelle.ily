@@ -142,3 +142,16 @@ do4 r <sol, sol>8 sol |
 <do, sol, re do'>4 <sol do'> <do, sol, sol> |
 <do, sol, mi do'>4 <sol mi'> <do, sol, sol>8 <sol, sol> |
 %% 14
+\repeat unfold 5 {
+  <do, sol, mi do'>4 <sol mi'> <do, sol, sol> |
+  <do, sol, mi do'>4 <sol mi'> <do, sol, sol>8 <sol, sol> |
+}
+<do, sol, re do'>4 <sol do'> <do, sol, sol> |
+<do, sol, re do'>4 <sol do'> <do, sol, sol>8 <la, sol> |
+<do, sol, mi do'>4 <sol mi'> <do, sol, sol> |
+<do, sol, mi do'>4 <sol mi'> <do, sol, sol>8 <sol, sol> |
+<do, sol, mi do'>4 <sol mi'> <do, sol, sol> |
+<do, sol, re do'>4 <sol do'> <do, sol, sol>8 <sol, sol> |
+<do, sol, sol>4 <sol do'> <do, sol, sol> |
+<do, sol, sol>4 <sol do'> <do, sol, sol>8 <sol, sol> |
+%% 15

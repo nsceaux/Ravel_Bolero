@@ -51,3 +51,16 @@ do''8) sol'16*2/3-.(^"arco" sol'-. sol'-.) sol'8-. sol'16*2/3-.( sol'-. sol'-.) 
 \repeat unfold 9 { <do sol sol'>4 <do re' do'' fa''> <do si sol' re''> | }
 <do sol sol'>4 <do do' sol' mi''> <do sol sol' re''> |
 %% 14
+\repeat unfold 2 { <do sol sol'>4 <do do' sol' mi''> <do si sol' re''> }
+\repeat unfold 5 { <do sol sol'> <do do' sol' mi''> <do sib sol' re''> }
+\repeat unfold 3 { <do do' sol'> <do do' sol' mi''> <do sib sol' re''> }
+<do sol sol'>4 <do re' do'' fa''> <do si! sol' re''> |
+<do sol sol'>4 <do re' do'' fa''> <do si sol' re''> |
+\repeat unfold 2 { <do sol sol'> <do do' sol' mi''> <do sib sol' re''> }
+<do sol sol'>4 <do do' sol' do''>8 fa->^"arco"~ fa4~ |
+fa4~ fa16 sol( fa) mib~ mib4~ |
+mib fa16( mib fa) reb~ reb4~ |
+reb~ reb16 reb( mib reb) fa( mib reb) do~ |
+%% 15
+<>^"Unis" do4~ do8 r r4 |
+R2. |

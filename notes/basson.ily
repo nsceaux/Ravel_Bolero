@@ -1,6 +1,8 @@
 \clef "tenor" R2.*40 |
 <>_\mp ^\markup { 1° Solo }
 << \themeB { s2.*12 | s4. \clef "bass" } >>
+%% 3
+r4 r |
 R2.*17 |
 %% 4
 \twoVoices #'(basson1 basson2 bassons) <<
@@ -139,3 +141,15 @@ R2.*18
   { s8-> r s-> r s-> r | s8-> r s-> r s4 | }
 >>
 %% 14
+\repeat unfold 9 <<
+  \tag #'(basson1 bassons) {
+    do8 s sol s sol s |
+    do8 s sol s \new Voice { \tag #'bassons \voiceOne sol-> r | }
+  }
+  \tag #'(basson2 bassons) {
+    do,8 s do s sol, s |
+    do, s do s \new Voice { \tag #'bassons \voiceTwo sol,-> sol,-> | }
+  }
+  { s8-> r s-> r s-> r | s8-> r s-> r s4 | }
+>>
+%% 15

@@ -61,3 +61,13 @@ R2.*18
 \repeat unfold 9 { <do, do>4 <sol do' fa' sol'> <sol si re' sol'> | }
 <do, do>4 <sol do' mi' sol'> <sol do' re' sol'> |
 %% 14
+\repeat unfold 2 { <do, do>4 <sol do' mi' sol'> <sol si re' sol'> }
+\repeat unfold 8 { <do, do>4 <sol do' mi' sol'> <sol sib re' sol'> }
+<do, do>4 <sol do' fa' sol'> <sol si! re' sol'> |
+<do, do>4 <sol do' fa' sol'> <sol si re' sol'> |
+\repeat unfold 2 { <do, do>4 <sol do' mi' sol'> <sol sib re' sol'> }
+<do, do>4 <sol do' mi' sol'> <sol do' re' sol'> |
+<do, do>4 <sol do' re' sol'> <sol sib do' sol'> |
+<do, do>4 <sol sib do' sol'> <sol lab do' sol'> |
+<do, do>4 <sol lab do' sol'> <sol do' sol'> |
+%% 15

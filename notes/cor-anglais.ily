@@ -87,3 +87,30 @@ R2.*2 |
     s8) }
 >>
 %% 14
+r8 r4 r |
+R2. |
+<<
+  \transpose do sol \filterMusic #'(ArticulationEvent SlurEvent) \themeBI
+  { s2.(
+    s8) s( s2
+    s2.
+    s4.) s8-_( s-_ s-_
+    s s4)-_ s8-_( s-_ s-_
+    s8*2/3-_ s-_ s-_) s8.->( s16) s8.->( s16)
+    s4( \once\override Script.avoid-slur = #'inside s2->
+    s s4)
+    s4.( s8) s4(
+    s) s( s8*2/3 s s)
+    s4( s8) \once\override Script.avoid-slur = #'outside s4.->(
+    s2 s8. s16)
+    s4->( s8) \breathe }
+>>
+<<
+  \transpose do sol' \filterMusic #'(ArticulationEvent SlurEvent) \themeBII
+  { \once\override Script.avoid-slur = #'outside s4.(->
+    s4 s16) s8.( s4
+    s) s2(
+    s4 s16) s8( s16) s4(
+    s) }
+>>
+%% 15

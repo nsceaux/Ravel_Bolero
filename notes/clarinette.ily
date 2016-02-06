@@ -123,7 +123,7 @@ R2.*2
 \tag #'clarinettes <>^"à 2"
 \transpose sib do' {
   \once \override Script.avoid-slur = #'outside
-  do'->](~ do'4~ |
+  do'->(~ do'4~ |
   do'~ do'16) re'( do' sib~ sib4~ |
   sib4) do'16( sib do' lab~ lab4~ |
   lab!~ lab16) lab( sib lab) do'( sib lab sol~ |
@@ -202,3 +202,28 @@ r8 <<
     s8) }
 >>
 %% 14
+r8 <<
+  \tag #'(clarinette1 clarinettes) {
+    fad''8 s mi'' s |
+    \repeat unfold 9 { s4 fad''8 s mi'' s | }
+    \repeat unfold 2 { s4 sol''8 s mi'' s | }
+    \repeat unfold 3 { s4 fad''8 s mi'' s | }
+    s4 mi''8 s re'' s |
+    s4 re''8 s re'' s |
+    s4 re''8 s re'' s |
+    
+  }
+  \tag #'(clarinette2 clarinettes) {
+    mi''8 s dod'' s | s4 mi''8 s dod'' s |
+    \repeat unfold 8 { s4 mi''8 s do'' s | }
+    s4 mi''8 s dod''! s |
+    s4 mi''8 s dod'' s |
+    \repeat unfold 2 { s4 re''8 s do'' s | } |
+    s4 re''8 s re'' s |
+    s4 re''8 s do'' s |
+    s4 do''8 s sib' s |
+    s4 sib'8 s la' s |
+  }
+  { s8-> r s-> r | \repeat unfold 17 { r4 s8-> r s-> r | } }
+>>
+%% 15

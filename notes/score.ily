@@ -132,12 +132,18 @@
             \global { \include "trompette3.ily" }
           >>
         >>
-        %% Trombonnes
+        %% Trombones
         \new Staff \with {
           instrumentName = \markup\smallCaps 3 Trombones
           shortInstrumentName = \markup\tiny Tromb.
           \haraKiri
-        } << \global { \include "trombone.ily" } >>
+        } << \global \keepWithTag #'trombones { \include "trombone.ily" } >>
+        %% Tuba
+        \new Staff \with {
+          instrumentName = \markup\smallCaps Tuba
+          shortInstrumentName = \markup\tiny Tuba
+          \haraKiri
+        } << \global { \include "tuba.ily" } >>
         %% Saxophones
         \new StaffGroup \with { \haraKiriFirst } <<
           \new Staff \with {
@@ -167,11 +173,6 @@
               s2.*7 \noHaraKiri }
           >>
         >>
-        %% Tuba
-        \new Staff \with {
-          instrumentName = \markup\smallCaps Tuba
-          \haraKiri
-        } << \global >>
         %% Timbales
         \new Staff \with {
           shortInstrumentName = \markup\tiny Timb.
@@ -264,7 +265,13 @@
             %% 11
             \grace s4 { s2.*5\break s2.*5\break s2.*4\break s2.*4\break }
             %% 12
-            \repeat unfold 7 { s2.*6\break s2.*6\break s2.*6\break }
+            { s2.*6\break s2.*6\break s2.*6\break }
+            %% 13
+            { s2.*6\break s2.*6\break s2.*6\break }
+            %% 14
+            \grace s8 { s2.*6\break s2.*6\break s2.*6\break }
+            %% 15
+            { s2.*6\break s2.*6\break s2.*6\break }
           }
         >>
       >>

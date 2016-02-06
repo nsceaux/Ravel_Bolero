@@ -90,7 +90,7 @@ themeBII = {
   fa~ fa16 sol( fa mib~ mib4~ |
   mib!) fa16( mib fa reb~ reb4~ |
   reb!~ reb16) reb( mib reb fa mib reb do~ |
-  do4) r r |
+  do4)
 }
 
 themeB = { \themeBI \breathe \themeBII }

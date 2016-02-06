@@ -167,3 +167,33 @@ R2. |
     s8) }
 >>
 %% 14
+r8 <<
+  \tag #'(hautbois1 hautbois) { mi''8 s re'' s | s4 mi''8 s re'' s | }
+  \tag #'(hautbois2 hautbois) { do''8 s do'' s | s4 do''8 s do'' s | }
+  { s8-> r s-> r | r4 s8-> r s-> r | }
+>>
+<<
+  <>^\markup\right-align\whiteout "a 2"
+  \transpose do do' \filterMusic #'(ArticulationEvent SlurEvent) \themeB
+  { s2.(
+    s8) s( s2
+    s2.
+    s4.) s8-_( s-_ s-_
+    s s4)-_ s8-_( s-_ s-_
+    s8*2/3-_ s-_ s-_) s8.->( s16) s8.->( s16)
+    s4( \once\override Script.avoid-slur = #'inside s2->
+    s s4)
+    s4.( s8) s4(
+    s) s( s8*2/3 s s)
+    s4( s8) \once\override Script.avoid-slur = #'outside s4.->(
+    s2 s8. s16)
+    s4->( s8) \breathe \once\override Script.avoid-slur = #'outside s4.(->
+    s4 s16) s8.( s4
+    s) s2(
+    s4 s16) s8( s16) s4(
+    s)
+  }
+>>
+%% 15
+r4 r |
+R2. |

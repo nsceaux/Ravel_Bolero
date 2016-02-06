@@ -21,3 +21,13 @@ R2.*18
 \repeat unfold 9 { <do sol sol'>4 <do do' fa' re''> <do do' re' si'> | }
 <do sol sol'>4 <do sol re' do''> <do do' re' si'> |
 %% 14
+\repeat unfold 2 { <do sol sol'>4 <do sol re' do''> <do do' re' si'> }
+\repeat unfold 8 { <do sol sol'>4 <do sol re' do''> <do do' re' sib'> }
+<do sol sol'>4 <do do' fa' re''> <do do' re' si'!> |
+<do sol sol'>4 <do do' fa' re''> <do do' re' si'> |
+\repeat unfold 2 { <do sol sol'> <do sol re' do''> <do do' re' sib'> }
+<do sol sol'>4 <do sol re' do''>8 fa->^"arco"~ fa4~ |
+fa4~ fa16 sol( fa) mib~ mib4~ |
+mib fa16( mib fa) reb~ reb4~ |
+reb~ reb16 reb( mib reb) fa( mib reb) do\laissezVibrer |
+%% 15

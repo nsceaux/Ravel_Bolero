@@ -98,3 +98,32 @@ R2.*2
     s2( s8. s16)
   }
 >>
+%% 14
+r8 r4 r |
+R2. |
+sib'4(~ sib'16 la' sol' fa') sib'( do'' la' sol') |
+sib'8 la'16( sol') sib'4 la'16( sib' la') sol'~ |
+sol'4~ sol'16 fa'( mi' re') mi'4~ |
+mi' r8 sib'--\noBeam do''-- reb''--~ |
+reb''! reb''4-- reb''8--\noBeam reb''-- reb''-- |
+\tuplet 3/2 { reb''8^_ reb''^_( reb''^_) }
+\once\override Script.avoid-slur = #'outside
+reb''8^> do''16( sib')
+\once\override Script.avoid-slur = #'outside
+reb''8^> do''16( sib') |
+reb''16( do'' sib' lab')
+\once\override Script.avoid-slur = #'outside
+sol'^>( fa') mi'!8~ mi'4~ |
+mi'2~ mi'8 r |
+re'!4. mi'8 re'16( mi') fa'8~ |
+fa'4 sol'8 lab' \tuplet 3/2 { fa'( sol') mi' } |
+re'16( mi' re' do'~ do'8) \breathe
+\once\override Script.avoid-slur = #'outside sib->(~ sib4~ |
+sib!16 do' sib do') re'( mi' re' do' re' do' sib lab) |
+\once\override Script.avoid-slur = #'outside
+sib->( lab) sol8
+r4 <lab re' do''>4 |
+r q <do' sib'> |
+r q <do' lab'> |
+r q <sol sol' do''> |
+%% 15

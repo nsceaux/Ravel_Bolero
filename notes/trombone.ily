@@ -21,4 +21,32 @@ _\markup { \dynamic mf \italic sostenuto }
   }
 >>
 %% 11
+r4 r |
 R2.*17
+%% 12
+R2.*18
+%% 13
+R2.*18
+%% 14
+<<
+  \tag #'(trombone1 trombones) {
+    \repeat unfold 10 { s4 mi'8 s re' s }
+    \repeat unfold 2  { s4 fa'8 s re' s }
+    \repeat unfold 3  { s4 mi'8 s re' s }
+    s4 re'8 s do' s |
+    \repeat unfold 2  { s4 do'8 s do' s }
+  }
+  \tag #'(trombone2 trombones) {
+    \repeat unfold 2 { s4 re'8 s si s }
+    \repeat unfold 8 { s4 re'8 s sib s }
+    s4 re'8 s si! s |
+    s4 re'8 s si s |
+    \repeat unfold 2 { s4 re'8 s sib s }
+    s4 re'8 s do' s |
+    s4 do'8 s sib s |
+    s4 sib8 s lab s |
+    s4 lab8 s sol s |
+  }
+  { r4 s8->\f r s-> r |
+    \repeat unfold 17 { r4 s8-> r s-> r | } }
+>>

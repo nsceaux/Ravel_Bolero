@@ -82,3 +82,8 @@ r8 <>\f <<
     \repeat unfold 17 { r4 s8-> r s-> r } }
 >>
 %% 14
+<<
+  \tag #'(cor1 cors) { si'-> \transpose do sol \rythmique }
+  \tag #'(cor2 cors) { sol'-> \transpose do sol, \rythmique }
+>>
+%% 15

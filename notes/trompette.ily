@@ -88,3 +88,29 @@
 %% 13
 R2.*18
 %% 14
+<<
+  \tag #'(trompette1 trompettes) {
+    R2.*2
+    \tag #'trompettes <>^"1°"
+    <<
+      \filterMusic #'(SlurEvent ArticulationEvent) \themeBI
+      { s2 s16( s8.)
+        s2 s16( s8.)
+        s2.
+        s4. s8-- s-- s--
+        s s4-- s8-- s-- s--
+        s8*2/3-- s-- s-- s8-> s16( s) s8-> s16( s)
+        s( s8.) s16->( s8.) s4
+        s2.
+        s4.-- s8-- s16( s8.)
+        s4 s8-- s-- s8*2/3( s) s
+        s16( s8.) s8 s4.->
+        s4 s16( s8.) s16( s8.)
+        s16( s8.) s8
+      }
+    >>
+    r8 r4 |
+    R2.*3
+  }
+  \tag #'trompette2 R2.*18
+>>

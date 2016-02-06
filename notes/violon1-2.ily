@@ -128,3 +128,30 @@ R2. |
     s2( s8. s16)
   }
 >>
+%% 14
+r8 r4 r |
+R2. |
+<<
+  { \filterMusic #'(SlurEvent ArticulationEvent) \themeBI \breathe
+    \filterMusic #'(SlurEvent ArticulationEvent) \transpose do do' \themeBII }
+  { s4( s8. s16) s8.( s16)
+    s8 s16( s) s4 s8( s)
+    s4 s16 s8( s16) s4
+    s4. s8-- s-- s--
+    s s4-- s8-- s-- s--
+    s8*2/3-_ s-_( s-_) s8-> s16( s) s8-> s16( s)
+    s8.( s16) s->( s8.) s4
+    s2.
+    s2 s16( s8.)
+    s2 s8*2/3( s) s
+    s4( s8) \once \override Script.avoid-slur = #'outside s4.->(
+    s8. s16) s8.( s16) s8.( s16)
+    s16( s8.) s8 s4.->
+    s4 s16 s( s8) s4
+    s4 s8( s) s4
+    s4 s16 s8( s16) s8( s)
+    s4~ do'8
+  }
+>>
+%% 15
+r8 r4 |
