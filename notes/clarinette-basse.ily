@@ -44,3 +44,14 @@ r4 r8 <<
     s) }
 >>
 %% 15
+re'8-> r re'-> r | re'-> r re'-> r re'-> re'-> |
+\repeat unfold 6 { re'8-> r re'-> r re'-> r | re'-> r re'-> r re'-> re'-> | }
+re'8-> r8 r
+\transpose do re {
+  \once\override Script.avoid-slur = #'outside fa'(->~ fa'4~ |
+  fa'4~ fa'16) sol'( fa' mib'~ mib'4~ |
+  mib'!4) fa'16( mib' fa' reb'~ reb'4~ |
+  reb'!~ reb'16) reb'( mib' reb' fa' mib' reb' do'~ |
+  do'8)
+}
+%% 16

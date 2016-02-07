@@ -71,3 +71,12 @@ R2.*18
 <do, do>4 <sol sib do' sol'> <sol lab do' sol'> |
 <do, do>4 <sol lab do' sol'> <sol do' sol'> |
 %% 15
+\repeat unfold 10 { <do, do>4 <do sol do' mi'> <do sol sib re'> }
+<do, do>4 <do sol do' re'> <do sol si! re'> |
+<do, do>4 <do sol do' re'> <do sol si re'> |
+\repeat unfold 2 { <do, do>4 <do sol do' mi'> <do sol sib re'> }
+<do, do>4 <do sol do' mi'> <do lab do' re'> |
+<do, do>4 <do lab do' re'> <do sol sib do'> |
+<do, do>4 <do sol sib do'> <do sol lab do'> |
+<do, do>4 <do sol lab do'> <do sol do'> |
+%% 16

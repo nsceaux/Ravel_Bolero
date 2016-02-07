@@ -87,3 +87,8 @@ r8 <>\f <<
   \tag #'(cor2 cors) { sol'-> \transpose do sol, \rythmique }
 >>
 %% 15
+<<
+  \tag #'(cor1 cors) \transpose do sol \rythmique
+  \tag #'(cor2 cors) \transpose do sol, \rythmique
+>>
+%% 16

@@ -227,3 +227,64 @@ r8 <<
   { s8-> r s-> r | \repeat unfold 17 { r4 s8-> r s-> r | } }
 >>
 %% 15
+R2.*2
+\transpose do re <<
+  \tag #'(clarinette1 clarinettes) {
+    sol''4~ sol''16 fa'' mi'' re'' sol'' la'' fa'' mi'' |
+    sol''8 fa''16 mi'' sol''4 fa''16 sol'' fa'' mi''~ |
+    mi''4~ mi''16 re'' do'' sib' do''4~ |
+    do''4 r8 sol''\noBeam la'' sib''!~ |
+    sib''! sib''4 sib''8\noBeam sib'' sib'' |
+    \tuplet 3/2 { sib''8 sib''8 sib''8 } sib''8 la''16 sol'' sib''8 la''16 sol'' |
+    sib''16 la'' sol'' fa'' mi''16 re'' do''8~ do''4~ |
+    do''2~ do''8 r |
+    la'!4. si'8 la'16 si' do''8~ |
+    do''4 re''8 fa'' \tuplet 3/2 { si'8 re''8 si' } |
+    la'!16 do'' la' sol'~ sol'8 sol'~ sol'4~ |
+    sol'16 la' sol' la' sib'! do'' sib' la' sib' la' sol' mi' |
+    sol'8[ mi']~ mi')
+  }
+  \tag #'(clarinette2 clarinettes) {
+    mi''4 ~ mi''16 re'' do'' sib' mi'' fa'' re'' do'' |
+    mi''8 re''16 do'' mi''4 re''16 mi'' re'' do''~ |
+    do''4~ do''16 sib' sol' fa' sol'4~ |
+    sol'4 r8 re''\noBeam mi'' mi''~ |
+    mi''8 mi''4 mi''8\noBeam mi'' mi'' |
+    \tuplet 3/2 { mi''8 mi'' mi'' } mi''8^> mib''16 reb'' mi''8^> mib''16 reb'' |
+    mi''! mib'' reb'' do'' sib' lab' sol'8~ sol'4~ |
+    sol'2~ sol'8 r |
+    fa'4. sol'8 fa'16 sol' la'8~ |
+    la'4 si'8 re'' \tuplet 3/2 { lab' si' sol' } |
+    sol'16 la'! sol' mi'~ mi'8 re'8->~ re'4~ |
+    re'16 mi' re' mi' sol' la' sol' mi' sol' mi' re' do' |
+    mi'8->[ do']~ do'
+  }
+  { s2.(
+    s8) s( s2->
+    s2.
+    s4.) s8(-_ s-_ s-_
+    s s4)-_ s8(-_ s-_ s-_
+    s8*2/3-_ s-_ s)-_
+    \once\override Script.avoid-slur = #'outside
+    s8.(-> s16)
+    \once \override Script.avoid-slur = #'outside
+    s8.(-> s16)
+    s8.( s16) \once\override Script.avoid-slur = #'outside s2->(
+    s2 s4)
+    s4.( s8) s4(
+    s4) s( s8*2/3-_ s-_ s)-_
+    s4( s8) \breathe
+    \once\override Script.avoid-slur = #'outside s4.(->
+    s2 s8. s16)
+    \once\override Script.avoid-slur = #'outside s4(-> s8) \breathe
+  }
+>>
+\transpose do re {
+  \tag #'clarinettes { \oneVoice <>\noBeam ^"à 2" }
+  \once \override Script.avoid-slur = #'outside do'->(~ do'4~ |
+  do'~ do'16) re'( do' sib~ sib4~ |
+  sib4) do'16( sib do' lab~ lab4~ |
+  lab!~ lab16) lab( sib lab do' sib lab sol~ |
+  sol8)
+}
+%% 16

@@ -77,3 +77,10 @@ R2.*2 |
 r8 la''-> r la''-> r |
 \repeat unfold 17 { r4 la''8-> r la''-> r }
 %% 15
+R2.*14 |
+r4 r8 <<
+  \transpose sib do'' \themeBII
+  { s4.(
+    s4 s2) }
+>>
+%% 16

@@ -114,3 +114,33 @@ R2. |
     s) }
 >>
 %% 15
+r4 r |
+R2. |
+\transpose do sol {
+  mi''4( ~ mi''16 re'' do'' sib' mi'' fa'' re'' do'' |
+  mi''8) re''16( do'' mi''4-> re''16 mi'' re'' do''~ |
+  do''4~ do''16 sib' sol' fa' sol'4~ |
+  sol'4) r8 re''\noBeam^_( mi''^_ mi''^_ ~ |
+  mi'' 8 mi''4)^_ mi''8\noBeam^_( mi'' ^_ mi'' ^_ |
+  \tuplet 3/2 { mi''8^_ mi'' ^_ mi'' ^_) }
+  \once\override Script.avoid-slur = #'outside mi''8^>( mib''16 reb'')
+  \once\override Script.avoid-slur = #'outside mi''8^>( mib''16 reb'') |
+  mi''( mib'' reb'' do'')
+  \once\override Script.avoid-slur = #'outside sib'->( lab' sol'8~ sol'4~ |
+  sol'2~ sol'8) r |
+  fa'4.( sol'8) fa'16( sol' la'8~ |
+  la'4) si'8( re'' \tuplet 3/2 { lab'-_ si'-_ sol'-_) } |
+  sol'16( la'! sol' mi'~ mi'8) \breathe
+  \once \override Script.avoid-slur = #'outside re'8->(~ re'4~ |
+  re'16 mi' re' mi' sol' la' sol' mi' sol' mi' re' do') |
+  \once \override Script.avoid-slur = #'outside mi'8->([ do']~ do') \breathe
+  \once \override Script.avoid-slur = #'outside lab->(~ lab4~ |
+  lab!~ lab16) sib( lab sol~ sol4~ |
+  sol) lab16( sol lab fa~ fa4~ |
+  fa~ fa16) fa( sol fa lab sol fa mi!~ |
+  mi4)
+}
+%% 16
+r4 r |
+R2.*17 |
+%% 17

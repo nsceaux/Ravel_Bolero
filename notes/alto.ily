@@ -62,5 +62,41 @@ fa4~ fa16 sol( fa) mib~ mib4~ |
 mib fa16( mib fa) reb~ reb4~ |
 reb~ reb16 reb( mib reb) fa( mib reb) do~ |
 %% 15
-<>^"Unis" do4~ do8 r r4 |
+do4~ do8 r r4 |
 R2. |
+<<
+  { mi''4~ mi''16 re'' do'' sib' mi'' fa'' re'' do'' |
+    mi''8 re''16 do'' mi''4 re''16 mi'' re'' do''~ |
+    do''4~ do''16 sib' sol' fa' sol'4~ |
+    sol'4 r8 re''\noBeam mi'' mi'' ~ |
+    mi''8 mi''4 mi''8\noBeam mi'' mi'' |
+    \tuplet 3/2 { mi''8 mi'' mi'' } mi''8 mib''16 reb'' mi''8 mib''16 reb'' |
+    mi'' mib'' reb'' do'' sib' lab' sol'8~ sol'4~ |
+    sol'2~ sol'8 r |
+    fa'4. sol'8 fa'16 sol' la'8~ |
+    la'4 si'8 re'' \tuplet 3/2 { lab' si' sol' } |
+    sol'16 la'! sol' mi'~ mi'8 \breathe re'8~ re'4~ |
+    re'16 mi' re' mi' sol' la' sol' mi' sol' mi' re' do' |
+    mi'8[ do']~ do' \breathe lab~ lab4~ |
+    lab!~ lab16 sib lab sol~ sol4~ |
+    sol lab16 sol lab fa~ fa4~ |
+    fa~ fa16 fa sol fa lab sol fa mi!~ |
+    mi8 }
+  { s4( s8. s16) s8.( s16)
+    s8 s16( s) s4-> s8( s)
+    s4 s16 s8( s16) s4
+    s4. s8-- s-- s--
+    s s4-- s8-- s-- s--
+    s8*2/3-_ s-_( s-_) s8-> s16( s) s8-> s16( s)
+    s8.( s16) \once\override Script.avoid-slur = #'outside s->( s8.) s4
+    s2.
+    s2 s16( s8.)
+    s2 s8*2/3( s) s
+    s4( s8) \once \override Script.avoid-slur = #'outside s4.->(
+    s8. s16) s8.( s16) s8.( s16)
+    s4.->_"Div." s4.->
+    s4 s16 s( s8) s4
+    s4 s8( s) s4
+    s4 s16 s8( s16) s8( s) }
+>>
+%% 16

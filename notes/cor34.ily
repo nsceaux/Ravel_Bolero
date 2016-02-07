@@ -54,7 +54,9 @@ r8 <>^\markup\right-align "a 2" sol'-> r sol'-> r |
   { sol'8-> r mib'-> r |
     sol'-> r mib'-> r re'-> r |
     sol'-> r re'-> r re'-> r |
-    sol'-> r re'-> r re'-> r | }
+    sol'-> r re'-> r re'-> r |
+    r8
+  }
   { r8 \transpose fa do' {
       fa8~ fa4~ |
       fa~ fa16 sol( fa) mib~ mib4~ |
@@ -65,3 +67,9 @@ r8 <>^\markup\right-align "a 2" sol'-> r sol'-> r |
   }
 >>
 %% 15
+<<
+  \tag #'(cor3 cors) \transpose do sol \rythmique
+  \tag #'(cor4 cors) \transpose do sol, \rythmique
+>>
+%% 16
+

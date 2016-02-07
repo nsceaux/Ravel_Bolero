@@ -114,3 +114,23 @@ R2.*18
   }
   \tag #'trompette2 R2.*18
 >>
+%% 15
+<<
+  \tag #'(trompette1 trompettes) {
+    \repeat unfold 10 { s4 mi''8 s re'' s }
+    \repeat unfold 2 { s4 fa''8 s re'' s }
+    \repeat unfold 3 { s4 mi''8 s re'' s }
+    s4 re''8 s do'' s |
+    \repeat unfold 2 { s4 do''8 s do'' s }
+  }
+  \tag #'(trompette2 trompettes) {
+    \repeat unfold 2 { s4 re''8 s do'' s }
+    \repeat unfold 6 { s4 do''8 s sib' s }
+    \repeat unfold 7 { s4 re''8 s do'' s }
+    s4 do''8 s sib' s |
+    s4 sib'8 s lab' s |
+    s4 lab'8 s sol' s |
+  }
+  \repeat unfold 18 { r4 s8-> r s-> r }
+  { s4 <>\f }
+>>

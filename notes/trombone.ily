@@ -50,3 +50,30 @@ R2.*18
   { r4 s8->\f r s-> r |
     \repeat unfold 17 { r4 s8-> r s-> r | } }
 >>
+%% 15
+<<
+  \tag #'(trombone1 trombones) {
+    R2.*2
+    <>_\markup\italic sostenuto
+    << \filterMusic #'(SlurEvent ArticulationEvent) \themeB
+      { s2.
+        s8. s16(\glissando \once\override Script.avoid-slur = #'outside s4)-> s16( s8.)
+        s2.
+        s4. s8-- s-- s--
+        s s4-- s8-- s4
+        s4 s-> \acciaccatura sib'8\glissando s4->
+        \acciaccatura sib'8\glissando s8.( s16) s(-> s) s4.
+        s2.
+        s2 s4(
+        s) s8-- s-- s8*2/3-- s-- s--
+        s16 s( s4) s4.->
+        s2.
+        \once\override Script.avoid-slur = #'outside s16->( s8.) s8 s4.->
+        s2.*2
+        s2 s16( s)
+      }
+    >>
+  }
+  \tag #'trombone2 { s2.*18 }
+>>
+%% 16

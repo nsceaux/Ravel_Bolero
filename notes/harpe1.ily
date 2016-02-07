@@ -74,3 +74,19 @@ r4 q <sib' do'' sol''> |
 r q <lab' do'' sol''> |
 r q <do'' sol''> |
 %% 15
+<sol mi'>4 <sol' do'' mi'' sol''> <sol' sib' re'' sol''> |
+<sol do' mi'>4 <sol' do'' mi'' sol''> <sol' sib' re'' sol''> |
+\repeat unfold 3 { <sol mi'>4 <sol' do'' mi'' sol''> <sol' sib' re'' sol''> }
+\repeat unfold 5 { <sol sol'>4 <sol' do'' mi'' sol''> <sol' sib' re'' sol''> }
+<>^\markup { \smallCaps Si \raise#0.8 \musicglyph#"accidentals.natural" }
+<sol fa'>4 <sol' do'' fa'' sol''> <sol' si'! re'' sol''> |
+<sol fa'>4 <sol' do'' fa'' sol''> <sol' si' re'' sol''> |
+<>^\markup { \smallCaps Si \raise#0.6 \musicglyph#"accidentals.flat" }
+\repeat unfold 2 { <sol mi'>4 <sol' do'' mi'' sol''> <sol' sib' re'' sol''> }
+<>^\markup { \smallCaps La \raise#0.6 \musicglyph#"accidentals.flat" }
+<sol mi'>4 <sol' do'' mi'' sol''> <sol' do'' re'' sol''> |
+<sol do' re'>4 <sol' do'' re'' sol''> <sol' sib' do'' sol''> |
+<sol sib do'>4 <sol' sib' do'' sol''> <sol' lab' do'' sol''> |
+<sol lab do'>4 <sol' lab' do'' sol''> <sol' do'' sol''> |
+%% 16
+<>^\markup { \smallCaps Si \raise#0.8 \musicglyph#"accidentals.natural" }

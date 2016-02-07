@@ -127,3 +127,42 @@ r q <do' sib'> |
 r q <do' lab'> |
 r q <sol sol' do''> |
 %% 15
+\repeat unfold 2 { r4 <do' sol'> <si sol' re''> }
+<>^\markup\whiteout\right-align "arco "
+<<
+  { sol''4~ sol''16 fa'' mi'' re'' sol'' la'' fa'' mi'' |
+    sol''8 fa''16( mi'' sol''4 fa''16 sol'' fa'' mi''~ |
+    mi''4~ mi''16 re'' do'' sib'! do''4~ |
+    do''4 r8 sol''\noBeam la'' sib''~ |
+    sib''! sib''4 sib''8\noBeam sib'' sib'' |
+    \tuplet 3/2 { sib''8 sib''8 sib''8 } sib''8 la''16 sol'' sib''8 la''16 sol'' |
+    sib''16 la'' sol'' fa'' mi''16 re'' do''!8~ do''4~ |
+    do''2~ do''8 r |
+    la'!4. si'8 la'16 si' do''8~ |
+    do''4 re''8 fa'' \tuplet 3/2 { si'8 re''8 si' } |
+    la'!16 do'' la' sol'~ sol'8 \breathe sol'~ sol'4~ |
+    sol'16 la' sol' la' sib' do'' sib' la' sib' la' sol' mi' |
+    sol'8[ mi']~ mi' \breathe do'~ do'4~ |
+    do'~ do'16 re' do' sib~ sib4~ |
+    sib4 do'16 sib do' lab~ lab4~ |
+    lab!~ lab16 lab sib lab do' sib lab sol~ |
+    sol4 }
+  { s4( s8. s16) s8.( s16)
+    s8 s16( s) s4-> s8( s)
+    s4 s16 s8( s16) s4
+    s4. s8-- s-- s--
+    s s4-- s8-- s-- s--
+    s8*2/3-_ s-_( s-_) s8-> s16( s) s8-> s16( s)
+    s8.( s16) \once\override Script.avoid-slur = #'outside s->( s8.) s4
+    s2.
+    s2 s16( s8.)
+    s2 s8*2/3( s) s
+    s4( s8) \once\override Script.avoid-slur = #'outside s4.->(
+    s8. s16) s8.( s16) s8.( s16)
+    s4.-> s4.->
+    s4 s16 s( s8) s4
+    s4 s8( s) s4
+    s4 s16 s8( s16) s8( s)
+  }
+>>
+%% 16

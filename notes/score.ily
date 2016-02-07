@@ -133,11 +133,14 @@
           >>
         >>
         %% Trombones
-        \new Staff \with {
+        \new StaffGroup \with {
           instrumentName = \markup\smallCaps 3 Trombones
-          shortInstrumentName = \markup\tiny Tromb.
+          shortInstrumentName = \markup\tiny Trb.
           \haraKiri
-        } << \global \keepWithTag #'trombones { \include "trombone.ily" } >>
+        } <<
+          \new Staff << \global \keepWithTag #'trombones { \include "trombone.ily" } >>
+          \new Staff << \global \keepWithTag #'trombones { \include "trombone23.ily" } >>
+        >>
         %% Tuba
         \new Staff \with {
           instrumentName = \markup\smallCaps Tuba
@@ -242,20 +245,22 @@
         shortInstrumentName = \markup\tiny Altos
       } <<
         \new Staff << \global { \include "alto.ily" } >>
-        \new Staff \with { \haraKiriFirst } <<
-          \global { \include "alto2.ily" }
-        >>
+        \new Staff \with { \haraKiriFirst } << \global { \include "alto2.ily" } >>
       >>
-      %% Violoncelles, contrebasses
-      \new StaffGroup <<
-        \new Staff \with {
-          instrumentName = \markup\smallCaps Violoncelles
-          shortInstrumentName = \markup\tiny\concat { V \super elles }
-        } << \global { \include "violoncelle.ily" } >>
-        \new Staff \with {
-          instrumentName = \markup\smallCaps Contrebasses
-          shortInstrumentName = \markup\tiny C.B.
-        } <<
+      %% Violoncelles
+      \new StaffGroup \with {
+        instrumentName = \markup\smallCaps Violoncelles
+        shortInstrumentName = \markup\tiny\concat { V \super elles }
+      } <<
+        \new Staff << \global { \include "violoncelle.ily" } >>
+        \new Staff \with { \haraKiriFirst } << \global { \include "violoncelle2.ily" } >>
+      >>
+      %% Contrebasses
+      \new StaffGroup \with {
+        instrumentName = \markup\smallCaps Contrebasses
+        shortInstrumentName = \markup\tiny C.B.
+      } <<
+        \new Staff <<
           \global { \include "cb.ily" }
           { s2.*7\break s2.*7\break s2.*6\break
             %% 1
@@ -272,8 +277,11 @@
             \grace s8 { s2.*6\break s2.*6\break s2.*6\break }
             %% 15
             { s2.*6\break s2.*6\break s2.*6\break }
+            %% 16
+            { s2.*6\break s2.*6\break s2.*6\break }
           }
         >>
+        \new Staff << \global { \include "cb2.ily" } >>
       >>
     >>
   >>
