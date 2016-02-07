@@ -114,7 +114,7 @@
   \abs-fontsize #6 \fromproperty #'header:shortcopyright \null } #}))))
 
 \paper {
-  scoreTitleMarkup = #f
+  %scoreTitleMarkup = #f
   oddFooterMarkup = \markup\nenuvar-footer #RIGHT
   evenFooterMarkup = \markup\nenuvar-footer #LEFT
   

@@ -39,14 +39,13 @@ R2.*2 |
     \once\override Script.avoid-slur = #'outside s8.(-> s16)
     \acciaccatura fa''8\glissando \once\override Script.avoid-slur = #'outside s8.(-> s16)
     \acciaccatura fa''8\glissando \once\override Script.avoid-slur = #'outside s8.( s16) s->( s8.) s4
-    s2 s4)
+    s2 s4
     s4.( s8) s4(
     s4) s( s8*2/3-_ s-_ s)-_
     s4( s8)
     \once \override Script.avoid-slur = #'outside
     s4.(->
     s2 s8. s16)
-    \tag #'hautbois \voiceOne
     \once \override Script.avoid-slur = #'outside
     s4(-> s8)
   }

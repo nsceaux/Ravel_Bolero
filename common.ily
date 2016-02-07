@@ -1,5 +1,6 @@
 \version "2.19.25"
 \header {
+  title = "BOLERO"
   copyrightYear = "2015"
   composer = "Maurice Ravel"
   date = "1928"
@@ -22,9 +23,6 @@
 \language "italiano"
 \include "lib/stylesheet.ily"
 
-\paper {
-  bookTitleMarkup = \nenuvarBookTitleMarkup
-}
 \layout {
   \context {
     \Voice

@@ -136,10 +136,13 @@
         \new StaffGroup \with {
           instrumentName = \markup\smallCaps 3 Trombones
           shortInstrumentName = \markup\tiny Trb.
-          \haraKiri
         } <<
-          \new Staff << \global \keepWithTag #'trombones { \include "trombone.ily" } >>
-          \new Staff << \global \keepWithTag #'trombones { \include "trombone23.ily" } >>
+          \new Staff \with { \haraKiri } <<
+            \global \keepWithTag #'trombones { \include "trombone.ily" }
+          >>
+          \new Staff \with { \haraKiriFirst } <<
+            \global \keepWithTag #'trombones { \include "trombone23.ily" }
+          >>
         >>
         %% Tuba
         \new Staff \with {
@@ -262,7 +265,7 @@
       } <<
         \new Staff <<
           \global { \include "cb.ily" }
-          { s2.*7\break s2.*7\break s2.*6\break
+          { s2.*5\pageBreak s2.*5\break s2.*5\break s2.*5\break
             %% 1
             \repeat unfold 9 { s2.*6\break s2.*6\break s2.*6\break }
             %% 10
@@ -279,9 +282,13 @@
             { s2.*6\break s2.*6\break s2.*6\break }
             %% 16
             { s2.*6\break s2.*6\break s2.*6\break }
+            %% 17
+            { s2.*6\break s2.*6\break s2.*6\break }
+            %% 18
+            { s2.*6\break s2.*6\break s2.*6\break }
           }
         >>
-        \new Staff << \global { \include "cb2.ily" } >>
+        \new Staff \with { \haraKiriFirst } << \global { \include "cb2.ily" } >>
       >>
     >>
   >>
