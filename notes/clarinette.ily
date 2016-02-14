@@ -288,3 +288,32 @@ R2.*2
   sol8)
 }
 %% 16
+<<
+  \tag #'(clarinette1 clarinettes) {
+    \set subdivideBeams = ##t
+    \set baseMoment = #(ly:make-moment 1/8)
+    <>\ff mi''16*2/3 re''( mi'') mi''8-. mi''16*2/3 re''( mi'') mi''8-. mi''-. |
+    mi''8-. mi''16*2/3 re''( mi'') mi''8-. mi''16*2/3 re''( mi'')
+    mi'' re''( mi'') mi'' re''( mi'') |
+    \repeat unfold 2 {
+      mi''8-. mi''16*2/3 re''( mi'') mi''8-. mi''16*2/3 re''( mi'') mi''8-. mi''-. |
+      mi''8-. mi''16*2/3 re''( mi'') mi''8-. mi''16*2/3 re''( mi'')
+      mi'' re''( mi'') mi'' re''( mi'') |
+    }
+    mi''8-. mi''16*2/3 re''( mi'') mi''8-. mi''16*2/3 re''( mi'') mi''8-. mi''-. |
+    mi''8-. mi''16*2/3 re''( mi'') mi''8-. mi''16*2/3 re''( mi'')
+    re'' dod''( re'') re'' dod''( re'') |
+    \repeat unfold 4 {
+      mi''8-. mi''16*2/3 re''( mi'') mi''8-. mi''16*2/3 re''( mi'') re''8-. re''-. |
+      mi''8-. mi''16*2/3 re''( mi'') mi''8-. mi''16*2/3 re''( mi'')
+      re'' dod''( re'') re'' dod''( re'') |
+    }
+    mi''8-. mi''16*2/3 re''( mi'') mi''8-. mi''16*2/3 re''( mi'') re''8-. re''-. |
+    mi''8-. mi''16*2/3 re''( mi'') mi''8-. mi''16*2/3 re''( mi'')
+    mi'' re''( mi'') mi'' re''( mi'') |
+    %% 17
+    mi''8-.
+    \unset subdivideBeams
+  }
+  \tag #'clarinette2 { s8 s2 s2.*17 }
+>>

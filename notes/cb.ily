@@ -27,3 +27,14 @@
 \repeat unfold 2 { do'8-> r do'-> r sol-> r }
 \repeat unfold 8 { do'8-> r do'-> r sol-> r | do'8-> r do'-> r sol-> sol-> }
 %% 16
+\repeat unfold 2 <<
+  { do'8 s do' s sol s | do' s do' s \new Voice { \voiceOne sol8-> sol-> } | }
+  { do8 s do s sol, s | do s do s \new Voice { \voiceTwo sol,-> r } | }
+  { s8-> r s-> r s-> r | s-> r s-> r s4 | }
+>>
+\repeat unfold 7 <<
+  { do'8 s do' s sol s | do' s do' s sol sol | }
+  { do8 s do s sol, s | do s do s sol, sol, | }
+  { s8-> r s-> r s-> r | s-> r s-> r s-> s-> | }
+>>
+%% 17

@@ -80,3 +80,9 @@ R2.*18
 <do, do>4 <do sol sib do'> <do sol lab do'> |
 <do, do>4 <do sol lab do'> <do sol do'> |
 %% 16
+<do, do>4 <sol, do mi do'> <sol, re sol si>8 q |
+\repeat unfold 6 { <do, sol, do mi>4 <sol, do mi do'> <sol, re sol si>8 q | }
+<do, sol, do mi>4 <sol, do mi sol do'> <sol, mi sol si>8 q |
+\repeat unfold 9 { <do, sol, do re>4 <sol, re sol do'> <sol, re sol si>8 q | }
+<do, sol, do mi>4 <sol, do mi do'> <sol, re sol do'>8 q |
+%% 17

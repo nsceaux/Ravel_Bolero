@@ -52,3 +52,25 @@ R2.*2 |
 >> r8 r4 |
 R2.*3 |
 %% 16
+R2.*2 |
+<<
+  \filterMusic #'(SlurEvent ArticulationEvent) \transpose do sol \themeA
+  { \once\override Script.avoid-slur = #'outside s4.-> s16( s) s8( s16-. s-.)
+    s8 s16-.( s-.) s4. s16( s)
+    s8( s16-. s-.) s2
+    s16 s8( s16) s8( s) s4
+    s4 s16 s( s-. s-. s8 s16-. s-.)
+    \once\override Script.avoid-slur = #'outside s16->( s8.) s8 s16( s) s4
+    s4-- s2--
+    s2.
+    s2-> s8( s16-. s-.)
+    \once\override Script.avoid-slur = #'outside s16->( s8.) s16 s16( s-. s-.)
+    \once\override Script.avoid-slur = #'outside s8->( s16-. s) |
+    s4 s8-> s-> \once\override Script.avoid-slur = #'outside s8->( s16-. s-.) |
+    s4 s8-> s-> \once\override Script.avoid-slur = #'outside s8->( s16-. s-.) |
+    s8 s16( s) s2
+    s8-> s-> \once\override Script.avoid-slur = #'outside s8->( s16-. s-.) s8 s16( s) |
+    s4. s16( s) s8 s16-> s->
+    s2 s16 s( s-. s-.)
+  }
+>>

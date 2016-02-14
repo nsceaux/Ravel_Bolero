@@ -1,4 +1,8 @@
-\clef "treble" R2.*92 |
+\clef "treble"
+%% 3rd trompette in trompette3.ily until #15
+\tag #'trompette3 s2.*272
+
+R2.*92 |
 %% 5
 <<
   \tag #'(trompette1 trompettes) {
@@ -114,7 +118,7 @@ R2.*18
   }
   \tag #'trompette2 R2.*18
 >>
-%% 15
+%% 15 (with 3rd trompette)
 <<
   \tag #'(trompette1 trompettes) {
     \repeat unfold 10 { s4 mi''8 s re'' s }
@@ -131,6 +135,53 @@ R2.*18
     s4 sib'8 s lab' s |
     s4 lab'8 s sol' s |
   }
+  \tag #'(trompette3 trompettes) {
+    \repeat unfold 10 { s4 do''8 s sib' s }
+    s4 do''8 s si'! s |
+    s4 do''8 s si' s |
+    \repeat unfold 2 { s4 do''8 s sib' s }
+    s4 do''8 s lab' s |
+    s4 lab'8 s sol' s |
+    \repeat unfold 2 { s4 sol'8 s sol' s }
+  }
   \repeat unfold 18 { r4 s8-> r s-> r }
   { s4 <>\f }
+>>
+%% 16
+<<
+  \repeat unfold 2 <<
+    \tag #'(trompette1 trompettes) { s4 mi''8 s re'' s | }
+    \tag #'(trompette2 trompettes) { s4 re''8 s do'' s | }
+    \tag #'(trompette3 trompettes) { s4 do''8 s si' s | }
+    { r4 s8-> r s-> r }
+  >>
+  { s4 <>\ff }
+>>
+<<
+  \tag #'(trompette1 trompettes) <<
+    \themeAbisQuinte { \tag #'trompettes \voiceOne s-- s-- }
+  >>
+  \tag #'(trompette2 trompettes) {
+    \themeAbisTierce { \tag #'trompettes \once\voiceTwo }
+  }
+  \tag #'(trompette3 trompettes) {
+    \filterMusic #'(ArticulationEvent SlurEvent) \themeA
+  }
+  { s2 s16( s8.)
+    s2.
+    s16( s8.) s2
+    s4 s16( s8.) s4
+    s2.
+    s16( s8.) s2
+    s4-- s2--
+    s2.
+    s2.->
+    \once\override Script.avoid-slur = #'outside s16->( s8.) s4
+    \once\override Script.avoid-slur = #'outside s16->( s8.) |
+    s4 s8-. s-. s4
+    s4 s8-. s-. s4
+    s8 s16( s) s2
+    s8-. s-. s4. s16( s)
+    s4. s16( s) s4
+    s2. }
 >>

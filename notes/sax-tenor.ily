@@ -84,3 +84,26 @@ r4 r8 <<
     s4 s2) }
 >>
 %% 16
+r4 r |
+R2. |
+<<
+  \transpose do re' \filterMusic #'(ArticulationEvent SlurEvent) \themeA
+  { \once\override Script.avoid-slur = #'outside s4.-> s16( s) s8( s16-. s-.)
+    s8 s16-.( s-.) s4. s16( s)
+    s8( s16-. s-.) s2
+    s16 s8( s16) s8( s) s4
+    s4 s16 s( s-. s-. s8 s16-. s-.)
+    \once\override Script.avoid-slur = #'outside s16->( s8.) s8 s16( s) s4
+    s4-- s2--
+    s2.
+    s2-> s8( s16-. s-.)
+    \once\override Script.avoid-slur = #'outside s16->( s8.) s16 s16( s-. s-.)
+    \once\override Script.avoid-slur = #'outside s8->( s16-. s) |
+    s4 s8-> s-> \once\override Script.avoid-slur = #'outside s8->( s16-. s-.) |
+    s4 s8-> s-> \once\override Script.avoid-slur = #'outside s8->( s16-. s-.) |
+    s8 s16( s) s2
+    s8-> s-> \once\override Script.avoid-slur = #'outside s8->( s16-. s-.) s8 s16( s) |
+    s4. s16( s) s8 s16-> s->
+    s2 s16 s( s-. s-.)
+  }
+>>

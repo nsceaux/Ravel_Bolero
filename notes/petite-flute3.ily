@@ -108,3 +108,34 @@ R2.*2 |
 >> r8 r4 |
 R2.*3 |
 %% 16
+r8 <<
+  { sol''16*2/3 sol'' sol'' sol''8 sol''16*2/3 sol'' sol'' si''8 si'' |
+    sol''8 sol''16*2/3 sol'' sol'' sol''8 sol''16*2/3 sol'' sol''
+    sol''16*2/3 sol'' sol'' sol'' sol'' sol'' | }
+  { \set subdivideBeams = ##t
+    \set baseMoment = #(ly:make-moment 1/8)
+    s8\ff s4-. s8-. s-. | s4-. s2-. |
+    \unset subdivideBeams }
+>>
+<<
+  \transpose do do' \filterMusic #'(ArticulationEvent SlurEvent) \themeA
+  { \once\override Script.avoid-slur = #'outside s4..->( s16) s8( s16-. s-.)
+    s8 s16-.( s-.) s4. s16( s)
+    s8( s16-. s-.) s2
+    s16 s-.( s-. s-.) s8( s16-. s-.) s4
+    s4 s16 s-.( s-. s-.) s8( s16-. s-.)
+    \once\override Script.avoid-slur = #'outside s16->( s8.) s8 s16( s) s4
+    s4-- s2--
+    s2.
+    s2-> s8( s16-. s-.)
+    \once\override Script.avoid-slur = #'outside s16->( s8.) s16 s16-.( s-. s-.)
+    \once\override Script.avoid-slur = #'outside s8->( s16-. s-.) |
+    s4 s8-> s-> \once\override Script.avoid-slur = #'outside s8->( s16-. s-.) |
+    s4-. s8-> s-> \once\override Script.avoid-slur = #'outside s8->( s16-. s-.) |
+    s8-. s16( s) s2
+    s8-> s-> \once\override Script.avoid-slur = #'outside s8->( s16-. s-.) s8 s16( s) |
+    s4. s16( s) s8 s16-> s->
+    s2-> s16 s-.( s-. s-.)
+    s8-.
+  }
+>>

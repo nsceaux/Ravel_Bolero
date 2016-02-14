@@ -13,12 +13,12 @@
                 Petites Flûtes
               }
             }
-            shortInstrumentName = \markup\tiny Fl.
+            shortInstrumentName = \markup\shortinstr Fl.
           } << \global \keepWithTag #'flutes { \include "flute.ily" } >>
           %% Petites flûtes
           \new StaffGroupNoBracket \with {
             \haraKiriFirst
-            shortInstrumentName = \markup\tiny { \concat { P \super tes } Fl. }
+            shortInstrumentName = \markup\shortinstr { \concat { P \super tes } Fl. }
           } <<
             \new Staff << \transpose do mi \global { \include "petite-flute1.ily" } >>
             \new Staff << \transpose do sol \global { \include "petite-flute2.ily" } >>
@@ -27,7 +27,7 @@
         >>
         %% Hautbois
         \new StaffGroup \with { \haraKiriFirst } <<
-          \new Staff \with {
+          \new StaffGroupNoBracket \with {
             instrumentName = \markup\center-column {
               \smallCaps Hautbois
               \fontsize#-2 \column {
@@ -36,27 +36,32 @@
                 Cor Anglais
               }
             }
-            shortInstrumentName = \markup\tiny Hautb.
+            shortInstrumentName = \markup\shortinstr Hautb.
           } <<
-            \global \keepWithTag #'hautbois { \include "hautbois.ily" }
-            { \noHaraKiri s2.*73 \revertNoHaraKiri s2. % 4
-              s2.*18 % 5
-              s2.*7 \noHaraKiri s2.*10 % 6
-            }
+            \new Staff <<
+              \global \keepWithTag #'hautbois { \include "hautbois.ily" }
+              { \noHaraKiri s2.*73 \revertNoHaraKiri s2. % 4
+                s2.*18 % 5
+                s2.*7 \noHaraKiri s2.*10 % 6
+              }
+            >>
+            \new Staff \with { \haraKiriFirst } <<
+              \global \keepWithTag #'hautbois { \include "hautbois2.ily" }
+            >>
           >>
           \new Staff \with {
-            shortInstrumentName = \markup\tiny "Htb.d’am."
+            shortInstrumentName = \markup\shortinstr "Htb.d’am."
           } << \transpose la do \global { \include "hautbois-amour.ily" } >>
           \new Staff \with {
-            shortInstrumentName = \markup\tiny Cor A.
+            shortInstrumentName = \markup\shortinstr Cor A.
           } << \transpose fa do \global { \include "cor-anglais.ily" } >>
         >>
         %% Clarinettes
         \new StaffGroup \with { \haraKiriFirst } <<
           \new Staff \with {
-            shortInstrumentName = \markup\tiny { \concat { P \super te } Cl. }
+            shortInstrumentName = \markup\shortinstr { \concat { P \super te } Cl. }
           } << \transpose mib do \global { \include "petite-clarinette.ily" } >>
-          \new Staff \with {
+          \new StaffGroupNoBracket \with {
             instrumentName = \markup\center-column {
               \smallCaps Clarinettes
               \fontsize#-2 \column {
@@ -65,23 +70,29 @@
                 Cl. basse en Si ♭
               }
             }
-            shortInstrumentName = \markup\tiny Clar.
+            shortInstrumentName = \markup\shortinstr Clar.
           } <<
-            \transpose sib do \global
-            \keepWithTag #'clarinettes { \include "clarinette.ily" }
-            { \noHaraKiri s2.*55 \revertNoHaraKiri s2. % 3
-              s2.*18 % 4
-              s2.*7 \noHaraKiri s2.*8 % 5
-              s2.*18 % 6
-              s2.*18 % 7
-              s2.*17 \revertNoHaraKiri s2. % 8
-              s2.*18 % 9
-              s2.*18 % 10
-            }
+            \new Staff <<
+              \transpose sib do \global
+              \keepWithTag #'clarinettes { \include "clarinette.ily" }
+              { \noHaraKiri s2.*55 \revertNoHaraKiri s2. % 3
+                s2.*18 % 4
+                s2.*7 \noHaraKiri s2.*8 % 5
+                s2.*18 % 6
+                s2.*18 % 7
+                s2.*17 \revertNoHaraKiri s2. % 8
+                s2.*18 % 9
+                s2.*18 % 10
+              }
+            >>
+            \new Staff \with { \haraKiriFirst } <<
+              \transpose sib do \global
+              \keepWithTag #'clarinettes { \include "clarinette2.ily" }
+            >>
           >>
           \new Staff \with {
             instrumentName = \markup { Clarinette basse }
-            shortInstrumentName = \markup\tiny Cl.B.
+            shortInstrumentName = \markup\shortinstr Cl.B.
           } << \transpose sib do \global { \include "clarinette-basse.ily" } >>
         >>
         %% Bassons
@@ -94,10 +105,10 @@
                 Contrebasson
               }
             }
-            shortInstrumentName = \markup\tiny\concat { B \super ons }
+            shortInstrumentName = \markup\shortinstr\concat { B \super ons }
           } << \global \keepWithTag #'bassons { \include "basson.ily" } >>
           \new Staff \with {
-            shortInstrumentName = \markup\tiny\concat { C.B \super on }
+            shortInstrumentName = \markup\shortinstr\concat { C.B \super on }
             \haraKiriFirst
           } << \global { \include "contrebasson.ily" } >>
         >>
@@ -107,7 +118,7 @@
         %% Cor
         \new StaffGroup \with {
           instrumentName = \markup { 4 \smallCaps Cors en fa }
-          shortInstrumentName = \markup\tiny Cors
+          shortInstrumentName = \markup\shortinstr Cors
         } <<
           \new Staff << \global \keepWithTag #'cors { \include "cor.ily" } >>
           \new Staff \with { \haraKiriFirst } <<
@@ -123,19 +134,31 @@
               Petite Tromp. en Ré
             }
           }
-          shortInstrumentName = \markup\tiny Tromp.
         } <<
-          \new Staff <<
-            \global \keepWithTag #'trompettes { \include "trompette.ily" }
+          \new Staff \with {
+            \haraKiriFirst
+            shortInstrumentName = \markup\shortinstr\center-column {
+              \line { \concat { P \super te } Tr }
+              en Ré
+            }
+          } <<
+            \global \keepWithTag #'trompettes { \include "petite-trompette.ily" }
           >>
-          \new Staff \with { \haraKiriFirst } <<
-            \global { \include "trompette3.ily" }
+          \new StaffGroupNoBracket \with {
+            shortInstrumentName = \markup\shortinstr Tromp.
+          } <<
+            \new Staff <<
+              \global \keepWithTag #'trompettes { \include "trompette.ily" }
+            >>
+            \new Staff \with { \haraKiriFirst } <<
+              \global { \include "trompette3.ily" }
+            >>
           >>
         >>
         %% Trombones
         \new StaffGroup \with {
           instrumentName = \markup\smallCaps 3 Trombones
-          shortInstrumentName = \markup\tiny Trb.
+          shortInstrumentName = \markup\shortinstr Trb.
         } <<
           \new Staff \with { \haraKiri } <<
             \global \keepWithTag #'trombones { \include "trombone.ily" }
@@ -147,17 +170,17 @@
         %% Tuba
         \new Staff \with {
           instrumentName = \markup\smallCaps Tuba
-          shortInstrumentName = \markup\tiny Tuba
+          shortInstrumentName = \markup\shortinstr Tuba
           \haraKiri
         } << \global { \include "tuba.ily" } >>
         %% Saxophones
         \new StaffGroup \with { \haraKiriFirst } <<
           \new Staff \with {
-            shortInstrumentName = \markup\tiny\center-column { Sax. sopranino }
+            shortInstrumentName = \markup\shortinstr\center-column { Sax. sopranino }
             \haraKiriFirst
           } << \transpose fa do \global { \include "sax-sopranino.ily" } >>
           \new Staff \with {
-            shortInstrumentName = \markup\tiny\center-column { Sax. soprano }
+            shortInstrumentName = \markup\shortinstr\center-column { Sax. soprano }
             \haraKiriFirst
           } << \transpose sib do \global { \include "sax-soprano.ily" } >>
           \new Staff \with {
@@ -169,7 +192,7 @@
                 Ténor en Si ♭
               }
             }
-            shortInstrumentName = \markup\tiny Sax. T.
+            shortInstrumentName = \markup\shortinstr Sax. T.
             \haraKiriFirst
           } <<
             \transpose sib do \global
@@ -181,7 +204,7 @@
         >>
         %% Timbales
         \new Staff \with {
-          shortInstrumentName = \markup\tiny Timb.
+          shortInstrumentName = \markup\shortinstr Timb.
           \haraKiriFirst
         } << \global { \include "timbales.ily" } >>
         %% Tambours
@@ -192,14 +215,14 @@
             2 Tambours
             Timbales
           }
-          shortInstrumentName = \markup\tiny Tamb.
+          shortInstrumentName = \markup\shortinstr Tamb.
         } << \global { \include "tambour.ily" } >>
       >>
     >>
     %% Celesta
     \new PianoStaff \with {
       instrumentName = \markup\smallCaps Celesta
-      shortInstrumentName = \markup\tiny Celesta
+      shortInstrumentName = \markup\shortinstr Celesta
       \haraKiri
     } <<
       \new Staff << \global { \include "celesta1.ily" } >>
@@ -208,7 +231,7 @@
     %% Harpe
     \new PianoStaff \with {
       instrumentName = \markup\smallCaps Harpe
-      shortInstrumentName = \markup\tiny Harpe
+      shortInstrumentName = \markup\shortinstr Harpe
       \haraKiri
     } <<
       \new Staff << \global { \include "harpe1.ily" } >>
@@ -219,7 +242,7 @@
       %% Violons
       \new StaffGroup \with {
         instrumentName = \markup\smallCaps { \concat { 1 \super rs } Violons }
-        shortInstrumentName = \markup\tiny {
+        shortInstrumentName = \markup\shortinstr {
           \concat { 1 \super rs } \concat { V \super ons }
         }
       } <<
@@ -233,7 +256,7 @@
       >>
       \new StaffGroup \with {
         instrumentName = \markup\smallCaps { \concat { 2 \super ds } Violons }
-        shortInstrumentName = \markup\tiny {
+        shortInstrumentName = \markup\shortinstr {
           \concat { 2 \super ds } \concat { V \super ons }
         }
       } <<
@@ -245,7 +268,7 @@
       %% Altos
       \new StaffGroup \with {
         instrumentName = \markup\smallCaps Altos
-        shortInstrumentName = \markup\tiny Altos
+        shortInstrumentName = \markup\shortinstr Altos
       } <<
         \new Staff << \global { \include "alto.ily" } >>
         \new Staff \with { \haraKiriFirst } << \global { \include "alto2.ily" } >>
@@ -253,7 +276,7 @@
       %% Violoncelles
       \new StaffGroup \with {
         instrumentName = \markup\smallCaps Violoncelles
-        shortInstrumentName = \markup\tiny\concat { V \super elles }
+        shortInstrumentName = \markup\shortinstr\concat { V \super elles }
       } <<
         \new Staff << \global { \include "violoncelle.ily" } >>
         \new Staff \with { \haraKiriFirst } << \global { \include "violoncelle2.ily" } >>
@@ -261,7 +284,7 @@
       %% Contrebasses
       \new StaffGroup \with {
         instrumentName = \markup\smallCaps Contrebasses
-        shortInstrumentName = \markup\tiny C.B.
+        shortInstrumentName = \markup\shortinstr C.B.
       } <<
         \new Staff <<
           \global { \include "cb.ily" }

@@ -196,3 +196,24 @@ R2. |
 %% 16
 r4 r4 |
 R2. |
+<<
+  \themeAbisQuinte { \voiceOne }
+  \filterMusic #'(SlurEvent ArticulationEvent) \themeA
+  { s4. s16( s) s( s) s-_( s-_)
+    s8 s16( s) s4. s16( s)
+    s( s) s-_( s-_) \once\voiceTwo s2
+    s16 s8( s16) s( s) s-_( s-_) s4
+    s4 s16 s8( s16) s( s) s-_( s-_)
+    \once\override Script.avoid-slur = #'outside s->( s8.) s8 s16( s) s8-_( s-_)
+    s4\downbow s2\downbow
+    s2.
+    s2-> s16( s) s-_( s-_)
+    \once\override Script.avoid-slur = #'outside s16->( s8.) s8 s16-_ s-_ \once\override Script.avoid-slur = #'outside s16->( s8.)
+    s8 s16-.( s-.) s8-> s-> \once\override Script.avoid-slur = #'outside s16->( s) s-_( s-_)
+    s8 s16-.( s-.) s4 \once\override Script.avoid-slur = #'outside s16->( s) s-_( s-_)
+    s8 s16( s) s4. s16-.( s-.)
+    s8-> s-> \once\override Script.avoid-slur = #'outside s16->( s) s-_( s-_) s8 s16( s)
+    s4. s16( s) s8 s16-.( s-.)
+    s2-> s16 s-- s-- s--
+  }
+>>

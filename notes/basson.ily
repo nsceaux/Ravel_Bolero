@@ -165,3 +165,12 @@ R2.*18
   { s8-> r s-> r s-> r | s8-> r s-> r s4 | }
 >>
 %% 16
+<<
+  { s4 <>\ff }
+  \repeat unfold 18 <<
+    \tag #'(basson1 bassons) { do8 s do' s do' do' }
+    \tag #'(basson2 bassons) { do,8 s do s do do }
+    { s-> r s-> r s-> s-> }
+  >>
+>>
+%% 17

@@ -248,4 +248,33 @@ fa'4~ fa'16) sol'( fa' mib'~ mib'4~ |
 mib'!4) fa'16( mib' fa' reb'~ reb'4~ |
 reb'!~ reb'16) reb'( mib' reb' fa' mib' reb' do'~ |
 %% 16
-do'8)
+do'8) <<
+  \tag #'(hautbois1 hautbois) {
+    \set subdivideBeams = ##t
+    \set baseMoment = #(ly:make-moment 1/8)
+    sol''16*2/3 mi''( sol'') sol''8-. sol''16*2/3 mi''( sol'') sol''8-. sol''-. |
+    sol''8-. sol''16*2/3 mi''( sol'') sol''8-. sol''16*2/3 mi''( sol'')
+    sol'' re''( sol'') sol'' re''( sol'') |
+    \repeat unfold 2 {
+      sol''8-. sol''16*2/3 mi''( sol'') sol''8-. sol''16*2/3 mi''( sol'') sol''8-. sol''-. |
+      sol''8-. sol''16*2/3 mi''( sol'') sol''8-. sol''16*2/3 mi''( sol'')
+      sol'' re''( sol'') sol'' re''( sol'') |
+    }
+    sol''8-. sol''16*2/3 mi''( sol'') sol''8-. sol''16*2/3 mi''( sol'') sol''8-. sol''-. |
+    sol''8-. sol''16*2/3 mi''( sol'') sol''8-. sol''16*2/3 mi''( sol'')
+    sol'' mi''( sol'') sol'' mi''( sol'') |
+    \repeat unfold 4 {
+      sol''8-. sol''16*2/3 fa''( sol'') sol''8-. sol''16*2/3 fa''( sol'') sol''8-. sol''-. |
+      sol''8-. sol''16*2/3 fa''( sol'') sol''8-. sol''16*2/3 fa''( sol'')
+      sol'' re''( sol'') sol'' re''( sol'') |
+    }
+    sol''8-. sol''16*2/3 fa''( sol'') sol''8-. sol''16*2/3 fa''( sol'') sol''8-. sol''-. |
+    sol''8-. sol''16*2/3 mi''( sol'') sol''8-. sol''16*2/3 mi''( sol'')
+    sol'' re''( sol'') sol'' re''( sol'') |
+    %% 17
+    sol8-.
+    
+    \unset subdivideBeams
+  }
+  \tag #'hautbois2 { s8 s2 s2.*17 s2.*18}
+>>

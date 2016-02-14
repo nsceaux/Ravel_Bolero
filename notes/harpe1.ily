@@ -90,3 +90,9 @@ r q <do'' sol''> |
 <sol lab do'>4 <sol' lab' do'' sol''> <sol' do'' sol''> |
 %% 16
 <>^\markup { \smallCaps Si \raise#0.8 \musicglyph#"accidentals.natural" }
+<sol do'>4 <>\ff <mi' sol' do'' sol''>4 <re' sol' si' sol''>8 q |
+\repeat unfold 6 { <mi' sol' do'' sol''>4 q <re' sol' si' sol''>8 q | }
+<mi' sol' do'' sol''>4 q <mi' sol' si' sol''>8 q |
+\repeat unfold 9 { <fa' do'' re'' sol''>4 q <re' sol' si' sol''>8 q | }
+<mi' sol' do'' sol''>4 q <fa' fa' do'' sol''>8 q |
+%% 17

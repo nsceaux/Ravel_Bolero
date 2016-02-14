@@ -319,3 +319,46 @@ R2. |
   \tag #'(flute1 flutes) { s2.*3 s4. s4. s2.*4 \ottava#0 }
 >>
 %% 16
+<<
+  \tag #'(flute1 flutes) {
+    mi'''16*2/3 mi''' mi''' mi'''8 mi'''16*2/3 mi''' mi''' re'''8 re''' |
+    mi'''8 mi'''16*2/3 mi''' mi''' mi'''8 mi'''16*2/3 mi''' mi'''
+    re'''16*2/3 re''' re''' re''' re''' re''' |
+  }
+  \tag #'(flute2 flutes) {
+    do'''16*2/3 do''' do''' do'''8 do'''16*2/3 do''' do''' si''8 si'' |
+    do'''8 do'''16*2/3 do''' do''' do'''8 do'''16*2/3 do''' do'''
+    si''16*2/3 si'' si'' si'' si'' si'' |
+  }
+  { \set subdivideBeams = ##t
+    \set baseMoment = #(ly:make-moment 1/8)
+    s8\ff s4-. s8-. s-. | s4-. s2-. |
+    \unset subdivideBeams }
+>>
+<<
+  \tag #'(flute1 flutes) {
+    \transpose do do' \themeAbisQuinte { \tag #'flutes \voiceOne }
+  }
+  \tag #'(flute2 flutes) {
+    \transpose do do' \themeAbisTierce { \tag #'flutes \once\voiceTwo }
+  }
+  { \once\override Script.avoid-slur = #'outside s4..->( s16) s8( s16-. s-.)
+    s8 s16-.( s-.) s4. s16( s)
+    s8( s16-. s-.) s2
+    s16 s-.( s-. s-.) s8( s16-. s-.) s4
+    s4 s16 s-.( s-. s-.) s8( s16-. s-.)
+    \once\override Script.avoid-slur = #'outside s16->( s8.) s8 s16( s) s4
+    s4-- s2--
+    s2.
+    s2-> s8( s16-. s-.)
+    \once\override Script.avoid-slur = #'outside s16->( s8.) s16 s16-.( s-. s-.)
+    \once\override Script.avoid-slur = #'outside s8->( s16-. s-.) |
+    s4 s8-> s-> \once\override Script.avoid-slur = #'outside s8->( s16-. s-.) |
+    s4-. s8-> s-> \once\override Script.avoid-slur = #'outside s8->( s16-. s-.) |
+    s8-. s16( s) s2
+    s8-> s-> \once\override Script.avoid-slur = #'outside s8->( s16-. s-.) s8 s16( s) |
+    s4. s16( s) s8 s16-> s->
+    s2-> s16 s-.( s-. s-.)
+    s8-.
+  }
+>>

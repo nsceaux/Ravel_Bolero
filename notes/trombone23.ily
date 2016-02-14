@@ -1,5 +1,5 @@
-\clef "tenor" R2.*272
-%% 15
+\clef "tenor" s2.*272
+%% 15 -> trombone 2 et 3
 <>\f \repeat unfold 2 {
   \twoVoices #'(trombone2 trombone3 trombones) <<
     { r4 }
@@ -35,4 +35,25 @@
     lab s lab s sol s |
   }
   \repeat unfold 16 { s8-> r s-> r s-> r }
+>>
+%% 16
+\twoVoices #'(trombone2 trombone3 trombones) <<
+  { r4 }
+  { sol8 r }
+>>
+<<
+  \tag #'(trombone2 trombones) {
+    re'8 s si s | re' s re' s si si |
+    \repeat unfold 3 { re' s re' s si s | re' s re' s si si | }
+    \repeat unfold 4 { do' s do' s si s | do' s do' s si si | }
+    do' s do' s si s | re' s re' s do' do' |
+  }
+  \tag #'(trombone3 trombones) {
+    sol8 s sol s | sol s sol s sol sol |
+    \repeat unfold 8 { sol s sol s sol s | sol s sol s sol sol | }
+  }
+  { s8->\ff r s-> r |
+    s-> r s-> r s-> s-> |
+    \repeat unfold 8 { s8-> r s-> r s-> r | s-> r s-> r s-> s-> | }
+  }
 >>

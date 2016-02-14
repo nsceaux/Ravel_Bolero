@@ -69,7 +69,33 @@ r8 <>^\markup\right-align "a 2" sol'-> r sol'-> r |
 %% 15
 <<
   \tag #'(cor3 cors) \transpose do sol \rythmique
-  \tag #'(cor4 cors) \transpose do sol, \rythmique
+  \tag #'(cor4 cors) \transpose do sol, {
+    \set subdivideBeams = ##t
+    \set baseMoment = #(ly:make-moment 1/8)
+    \tuplet 3/2 { sol'16[ sol' sol'] } sol'8-. sol'16*2/3 sol' sol' sol'8-. sol'-. |
+    sol'-. sol'16*2/3 sol' sol' sol'8-. sol'16*2/3 sol' sol' sol' sol' sol' sol' sol' sol' |
+    \repeat unfold 8 {
+      sol'8-. sol'16*2/3 sol' sol' sol'8-. sol'16*2/3 sol' sol' sol'8-. sol'-. |
+      sol'-. sol'16*2/3 sol' sol' sol'8-. sol'16*2/3 sol' sol' sol' sol' sol' sol' sol' sol' |
+    }
+    do''8-.\noBeam
+    \unset subdivideBeams
+  }
 >>
 %% 16
-
+<<
+  \tag #'(cor3 cors) \transpose do sol \rythmique
+  \tag #'(cor4 cors) \transpose do sol, {
+    \set subdivideBeams = ##t
+    \set baseMoment = #(ly:make-moment 1/8)
+    \tuplet 3/2 { sol'16[ sol' sol'] } do''8-. sol'16*2/3 sol' sol' do''8-. do''-. |
+    do''-. sol'16*2/3 sol' sol' do''8-. sol'16*2/3 sol' sol' do'' sol' sol' do'' sol' sol' |
+    \repeat unfold 8 {
+      do''8-. sol'16*2/3 sol' sol' do''8-. sol'16*2/3 sol' sol' do''8-. do''-. |
+      do''-. sol'16*2/3 sol' sol' do''8-. sol'16*2/3 sol' sol' do'' sol' sol' do'' sol' sol' |
+    }
+    sol'8-.\noBeam
+    \unset subdivideBeams
+  }
+  <>\ff
+>>

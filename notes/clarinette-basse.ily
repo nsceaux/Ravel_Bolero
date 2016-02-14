@@ -52,6 +52,10 @@ re'8-> r8 r
   fa'4~ fa'16) sol'( fa' mib'~ mib'4~ |
   mib'!4) fa'16( mib' fa' reb'~ reb'4~ |
   reb'!~ reb'16) reb'( mib' reb' fa' mib' reb' do'~ |
-  do'8)
+  do'4)
 }
 %% 16
+re'8->\ff r8 la-> la-> |
+\repeat unfold 17 { re'-> r re'-> r la-> la-> } |
+%% 17
+

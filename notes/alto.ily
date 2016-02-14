@@ -100,3 +100,19 @@ R2. |
     s4 s16 s8( s16) s8( s) }
 >>
 %% 16
+\grace s4\ff <>^"pizz." <do do' sol' mi''>16*2/3 q q q8 q16*2/3 q q <do si sol' re''>8 q |
+<do do' sol' mi''>8 q16*2/3 q q q8 q16*2/3 q q <do si sol' re''>8 q16*2/3 q q |
+\repeat unfold 2 {
+  <do do' sol' mi''>8 q16*2/3 q q q8 q16*2/3 q q <do si sol' re''>8 q8 |
+  <do do' sol' mi''>8 q16*2/3 q q q8 q16*2/3 q q <do si sol' re''>8 q16*2/3 q q |
+}
+<do do' sol' mi''>8 q16*2/3 q q q8 q16*2/3 q q <do si sol' re''>8 q8 |
+<do do' sol' mi''>8 q16*2/3 q q q8 q16*2/3 q q <do si sol' mi''>8 q16*2/3 q q |
+\repeat unfold 4 {
+  <do sol sol' fa''>8 q16*2/3 q q q8 q16*2/3 q q <do si sol' re''>8 q8 |
+  <do sol sol' fa''>8 q16*2/3 q q q8 q16*2/3 q q <do si sol' re''>8 q16*2/3 q q |
+}
+<do sol sol' fa''>8 q16*2/3 q q q8 q16*2/3 q q <do si sol' re''>8 q8 |
+<do mi' sol' mi''>8 q16*2/3 q q q8 q16*2/3 q q <do sol sol' do''>8 q16*2/3 q q |
+%% 17
+<do sol sol' mi''>8

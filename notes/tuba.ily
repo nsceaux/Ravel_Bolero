@@ -5,3 +5,11 @@
 <>\f \repeat unfold 2 { do,8-> r do-> r sol,-> r }
 \repeat unfold 8 { do,8-> r do-> r sol,-> r | do,8-> r do-> r sol,-> sol,-> }
 %% 16
+<<
+  \repeat unfold 9 {
+    do,8-> r do-> r sol,,-> r |
+    do,-> r do-> r sol,,-> sol,,->
+  }
+  { s4 <>\ff }
+>>
+%% 17
