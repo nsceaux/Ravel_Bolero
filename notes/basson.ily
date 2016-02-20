@@ -166,7 +166,7 @@ R2.*18
 >>
 %% 16
 <<
-  { s4 <>\ff }
+  { s4 \grace s4\ff }
   \repeat unfold 18 <<
     \tag #'(basson1 bassons) { do8 s do' s do' do' }
     \tag #'(basson2 bassons) { do,8 s do s do do }

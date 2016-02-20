@@ -8,5 +8,7 @@
 %% 15
 \repeat unfold 18 { do4 r sol, }
 %% 16
-\repeat unfold 18 { do4 r sol, }
+<>\ff \repeat unfold 2 { do4 r sol, }
+R2.*7
+\repeat unfold 9 { do4 r sol, }
 %% 17

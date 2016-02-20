@@ -55,7 +55,7 @@ re'8-> r8 r
   do'4)
 }
 %% 16
-re'8->\ff r8 la-> la-> |
+\grace s4\ff re'8-> r8 la-> la-> |
 \repeat unfold 17 { re'-> r re'-> r la-> la-> } |
 %% 17
 

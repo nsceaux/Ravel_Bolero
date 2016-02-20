@@ -248,7 +248,7 @@ fa'4~ fa'16) sol'( fa' mib'~ mib'4~ |
 mib'!4) fa'16( mib' fa' reb'~ reb'4~ |
 reb'!~ reb'16) reb'( mib' reb' fa' mib' reb' do'~ |
 %% 16
-do'8) <<
+do'8) <>\ff <<
   \tag #'(hautbois1 hautbois) {
     \set subdivideBeams = ##t
     \set baseMoment = #(ly:make-moment 1/8)

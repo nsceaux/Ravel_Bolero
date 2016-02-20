@@ -71,33 +71,42 @@ themeA = {
 }
 
 %% Harmonisation du themeA, à partir de 16
-themeAbisTierce =
+themeAbisTierceI =
 #(define-music-function (parser location voice-modifier) (ly:music?)
    #{ mi''4~ mi''8 re''16 mi'' fad''! mi'' re'' do'' |
 mi''8 mi''16 do'' mi''4~ mi''8 re''16 mi'' |
 do'' si' sol' la' $voice-modifier do''2~ |
-do''16 la' sol' fa' sol' la' si' do'' si'4~ |
-si'4~ si'16 do'' re'' do'' si' la' sol' fa' |
+do''16 la' sol' fa' sol' la' si' do'' si'4 |
+do''4~ do''16 do'' re'' do'' si' la' sol' fa' |
 sol' fa' mi'8~ mi'8 mi'16 fa' sol'8 la' |
 fa'4 si'2~ |
-si'~ si'8 r |
-fa''4~ fa''8. mi''16 re'' do'' re'' mi'' |
-fa'' mi'' re''8~ re''16 fa'' mi'' re'' fa'' mi'' re'' la'~ |
-la'8 la'16 la' la'8 re'' fa''16 re'' mi'' do'' |
-la'8 la'16 la' la'8 re'' mi''16 si' re'' la' |
-fa'8 fa'16 mi' fa'4~ fa'8 fa'16 fa' |
-fa'8 la' do''16 la' si' sol' fa'8 fa'16 mi' |
-fa'4~ fa'8 fa'16 mi' fa'8 sol'16 la' |
-do''2~ do''16 la' sol' fa' |
-mi'8 #})
+si'~ si'8 r | #})
+
+themeAbisTierceII = {
+  fa''4~ fa''8. mi''16 re'' do'' re'' mi'' |
+  fa'' mi'' re''8~ re''16 fa'' mi'' re'' fa'' mi'' re'' la'~ |
+  la'8 la'16 la' la'8 re'' fa''16 re'' mi'' si' |
+  la'8 la'16 la' la'8 re'' mi''16 si' re'' la' |
+}
+themeAbisTierceIII = {
+  fa'8 fa'16 mi' fa'4~ fa'8 fa'16 fa' |
+  fa'8 la' do''16 la' si' sol' fa'8 fa'16 mi' |
+  fa'4~ fa'8 fa'16 mi' fa'8 sol'16 la' |
+  do''2~ do''16 la' sol' fa' |
+  mi'8
+}
+
+themeAbisTierce =
+#(define-music-function (parser location voice-modifier) (ly:music?)
+   #{ \themeAbisTierceI $voice-modifier \themeAbisTierceII \themeAbisTierceIII #})
 
 themeAbisQuinte =
 #(define-music-function (parser location voice-modifier) (ly:music?)
    #{ sol''4~ sol''8 fad''16 sol'' la'' sol'' fad'' mi'' |
 sol''8 sol''16 mi'' sol''4~ sol''8 fad''16 sol'' |
 mi'' re'' si' do'' \new Voice << $voice-modifier { mi''4 re'' } >> |
-mi''16 do'' si' la' si' do'' re'' mi'' re''4~ |
-re''~ re''16 mi'' fad'' mi'' re'' do'' si' la' |
+mi''16 do'' si' la' si' do'' re'' mi'' re''4 |
+mi''~ mi''16 mi'' fad'' mi'' re'' do'' si' la' |
 si' la' sol'8~ sol' sol'16 la' si'8 do'' |
 la'4 re''2~ |
 re''~ re''8 r |

@@ -75,11 +75,15 @@ R2. |
 }
 <do do' sol' mi''>4 q <do si sol' re''>8 q |
 <do do' sol' mi''>4 q <do si sol' mi''>16*2/3 q q q8 |
-\repeat unfold 4 {
+\repeat unfold 2 {
   <do sol sol' fa''>4 q <do si sol' re''>8 q |
   <do sol sol' fa''>4 q <do si sol' re''>16*2/3 q q q8 |
 }
 <do sol sol' fa''>4 q <do si sol' re''>8 q |
-<do mi' sol' mi''>4 q <do sol sol' do''>16*2/3 q q q8 |
+<do sol sol' fa''>4 q <do si sol' fa''>16*2/3 q q q8 |
+<do sol sol' fa''>4 q <do si sol' re''>8 q |
+<do sol sol' fa''>4 q <do si sol' fa''>16*2/3 q q q8 |
+<do sol sol' fa''>4 q <do si sol' re''>8 q |
+<do do' sol' mi''>4 q <do sol sol' do''>16*2/3 q q q8 |
 %% 17
 <do do' sol' mi''>8

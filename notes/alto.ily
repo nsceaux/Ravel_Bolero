@@ -108,11 +108,15 @@ R2. |
 }
 <do do' sol' mi''>8 q16*2/3 q q q8 q16*2/3 q q <do si sol' re''>8 q8 |
 <do do' sol' mi''>8 q16*2/3 q q q8 q16*2/3 q q <do si sol' mi''>8 q16*2/3 q q |
-\repeat unfold 4 {
+\repeat unfold 2 {
   <do sol sol' fa''>8 q16*2/3 q q q8 q16*2/3 q q <do si sol' re''>8 q8 |
   <do sol sol' fa''>8 q16*2/3 q q q8 q16*2/3 q q <do si sol' re''>8 q16*2/3 q q |
 }
 <do sol sol' fa''>8 q16*2/3 q q q8 q16*2/3 q q <do si sol' re''>8 q8 |
-<do mi' sol' mi''>8 q16*2/3 q q q8 q16*2/3 q q <do sol sol' do''>8 q16*2/3 q q |
+<do sol sol' fa''>8 q16*2/3 q q q8 q16*2/3 q q <do si sol' fa''>8 <do si sol' re''>16*2/3 q q |
+<do sol sol' fa''>8 q16*2/3 q q q8 q16*2/3 q q <do si sol' re''>8 q8 |
+<do sol sol' fa''>8 q16*2/3 q q q8 q16*2/3 q q <do si sol' re''>8 q16*2/3 q q |
+<do sol sol' fa''>8 q16*2/3 q q q8 q16*2/3 q q <do si sol' re''>8 q8 |
+<do do' sol' mi''>8 q16*2/3 q q q8 q16*2/3 q q <do sol sol' do''>8 q16*2/3 q q |
 %% 17
 <do sol sol' mi''>8

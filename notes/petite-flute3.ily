@@ -109,7 +109,7 @@ R2.*2 |
 R2.*3 |
 %% 16
 r8 <<
-  { sol''16*2/3 sol'' sol'' sol''8 sol''16*2/3 sol'' sol'' si''8 si'' |
+  { sol''16*2/3 sol'' sol'' sol''8 sol''16*2/3 sol'' sol'' sol''8 sol'' |
     sol''8 sol''16*2/3 sol'' sol'' sol''8 sol''16*2/3 sol'' sol''
     sol''16*2/3 sol'' sol'' sol'' sol'' sol'' | }
   { \set subdivideBeams = ##t

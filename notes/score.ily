@@ -176,11 +176,15 @@
         %% Saxophones
         \new StaffGroup \with { \haraKiriFirst } <<
           \new Staff \with {
-            shortInstrumentName = \markup\shortinstr\center-column { Sax. sopranino }
+            shortInstrumentName = \markup\shortinstr {
+              Sax. \concat { S \super ino }
+            }
             \haraKiriFirst
           } << \transpose fa do \global { \include "sax-sopranino.ily" } >>
           \new Staff \with {
-            shortInstrumentName = \markup\shortinstr\center-column { Sax. soprano }
+            shortInstrumentName = \markup\shortinstr {
+              Sax. \concat { S \super ano }
+            }
             \haraKiriFirst
           } << \transpose sib do \global { \include "sax-soprano.ily" } >>
           \new Staff \with {
