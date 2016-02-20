@@ -20,3 +20,7 @@
   \repeat unfold 9 { do8-> r do-> r sol,-> r | do8-> r do-> r sol,-> sol,-> }
 >>
 %% 17
+\repeat unfold 9 { do8-> r do-> r sol,-> r | do8-> r do-> r sol,-> sol,-> }
+%% 18
+\repeat unfold 4 { mi,8-> r mi-> r si,-> r | mi,-> r mi-> r si,-> si,-> }
+

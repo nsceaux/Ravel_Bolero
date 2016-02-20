@@ -272,9 +272,35 @@ do'8) <>\ff <<
     sol''8-. sol''16*2/3 mi''( sol'') sol''8-. sol''16*2/3 mi''( sol'')
     sol'' re''( sol'') sol'' re''( sol'') |
     %% 17
-    sol8-.
-    
+    sol''8-. sol''16*2/3 mi''( sol'') sol''8-. sol''16*2/3 mi''( sol'') sol''8-. sol''-. |
+    sol''8-. sol''16*2/3 mi''( sol'') sol''8-. sol''16*2/3 mi''( sol'')
+    sol'' mi''( sol'') sol'' mi''( sol'') |
+    \repeat unfold 4 {
+      sol''8-. sol''16*2/3 mi''( sol'') sol''8-. sol''16*2/3 mi''( sol'') sol''8-. sol''-. |
+      sol''8-. sol''16*2/3 mi''( sol'') sol''8-. sol''16*2/3 mi''( sol'')
+      sol'' re''( sol'') sol'' re''( sol'') |
+    }
+    sol''8-. sol''16*2/3 fa''( sol'') sol''8-. sol''16*2/3 fa''( sol'') sol''8-. sol''-. |
+    sol''8-. sol''16*2/3 fa''( sol'') sol''8-. sol''16*2/3 fa''( sol'')
+    sol'' re''( sol'') sol'' re''( sol'') |
+    \repeat unfold 2 {
+      sol''8-. sol''16*2/3 mi''( sol'') sol''8-. sol''16*2/3 mi''( sol'') sol''8-. sol''-. |
+      sol''8-. sol''16*2/3 mi''( sol'') sol''8-. sol''16*2/3 mi''( sol'')
+      sol'' re''( sol'') sol'' re''( sol'') |
+    }
+    sol''8-. sol''16*2/3 fa''( sol'') sol''8-. sol''16*2/3 fa''( sol'') sol''8-. sol''-. |
+    sol''8-. sol''16*2/3 fa''( sol'') sol''8-. sol''16*2/3 fa''( sol'')
+    sol'' re''( sol'') sol'' re''( sol'') |
+    %% 18
+    \repeat unfold 3 {
+      sold''8-. sold''16*2/3 mi''( sold'') sold''8-. sold''16*2/3 mi''( sold'') fad''8-. fad''-. |
+      sold''8-. sold''16*2/3 mi''( sold'') sold''8-. sold''16*2/3 mi''( sold'')
+      fad'' re''( fad'') fad'' re''( fad'') |
+    }
+    sold''8-. sold''16*2/3 mi''( sold'') sold''8-. sold''16*2/3 mi''( sold'') fad''8-. fad''-. |
+    sold''8-. sold''16*2/3 mi''( sold'') sold''8-. sold''16*2/3 mi''( sold'')
+    sol'' re''( sol'') sol'' re''( sol'') |
     \unset subdivideBeams
   }
-  \tag #'hautbois2 { s8 s2 s2.*17 s2.*18}
+  \tag #'hautbois2 { s8 s2 s2.*17 s2.*18 }
 >>

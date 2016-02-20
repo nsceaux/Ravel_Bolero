@@ -13,3 +13,7 @@
   { s4 <>\ff }
 >>
 %% 17
+\repeat unfold 9 { do,8-> r do-> r sol,,-> r | do,-> r do-> r sol,,-> sol,,-> }
+%% 18
+\repeat unfold 3 { mi,8-> r mi,-> r si,,-> r | mi,-> r mi,-> r si,,-> si,,-> }
+mi,8-> r mi,-> r si,,-> r | mi,-> r mi,-> r sol,,!-> r |

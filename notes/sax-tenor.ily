@@ -107,3 +107,38 @@ R2. |
     s2 s16 s( s-. s-.)
   }
 >>
+%% 17-18
+<<
+  { s8 la'' s la'' s | s4 la''8 s la'' s | }
+  { r8 s-> r s-> r | r4 s8-> r s-> r | }
+>>
+\transpose do re <<
+  { \themeFinal{ \once\override Script.avoid-slur = #'outside s16->( s) }
+    do''4 }
+  { \once\override Script.avoid-slur = #'outside s4->( s16 s-. s-. s-.) s8.( s16)
+    \once\override Script.avoid-slur = #'outside s8->( s16-. s-.) s4-> s8( s)
+    s4 s16 s8.( s4
+    s4.) s8-> s-> s->
+    s s4-> s8-> s-> s->
+    s8*2/3-> s-> s-> s8-> s16( s) \acciaccatura sib''8\glissando s8 s16( s)
+    \acciaccatura sib''8\glissando s8.( s16) \once\override Script.avoid-slur = #'outside s16->( s8.) s4
+    s2.
+    s4.-> s8-> \once\override Script.avoid-slur = #'outside s16->( s8.)
+    s4 s8-> s-> s8*2/3->( s-> s->)
+    \once\override Script.avoid-slur = #'outside s4->( s8) \breathe s4.->
+    s16 s8( s16) s8.( s16) s8.( s16)
+    s2.
+    s2 s8 s->
+    s4. s->
+    \once\override Script.avoid-slur = #'outside s16->( s8.) s4 s8-> s->
+    %% 18
+    s4 s16 s8( s16) s8.( s16)
+    s4 s16 s8( s16) s8.( s16)
+    \once\override Script.avoid-slur = #'outside s16->( s8.) s16 s8( s16) s8.( s16)
+    \once\override Script.avoid-slur = #'outside s16->( s8.) s4 \once\override Script.avoid-slur = #'outside s16->( s8.)
+    s2 \once\override Script.avoid-slur = #'outside s16->( s8.)
+    s2 \once\override Script.avoid-slur = #'outside s16->( s8.)
+    s2 \once\override Script.avoid-slur = #'outside s16->( s8) s16\>
+    s4\< s8. s16\! s-> s-> s-> s->
+  }
+>>

@@ -217,3 +217,36 @@ R2. |
     s2-> s16 s-- s-- s--
   }
 >>
+%% 17-18
+r8 r4 r |
+R2. |
+<<
+  { \themeFinalQuarte { \voiceOne s8-> s8\downbow } mi'8 }
+  \transpose do' do { \themeFinal { \voiceTwo s16( s) } do''8 }
+  { s4-> s16 s-- s-- s-- s( s) s-_ s-_
+    s8 s16( s) s4-> \once\override Script.avoid-slur = #'outside s16\downbow( s8.)
+    s4. s16( s) s4
+    s4. s8-> s-> s->
+    s s4-> s8-> s-> s->
+    s8*2/3-> s->( s->) s8-> s16( s) s8-> s16( s)
+    s8( s) \once\override Script.avoid-slur = #'outside s16->( s8.) s4
+    s2.
+    s4.-> s8-> \once\override Script.avoid-slur = #'outside s16->( s8.)
+    s4 s8-> s-> s8*2/3->( s->) s->
+    \once\override Script.avoid-slur = #'outside s16->( s8.) s8 \breathe s4.
+    s16 s8( s16) s( s) s-.( s-.) s( s) s-.( s-.)
+    s2.
+    s2 \oneVoice s8 s\downbow
+    s2.
+    \once\override Script.avoid-slur = #'outside s16->( s8.) s4 s8-> s->
+    %% 18
+    s4 s16 s8( s16) s8( s)
+    s4 s16 s8( s16) s8( s)
+    \once\override Script.avoid-slur = #'outside s16->( s8.) s16 s8( s16) s8( s)
+    \once\override Script.avoid-slur = #'outside s16->( s8.) s4 \once\override Script.avoid-slur = #'outside s16->( s8.)
+    s2 \once\override Script.avoid-slur = #'outside s16->\downbow( s8.)
+    s2 \once\override Script.avoid-slur = #'outside s16->\downbow( s8.)
+    s2 \once\override Script.avoid-slur = #'outside s16->\downbow( s8.)
+    s2 \once\override Script.avoid-slur = #'outside s16->\downbow( s8.)
+  }
+>>

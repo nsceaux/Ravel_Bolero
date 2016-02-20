@@ -312,7 +312,35 @@ R2.*2
     mi''8-. mi''16*2/3 re''( mi'') mi''8-. mi''16*2/3 re''( mi'')
     mi'' re''( mi'') mi'' re''( mi'') |
     %% 17
-    mi''8-.
+    mi''8-. mi''16*2/3 re''( mi'') mi''8-. mi''16*2/3 re''( mi'') re''8-. re''-. |
+    mi''8-. mi''16*2/3 re''( mi'') mi''8-. mi''16*2/3 re''( mi'')
+    re'' dod''( re'') re'' dod''( re'') |
+    \repeat unfold 4 {
+      mi''8-. mi''16*2/3 re''( mi'') mi''8-. mi''16*2/3 re''( mi'') re''8-. re''-. |
+      mi''8-. mi''16*2/3 re''( mi'') mi''8-. mi''16*2/3 re''( mi'')
+      re'' do''( re'') re'' do''( re'') |
+    }
+    mi''8-. mi''16*2/3 re''( mi'') mi''8-. mi''16*2/3 re''( mi'') re''8-. re''-. |
+    mi''8-. mi''16*2/3 re''( mi'') mi''8-. mi''16*2/3 re''( mi'')
+    re'' dod''( re'') re'' dod''( re'') |
+    mi''8-. mi''16*2/3 re''( mi'') mi''8-. mi''16*2/3 re''( mi'') re''8-. re''-. |
+    mi''8-. mi''16*2/3 re''( mi'') mi''8-. mi''16*2/3 re''( mi'')
+    re'' do''( re'') re'' do''( re'') |
+    mi''8-. mi''16*2/3 re''( mi'') mi''8-. mi''16*2/3 re''( mi'') mi''8-. mi''-. |
+    mi''8-. mi''16*2/3 re''( mi'') mi''8-. mi''16*2/3 re''( mi'')
+    mi'' re''( mi'') mi'' re''( mi'') |
+    mi''8-. mi''16*2/3 re''( mi'') mi''8-. mi''16*2/3 re''( mi'') re''8-. re''-. |
+    mi''8-. mi''16*2/3 re''( mi'') mi''8-. mi''16*2/3 re''( mi'')
+    re'' dod''( re'') re'' dod''( re'') |
+    %% 18
+    \repeat unfold 3 {
+      dod''8-. dod''16*2/3 lad'( dod'') dod''8-. dod''16*2/3 lad'( dod'') dod''8-. dod''-. |
+      dod''8-. dod''16*2/3 lad'( dod'') dod''8-. dod''16*2/3 lad'( dod'')
+      dod'' sold'( dod'') dod'' sold'( dod'') |
+    }
+    dod''8-. dod''16*2/3 lad'( dod'') dod''8-. dod''16*2/3 lad'( dod'') dod''8-. dod''-. |
+    dod''8-. dod''16*2/3 lad'( dod'') dod''8-. dod''16*2/3 lad'( dod'')
+    dod'' la'!( dod'') dod'' la'( dod'') |
     \unset subdivideBeams
   }
   \tag #'clarinette2 { s8 s2 s2.*17 }

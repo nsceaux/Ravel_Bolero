@@ -185,3 +185,54 @@ R2.*18
     s4. s16( s) s4
     s2. }
 >>
+%% 17-18
+<<
+  <<
+    \tag #'(trompette1 trompettes) { s8 mi'' s mi'' s  | s4 mi''8 s re'' s }
+    \tag #'(trompette2 trompettes) { s8 re'' s do'' s | s4 re''8 s do'' s }
+    \tag #'(trompette3 trompettes) { s do'' s si' s | s4 do''8 s si' s }
+    { r8 s8-> r s-> r | r4 s8-> r s-> r }
+  >>
+>>
+<<
+  \tag #'(trompette1 trompettes) {
+    \themeFinalSixteTr { \tag #'trompettes \voiceOne s8-> }
+    sol'8
+  }
+  \tag #'(trompette2 trompettes) {
+    \themeFinalQuarte { \tag #'trompettes \voiceOne s8-> }
+    mi'8
+  }
+  \tag #'(trompette3 trompettes) \transpose do' do {
+    \themeFinal{
+      \tag #'trompettes \voiceTwo
+      \once\override Script.avoid-slur = #'outside s16->( s8.)
+    }
+    do''8
+  }
+  { s2-> s16( s8.)
+    s4 s-> s16( s8.)
+    s2.
+    s4. s8-> s-> s->
+    s s4-> s8-> s-> s->
+    s8*2/3-> s-> s-> s4-> s->
+    s \once\override Script.avoid-slur = #'outside s16->( s8.) s4
+    s2.
+    s4.-> s8-> \once\override Script.avoid-slur = #'outside s16->( s8.)
+    s4 s8-> s-> s8*2/3-> s-> s->
+    \once\override Script.avoid-slur = #'outside s16->( s8.) s8 \breathe s4.
+    s4 s16( s8.) s4
+    s2.
+    s2 \oneVoice s8 s->
+    s4. s->
+    \once\override Script.avoid-slur = #'outside s16->( s8.) s4 s8-> s->
+    %% 18
+    s2 s16( s8.)
+    s2.
+    \once\override Script.avoid-slur = #'outside s16->( s8.) s2
+    \once\override Script.avoid-slur = #'outside s16->( s8.) s4 \once\override Script.avoid-slur = #'outside s16->( s8.)
+    s2 \once\override Script.avoid-slur = #'outside s16->( s8.)
+    s2 \once\override Script.avoid-slur = #'outside s16->( s8.)
+    s2 \once\override Script.avoid-slur = #'outside s16->( s8.)
+    s2 s16-> s-> s-> s-> }
+>>

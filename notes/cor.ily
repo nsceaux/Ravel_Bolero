@@ -98,4 +98,47 @@ r8 <>\f <<
   <>\ff
 >>
 %% 17
-
+\set subdivideBeams = ##t
+\set baseMoment = #(ly:make-moment 1/8)
+<<
+  \tag #'(cor1 cors) \transpose do sol {
+    sol'16*2/3 sol' sol' sol'8-. sol'16*2/3 sol' sol' sol'8-. sol'-. |
+    sol'-. sol'16*2/3 sol' sol' sol'8-. sol'16*2/3 sol' sol' sol' sol' sol' sol' sol' sol' |
+    \repeat unfold 8 {
+      sol'8-. sol'16*2/3 sol' sol' sol'8-. sol'16*2/3 sol' sol' sol'8-. sol'-. |
+      sol'-. sol'16*2/3 sol' sol' sol'8-. sol'16*2/3 sol' sol' sol' sol' sol' sol' sol' sol' |
+    }
+  }
+  \tag #'(cor2 cors) \transpose do sol, {
+    sol'16*2/3[ sol' sol'] sol'8-. sol'16*2/3 sol' sol' sol'8-. sol'-. |
+    sol'-. sol'16*2/3 sol' sol' sol'8-. sol'16*2/3 sol' sol' sol' sol' sol' sol' sol' sol' |
+    \repeat unfold 8 {
+      sol'8-. sol'16*2/3 sol' sol' sol'8-. sol'16*2/3 sol' sol' sol'8-. sol'-. |
+      sol'-. sol'16*2/3 sol' sol' sol'8-. sol'16*2/3 sol' sol' sol' sol' sol' sol' sol' sol' |
+    }
+  }
+  { s8 s4-. s8-. s-. | s4-. s2-. |
+    \repeat unfold 8 { s4-. s4-. s8-. s-. | s4-. s2-. | } }
+>>
+%% 18
+<<
+  \tag #'(cor1 cors) {
+    \repeat unfold 3 {
+      red''8 red''16*2/3 red'' red'' red''8 red''16*2/3 red'' red'' dod''8 dod'' |
+      red''8 red''16*2/3 red'' red'' red''8 red''16*2/3 red'' red'' dod''16*2/3 dod'' dod'' dod'' dod'' dod'' |
+    }
+    red''8 red''16*2/3 red'' red'' red''8 red''16*2/3 red'' red'' dod''8 dod'' |
+    red''8 red''16*2/3 red'' red'' red''8 red''16*2/3 red'' red'' re''!16*2/3 re'' re'' re'' re'' re'' |
+  }
+  \tag #'(cor2 cors) {
+    \repeat unfold 3 {
+      red'8 red'16*2/3 red' red' red'8 red'16*2/3 red' red' dod'8 dod' |
+      red'8 red'16*2/3 red' red' red'8 red'16*2/3 red' red' dod'16*2/3 dod' dod' dod' dod' dod' |
+    }
+    red'8 red'16*2/3 red' red' red'8 red'16*2/3 red' red' dod'8 dod' |
+    red'8 red'16*2/3 red' red' red'8 red'16*2/3 red' red' re'!16*2/3 re' re' re' re' re' |
+  }
+  
+  \repeat unfold 4 { s4-. s4-. s8-. s-. | s4-. s2-. | }
+>>
+\unset subdivideBeams

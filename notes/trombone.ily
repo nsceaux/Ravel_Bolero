@@ -97,3 +97,40 @@ R2.*18
     \repeat unfold 8 { s8-> r s-> r s-> r | s-> r s-> r s-> s-> | }
   }
 >>
+%% 17-18
+<<
+  { mi'8 s mi' s re' s | mi' s mi' s re' re' | }
+  { s8-> r s-> r s-> r | s8-> r s-> r s-> s-> }
+>>
+<>_\markup { \dynamic ff \italic possibile }
+<<
+  \transpose do' do {
+    \themeFinal{ \once\override Script.avoid-slur = #'outside s16->( s8.) }
+    do''4
+  }
+  { s2-> s16( s8.)
+    s4 s-> s16( s8.)
+    s2.
+    s4. s8-> s-> s->
+    s s4-> s8-> s-> s->
+    s8*2/3-> s-> s-> s4-> \acciaccatura sib'8\glissando s4
+    \acciaccatura sib'8\glissando s4 \once\override Script.avoid-slur = #'outside s16->( s8.) s4
+    s2.
+    s4.-> s8-> \once\override Script.avoid-slur = #'outside s16->( s8.)
+    s4 s8-> s-> s8*2/3-> s-> s->
+    \once\override Script.avoid-slur = #'outside s16->( s8.) s8 \breathe s4.
+    s4 s16( s8.) s4
+    s2.
+    s2 s8 s->
+    s4. s->
+    \once\override Script.avoid-slur = #'outside s16->( s8.) s4 s8-> s->
+    %% 18
+    s2 s16( s8.)
+    s2.
+    \once\override Script.avoid-slur = #'outside s16->( s8.) s2
+    \once\override Script.avoid-slur = #'outside s16->( s8.) s4 \once\override Script.avoid-slur = #'outside s16->( s8.)
+    s2 \once\override Script.avoid-slur = #'outside s16->( s8.)
+    s2 \once\override Script.avoid-slur = #'outside s16->( s8.)
+    s2 \once\override Script.avoid-slur = #'outside s16->( s8.)
+    s2 s16-> s-> s-> s-> }
+>>

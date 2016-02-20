@@ -12,3 +12,8 @@
 R2.*7
 \repeat unfold 9 { do4 r sol, }
 %% 17
+\repeat unfold 18 { do4 r sol, }
+%% 18
+\repeat unfold 7 { mi4 r mi }
+mi r sol, |
+\repeat unfold 2 { do do sol, }

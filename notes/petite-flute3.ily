@@ -139,3 +139,43 @@ r8 <<
     s8-.
   }
 >>
+%% 17-18
+<<
+  { sol''16*2/3 sol'' sol'' sol''8 sol''16*2/3 sol'' sol'' sol''8 sol'' |
+    sol''8 sol''16*2/3 sol'' sol'' sol''8 sol''16*2/3 sol'' sol''
+    sol''16*2/3 sol'' sol'' sol'' sol'' sol'' | }
+  { \set subdivideBeams = ##t
+    \set baseMoment = #(ly:make-moment 1/8)
+    s8 s4-. s8-. s-. | s4-. s2-. |
+    \unset subdivideBeams }
+>>
+<<
+  { \themeFinal{ \once\override Script.avoid-slur = #'outside s16->( s) }
+    do''8 }
+  { \once\override Script.avoid-slur = #'outside s4->( s16 s-. s-. s-.) s8( s16-. s-.)
+    s8( s16-. s-.) s4-> s16-.( s-. s-. s-.
+    s4 s16) s8.( s4
+    s) s8 s-> s-> s->
+    s8 s4-> s8-> s-> s->
+    s8*2/3-> s-> s-> s8-> s16( s) s8-> s16( s)
+    s8( s16-. s-.) \once\override Script.avoid-slur = #'outside s16->( s) s4.
+    s2.
+    s4.-> s8-> \once\override Script.avoid-slur = #'outside s16->( s) s8
+    s4 s8-> s-> s8*2/3->( s-> s->)
+    \once\override Script.avoid-slur = #'outside s4->( s8) \breathe s4.
+    s16 s-.( s-. s-.) s-.( s-. s-. s-.) s-.( s-. s-. s-.)
+    s2.
+    s2 s8 s->
+    s4. s->
+    \once\override Script.avoid-slur = #'outside s16->( s) s4. s8-> s->
+    %% 18
+    s4 s16 s-.( s-. s-.) s-.( s-. s-. s-.)
+    s4 s16 s-.( s-. s-.) s-.( s-. s-. s-.)
+    \once\override Script.avoid-slur = #'outside s16->( s8.) s16 s-.( s-. s-.) s-. s-. s-. s-.
+    \once\override Script.avoid-slur = #'outside s16->( s8.) s4 \once\override Script.avoid-slur = #'outside s16->( s) s-.( s-.
+    s2) \once\override Script.avoid-slur = #'outside s16->( s) s-.( s-.
+    s2) \once\override Script.avoid-slur = #'outside s16->( s) s-.( s-.
+    s2) \once\override Script.avoid-slur = #'outside s16->( s) s-.( s-.
+    s2) s16-> s-> s-> s->
+  }
+>>

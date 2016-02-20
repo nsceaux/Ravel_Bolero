@@ -86,3 +86,14 @@ R2.*18
 \repeat unfold 9 { <do, sol, do re>4 <sol, re sol do'> <sol, re sol si>8 q | }
 <do, sol, do mi>4 <sol, do mi do'> <sol, re sol do'>8 q |
 %% 17
+\repeat unfold 2 { <do, sol, do mi>4 <sol, do mi do'> <sol, re sol si>8 q | }
+\repeat unfold 8 { <do, sol, do mi>4 <sol, do mi do'> <sol, re sol sib>8 q | }
+<do, sol, do re>4 <sol, re sol do'> <sol, re sol si!>8 <sol, re sol si> |
+<do, sol, do re>4 <sol, re sol do'> <sol, re sol si>8 q |
+\repeat unfold 2 { <do, sol, do mi>4 <sol, do mi do'> <sol, re sol sib>8 q | }
+\repeat unfold 2 { <do, sol, do mi>4 q <sol, re sol do'>8 q }
+<do, sol, do re>4 <sol, re sol do'> <sol, re sol si!>8 <sol, re sol si> |
+<do, sol, do re>4 <sol, re sol do'> <sol, re sol si> |
+%% 18
+\repeat unfold 7 { <mi, si, mi sold>4 q <si, re fad si>8 q }
+<mi, si, mi sold>4 q <sol, re sol si>8 q |

@@ -27,5 +27,29 @@ fa''8-. fa''16*2/3( sol'') fa'' fa''8-. fa''16*2/3( sol'') fa'' re''8-. re''-. |
 mi''8-. mi''16*2/3( sol'') mi'' mi''8-. mi''16*2/3( sol'') mi''
 re''( sol'') re'' re''( sol'') re'' |
 %% 17
-mi''8-.
+\repeat unfold 5 {
+  mi''8-. mi''16*2/3( sol'') mi'' mi''8-. mi''16*2/3( sol'') mi'' re''8-. re''-. |
+  mi''8-. mi''16*2/3( sol'') mi'' mi''8-. mi''16*2/3( sol'') mi''
+  re''( sol'') re'' re''( sol'') re'' |
+}
+fa''8-. fa''16*2/3( sol'') fa'' fa''8-. fa''16*2/3( sol'') fa'' re''8-. re''-. |
+fa''8-. fa''16*2/3( sol'') fa'' fa''8-. fa''16*2/3( sol'') fa''
+re''( sol'') re'' re''( sol'') re'' |
+\repeat unfold 2 {
+  mi''8-. mi''16*2/3( sol'') mi'' mi''8-. mi''16*2/3( sol'') mi'' re''8-. re''-. |
+  mi''8-. mi''16*2/3( sol'') mi'' mi''8-. mi''16*2/3( sol'') mi''
+  re''( sol'') re'' re''( sol'') re'' |
+}
+fa''8-. fa''16*2/3( sol'') fa'' fa''8-. fa''16*2/3( sol'') fa'' re''8-. re''-. |
+fa''8-. fa''16*2/3( sol'') fa'' fa''8-. fa''16*2/3( sol'') fa''
+re''( sol'') re'' re''( sol'') re'' |
+%% 18
+\repeat unfold 3 {
+  mi''8-. mi''16*2/3( sold'') mi'' mi''8-. mi''16*2/3( sold'') mi'' re''8-. re''-. |
+  mi''8-. mi''16*2/3( sold'') mi'' mi''8-. mi''16*2/3( sold'') mi''
+  re''( fad'') re'' re''( fad'') re'' |
+}
+mi''8-. mi''16*2/3( sold'') mi'' mi''8-. mi''16*2/3( sold'') mi'' re''8-. re''-. |
+mi''8-. mi''16*2/3( sold'') mi'' mi''8-. mi''16*2/3( sold'') mi''
+re''( sol'') re'' re''( sol'') re'' |
 \unset subdivideBeams

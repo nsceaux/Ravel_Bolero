@@ -57,3 +57,56 @@
     \repeat unfold 8 { s8-> r s-> r s-> r | s-> r s-> r s-> s-> | }
   }
 >>
+%% 17
+<<
+  \tag #'(trombone2 trombones) {
+    re'8 s re' s si s | re' s re' s si si |
+    \repeat unfold 4 { mi' s mi' s re' s | mi' s mi' s re' re' | }
+    fa' s fa' s do' s |
+    re' s fa' s \new Voice { \tag #'trombones \voiceOne re'-> r } |
+    do' s mi' s re' s |
+    mi' s mi' s \new Voice { \tag #'trombones \voiceOne do'-> r } |
+    mi' s mi' s re' s | mi' s mi' s re' re' |
+    fa' s fa' s re' s | fa' s fa' s re' re' |
+  }
+  \tag #'(trombone3 trombones) {
+    sol8 s sol s sol s | sol s sol s sol sol |
+    \repeat unfold 4 { sol s re' s sib s | sol s re' s sib sib | }
+    sol s re' s si! s |
+    sol s re' s \new Voice { \tag #'trombones \voiceTwo si-> si-> } |
+    sol s re' s do' s |
+    sol s do' s \new Voice { \tag #'trombones \voiceTwo sib-> sib-> } |
+    sol s re' s do' s | sol s re' s do' do' |
+    sol s do' s si! s | sol s do' s si si |
+  }
+  { \repeat unfold 5 { s8-> r s-> r s-> r | s-> r s-> r s-> s-> | }
+    \repeat unfold 2 { s8-> r s-> r s-> r | s-> r s-> r s4 | }
+    \repeat unfold 2 { s8-> r s-> r s-> r | s-> r s-> r s-> s-> | }
+  }
+>>
+%% 18
+<<
+  \tag #'(trombone2 trombones) {
+    mi'8 s mi' s re' s | mi' s mi' s re' re' |
+    mi' s mi' s re' s | si s si s \new Voice { \tag #'trombones \voiceOne si-> r }
+    si s si s re' s | si s si s \new Voice { \tag #'trombones \voiceOne si-> r }
+    si s si s dod' s |
+    si2 la16 si la sol~ |
+    sol4
+  }
+  \tag #'(trombone3 trombones) {
+    sold8 s sold s fad s | sold s sold s fad fad |
+    \repeat unfold 2 {
+      sold s sold s fad s |
+      sold s sold s \new Voice { \tag #'trombones \voiceTwo fad-> fad-> } |
+    }
+    sold s sold s la s |
+    sold2 fa16 sol fa mi~ |
+    mi4
+  }
+  { s8-> r s-> r s-> r | s-> r s-> r s-> s-> |
+    \repeat unfold 2 { s8-> r s-> r s-> r | s-> r s-> r s4 | }
+    s8-> r s-> r s-> r |
+    s2 s16-> s-> s-> s->
+  }
+>>
