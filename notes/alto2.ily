@@ -86,4 +86,33 @@ R2. |
 <do sol sol' fa''>4 q <do si sol' re''>8 q |
 <do do' sol' mi''>4 q <do sol sol' do''>16*2/3 q q q8 |
 %% 17
-<do do' sol' mi''>8
+\set subdivideBeams = ##t
+\set baseMoment = #(ly:make-moment 1/8)
+<<
+  { <do do' sol' mi''>8 <do' re'>16*2/3 q q q8 q16*2/3 q q <si>8 q |
+    <do' re'>8 q16*2/3 q q q8 q16*2/3 q q <si> q q q q q |
+    \repeat unfold 4 {
+      <do' re'>8 q16*2/3 q q q8 q16*2/3 q q <sib>8 q |
+      <do' re'>8 q16*2/3 q q q8 q16*2/3 q q <sib> q q q q q |
+    }
+    <do' fa'>8 q16*2/3 q q q8 q16*2/3 q q <si!>8 q |
+    <do' fa'>8 q16*2/3 q q q8 q16*2/3 q q <si> q q q q q |
+    <do' re'>8 q16*2/3 q q q8 q16*2/3 q q <sib>8 q |
+    <do' re'>8 q16*2/3 q q q8 q16*2/3 q q <sib> q q q q q |
+    <do' re'>8 q16*2/3 q q q8 q16*2/3 q q <do' re'>8 q |
+    <do' re'>8 q16*2/3 q q q8 q16*2/3 q q <do' re'> q q q q q |
+    <do' fa'>8 q16*2/3 q q q8 q16*2/3 q q <si!>8 q |
+    <do' fa'>8 q16*2/3 q q q8 q16*2/3 q q <si> q q q q q |
+  }
+  { s8 s^"arco" s4-.-> s8-.-> s-.->
+    s4-.-> s2-.->
+    s8-.-> s_\markup\italic simile }
+>>
+%% 18
+\repeat unfold 3 {
+  <si>8 q16*2/3 q q q8 q16*2/3 q q <si mi'>8 q |
+  <si>8 q16*2/3 q q q8 q16*2/3 q q <si mi'> q q q q q |
+}
+<si>8 q16*2/3 q q q8 q16*2/3 q q <si mi'>8 q |
+<si>8 q16*2/3 q q q8 q16*2/3 q q <sol!> <sol> q q q q |
+\unset subdivideBeams

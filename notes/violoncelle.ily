@@ -198,4 +198,25 @@ do4 r <sol, sol>8 sol |
 <do, sol, re do'>8 q16*2/3 q q q8 q16*2/3 q q q8 q |
 <do, sol, mi do'>8 q16*2/3 q q q8 q16*2/3 q q <do, sol, re do'>8 q16*2/3 q q |
 %% 17
-<do, sol, mi do'>8
+\set subdivideBeams = ##t
+\set baseMoment = #(ly:make-moment 1/8)
+<<
+  { <do, sol, mi do'>8 <sol>16*2/3 q q q8 q16*2/3 q q <sol do'>8 q |
+    <sol>8 q16*2/3 q q q8 q16*2/3 q q <sol do'> q q q q q |
+    \repeat unfold 8 {
+      <sol>8 q16*2/3 q q q8 q16*2/3 q q <sol do'>8 q |
+      <sol>8 q16*2/3 q q q8 q16*2/3 q q <sol do'> q q q q q |
+    }
+  }
+  { s8 s^"arco" s4-.-> s8-.-> s-.->
+    s4-.-> s2-.->
+    s8-.-> s_\markup\italic simile }
+>>
+%% 18
+\repeat unfold 3 {
+  <sold>8 q16*2/3 q q q8 q16*2/3 q q <fad re'>8 q |
+  <sold>8 q16*2/3 q q q8 q16*2/3 q q <fad re'> q q q q q |
+}
+<sold>8 q16*2/3 q q q8 q16*2/3 q q <fad re'>8 q |
+<sold>8 q16*2/3 q q q8 q16*2/3 q q <re si> q q q q q |
+\unset subdivideBeams
