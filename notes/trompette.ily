@@ -197,18 +197,33 @@ R2.*18
 <<
   \tag #'(trompette1 trompettes) {
     \themeFinalSixteTr { \tag #'trompettes \voiceOne s8-> }
+    sol'8 <mi''>16*2/3 q q q8 q16*2/3 q q <re''>8 q |
+    <mi''>8 q16*2/3 q q q8 q16*2/3 q q <re''> q q q q q |
+    <mi''>8 q16*2/3 q q q8 q16*2/3 q q <re''>8 q |
+    <mi''>8 q16*2/3 q q q8 q16*2/3 q q <re''> q q q q q |
+    s8 lab''16*2/3 sol'' fa''~ fa''4~ fa''16*2/3 mib'' reb'' do'' sib' lab' |
     sol'8
   }
   \tag #'(trompette2 trompettes) {
     \themeFinalQuarte { \tag #'trompettes \voiceOne s8-> }
-    mi'8
+    mi'8 <re''>16*2/3 q q q8 q16*2/3 q q <do''>8 q |
+    <re''>8 q16*2/3 q q q8 q16*2/3 q q <do''> q q q q q |
+    <re''>8 q16*2/3 q q q8 q16*2/3 q q <do''>8 q |
+    <re''>8 q16*2/3 q q q8 q16*2/3 q q <do''> q q q q q |
+    s8 fa''16*2/3 mi'' reb''~ reb''4~ reb''16*2/3 do'' sib' lab' sol' fa' |
+    mi'!8
   }
-  \tag #'(trompette3 trompettes) \transpose do' do {
-    \themeFinal{
+  \tag #'(trompette3 trompettes) {
+    \transpose do' do \themeFinal{
       \tag #'trompettes \voiceTwo
       \once\override Script.avoid-slur = #'outside s16->( s8.)
     }
-    do''8
+    do'8 <do''>16*2/3 q q q8 q16*2/3 q q <si'>8 q |
+    <do''>8 q16*2/3 q q q8 q16*2/3 q q <si'> q q q q q |
+    <do''>8 q16*2/3 q q q8 q16*2/3 q q <si'>8 q |
+    <do''>8 q16*2/3 q q q8 q16*2/3 q q <si'> q q q q q |
+    s8 do''16*2/3 si' sib'~ sib'4~ sib'16*2/3 lab' sol' fa' mib' reb' |
+    do'8
   }
   { s2-> s16( s8.)
     s4 s-> s16( s8.)
@@ -234,5 +249,12 @@ R2.*18
     s2 \once\override Script.avoid-slur = #'outside s16->( s8.)
     s2 \once\override Script.avoid-slur = #'outside s16->( s8.)
     s2 \once\override Script.avoid-slur = #'outside s16->( s8.)
-    s2 s16-> s-> s-> s-> }
+    s2 s16-> s-> s-> s-> 
+    \set subdivideBeams = ##t
+    \set baseMoment = #(ly:make-moment 1/8)
+    s4 s4-. s8-. s-. | s4-. s2-. |
+    s4-. s4-. s8-. s-. | s4-. s2-. |
+    r8 s( s2 |
+    s8-.) r r4 r
+  }
 >>

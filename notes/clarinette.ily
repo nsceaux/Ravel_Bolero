@@ -344,7 +344,10 @@ R2.*2
     dod''8-. dod''16*2/3 lad'( dod'') dod''8-. dod''16*2/3 lad'( dod'') dod''8-. dod''-. |
     dod''8-. dod''16*2/3 lad'( dod'') dod''8-. dod''16*2/3 lad'( dod'')
     dod'' la'!( dod'') dod'' la'( dod'') |
+    re''8-> r fad''-> r mi''-> mi''-> |
+    \repeat unfold 3 { fad''-> r fad''-> r mi''-> mi''-> | }
+    r8 re'''-^~ re'''4~ re'''16*2/3 re''' re''' re''' re''' re''' |
+    re'''8-. r r4 r |
     \unset subdivideBeams
   }
-  \tag #'clarinette2 { s8 s2 s2.*17 }
 >>

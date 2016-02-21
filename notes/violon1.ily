@@ -204,3 +204,20 @@ R2. |
     s2 \once\override Script.avoid-slur = #'outside s16->\downbow( s8.)
   }
 >>
+\set subdivideBeams = ##t
+\set baseMoment = #(ly:make-moment 1/8)
+<<
+  { <re'' sol''>16*2/3 q q q8 q16*2/3 q q <si' sol''>8 q |
+    <re'' sol''>8 q16*2/3 q q q8 q16*2/3 q q <si' sol''> q q q q q |
+    <re'' sol''>8 q16*2/3 q q q8 q16*2/3 q q <si' sol''>8 q |
+    <re'' sol''>8 q16*2/3 q q q8 q16*2/3 q q <si' sol''> q q q q q |
+    r8 do'''16*2/3 si'' sib''~ sib''4~ sib''16*2/3 lab'' sol'' fa'' mib'' reb'' |
+    <sol mi' do''>8 r r4 r |
+  }
+  { s8^"Unis" s4-.-> s8-.-> s-.-> |
+    s4-.-> s2-.-> |
+    s4-.-> s2_\markup\italic simile |
+    s2.
+    \unset subdivideBeams
+    s8 s( s4 s16*2/3) s8*4/3( s16*2/3) }
+>>

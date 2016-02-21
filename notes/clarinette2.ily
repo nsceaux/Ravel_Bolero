@@ -55,4 +55,8 @@ dod''( re'') dod'' dod''( re'') dod'' |
 lad'8-. lad'16*2/3( dod'') lad' lad'8-. lad'16*2/3( dod'') lad' sold'8-. sold'-. |
 lad'8-. lad'16*2/3( dod'') lad' lad'8-. lad'16*2/3( dod'') lad'
 la'!( dod'') la' la'( dod'') la' |
+la'8-> r re''-> r dod''-> dod''-> |
+\repeat unfold 3 { re''-> r re''-> r dod''-> dod''-> | }
+r8 dod'''-^~ dod'''4~ dod'''16*2/3 dod''' dod''' dod''' dod''' dod''' |
+fad''8-. r r4 r |
 \unset subdivideBeams

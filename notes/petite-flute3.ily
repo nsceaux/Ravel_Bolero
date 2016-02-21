@@ -151,7 +151,13 @@ r8 <<
 >>
 <<
   { \themeFinal{ \once\override Script.avoid-slur = #'outside s16->( s) }
-    do''8 }
+    do''8 <sol''>16*2/3 q q q8 q16*2/3 q q q8 q |
+    <sol''>8 q16*2/3 q q q8 q16*2/3 q q q q q q q q |
+    <sol''>8 q16*2/3 q q q8 q16*2/3 q q q8 q |
+    <sol''>8 q16*2/3 q q q8 q16*2/3 q q q q q q q q |
+    s8 do'''16*2/3 si'' sib''~ sib''4~ sib''16*2/3 lab'' sol'' fa'' mib'' reb'' |
+    do''8
+  }
   { \once\override Script.avoid-slur = #'outside s4->( s16 s-. s-. s-.) s8( s16-. s-.)
     s8( s16-. s-.) s4-> s16-.( s-. s-. s-.
     s4 s16) s8.( s4
@@ -177,5 +183,11 @@ r8 <<
     s2) \once\override Script.avoid-slur = #'outside s16->( s) s-.( s-.
     s2) \once\override Script.avoid-slur = #'outside s16->( s) s-.( s-.
     s2) s16-> s-> s-> s->
+    s4 s-. s8-. s-.
+    s4-. s2-.
+    s4-. s-. s8-. s-.
+    s4-. s2-. |
+    r8 \scriptOutside s->( s2
+    s8-.) r r4 r
   }
 >>

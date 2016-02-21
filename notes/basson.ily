@@ -174,18 +174,24 @@ R2.*18
   >>
 >>
 %% 17
-<<
-  \repeat unfold 18 <<
-    \tag #'(basson1 bassons) { do8 s do' s do' do' }
-    \tag #'(basson2 bassons) { do,8 s do s do do }
-    { s-> r s-> r s-> s-> }
-  >>
+\repeat unfold 18 <<
+  \tag #'(basson1 bassons) { do8 s do' s do' do' }
+  \tag #'(basson2 bassons) { do,8 s do s do do }
+  { s-> r s-> r s-> s-> }
 >>
 %% 18
+\repeat unfold 4 <<
+  \tag #'(basson1 bassons) { mi8 s mi s si, s | mi s mi s si, si, }
+  \tag #'(basson2 bassons) { mi,8 s mi, s si,, s | mi, s mi, s si,, si,, }
+  { s-> r s-> r s-> r | s-> r s-> r s-> s-> }
+>>
+\repeat unfold 4 <<
+  \tag #'(basson1 bassons) { do8 s do' s do' do' }
+  \tag #'(basson2 bassons) { do,8 s do s sol, sol, }
+  { s-> r s-> r s-> s-> }
+>>
 <<
-  \repeat unfold 4 <<
-    \tag #'(basson1 bassons) { mi8 s mi s si, s | mi s mi s si, si, }
-    \tag #'(basson2 bassons) { mi,8 s mi, s si,, s | mi, s mi, s si,, si,, }
-    { s-> r s-> r s-> r | s-> r s-> r s-> s-> }
-  >>
+  \tag #'(basson1 bassons) { lab8 lab~ lab4~ lab8 lab16*2/3 lab lab | sol8 }
+  \tag #'(basson2 bassons) { fa,8 fa,~ fa,4~ fa,8 fa,16*2/3 fa, fa, | do,8 }
+  { s-> s-^ s2 | s8-. r r4 r }
 >>

@@ -59,3 +59,10 @@
   { s8 r s r s4 |
     \repeat unfold 3 { s8 r s r s r | s8 r s r s4 | } }
 >>
+\repeat unfold 2 {
+  <do do'>8-> r q-> r <sol, sol>-> r |
+  <do do'>8-> r q-> r <sol, sol>-> q-> |
+}
+<>^"Unis"
+fa,8 fa,->~ fa,4~ fa,16*2/3 fa, fa, fa, fa, fa, |
+<< do8^"Div." \\ do, >> r8 r4 r |

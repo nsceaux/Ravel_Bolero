@@ -113,7 +113,7 @@
           } << \global { \include "contrebasson.ily" } >>
         >>
       >>
-      %% Cuivres, saxophones, percussions
+      %% Cuivres, saxophones
       \new StaffGroupNoBracket <<
         %% Cor
         \new StaffGroup \with {
@@ -206,10 +206,12 @@
               s2.*7 \noHaraKiri }
           >>
         >>
+      >>
+      %% Percussions
+      \new StaffGroupNoBracket \with { \haraKiriFirst } <<
         %% Timbales
         \new Staff \with {
           shortInstrumentName = \markup\shortinstr Timb.
-          \haraKiriFirst
         } << \global { \include "timbales.ily" } >>
         %% Tambours
         \new DrumStaff \with {
@@ -217,10 +219,29 @@
           \override StaffSymbol.line-count = #1
           instrumentName = \markup\center-column\smallCaps {
             2 Tambours
-            Timbales
+            3 Timbales
+            Cymbales & Tam-Tam
           }
           shortInstrumentName = \markup\shortinstr Tamb.
         } << \global { \include "tambour.ily" } >>
+        %% Tam-tam
+        \new DrumStaff \with {
+          drumStyleTable = #percussion-style
+          \override StaffSymbol.line-count = #1
+          shortInstrumentName = \markup\shortinstr T-T.
+        } << \global { \include "tamtam.ily" } >>
+        %% Cymbale
+        \new DrumStaff \with {
+          drumStyleTable = #percussion-style
+          \override StaffSymbol.line-count = #1
+          shortInstrumentName = \markup\shortinstr Cymb.
+        } << \global { \include "cymbales.ily" } >>
+        %% Grosse caisse
+        \new DrumStaff \with {
+          drumStyleTable = #percussion-style
+          \override StaffSymbol.line-count = #1
+          shortInstrumentName = \markup\shortinstr Gr.C.
+        } << \global { \include "grosse-caisse.ily" } >>
       >>
     >>
     %% Celesta
@@ -312,7 +333,7 @@
             %% 17
             { s2.*6\break s2.*6\break s2.*6\break }
             %% 18
-            { s2.*6\break s2.*6\break s2.*6\break }
+            { s2.*4\break s2.*4\break }
           }
         >>
         \new Staff \with { \haraKiriFirst } << \global { \include "cb2.ily" } >>

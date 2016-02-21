@@ -98,3 +98,6 @@ R2.*18
 %% 18
 \repeat unfold 7 { <mi, si, mi sold>4 q <si, re fad si>8 q }
 <mi, si, mi sold>4 q <sol, re sol si>8 q |
+\repeat unfold 4 { <do, sol, do mi>4 q <sol, re sol si>8 q }
+<fa,, fa,>8 <si do'>\laissezVibrer r4 r |
+<do mi sol do'>8 r r4 r |

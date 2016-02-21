@@ -144,3 +144,10 @@ R2. |
 r4 r |
 R2.*17 |
 %% 17
+R2.*18
+%% 18
+R2.*8
+r4 sol''8->\ff r sol''-> sol''-> |
+\repeat unfold 3 { sol''8-> r sol''-> r sol''-> sol''-> }
+r8 lab'-^(~ lab'4~ lab'16*2/3 la' sib' si' do'' dod'' |
+re''8)-. r r4 r |

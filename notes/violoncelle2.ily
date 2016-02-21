@@ -60,4 +60,9 @@
 }
 <mi, si,>8 q16*2/3 q q q8 q16*2/3 q q <si,>8 q |
 <mi, si,>8 q16*2/3 q q q8 q16*2/3 q q <sol,! sol!> q q q q q |
-\unset subdivideBeams
+\repeat unfold 2 {
+  <do, do>8 q16*2/3 q q q8 q16*2/3 q q q8 q |
+  <do, do>8 q16*2/3 q q q8 q16*2/3 q q q q q q q q |
+}
+<fa, do lab>8 q~ <fa,>4~ q16*2/3 q q q q q |
+<do, sol, mi do'>8 r r4 r |

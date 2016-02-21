@@ -16,4 +16,8 @@ R2.*7
 %% 18
 \repeat unfold 7 { mi4 r mi }
 mi r sol, |
-\repeat unfold 2 { do do sol, }
+\repeat unfold 4 { do do sol, }
+\set subdivideBeams = ##t
+\set baseMoment = #(ly:make-moment 1/8)
+do8 do r4 r16*2/3 do do do do do |
+do8 r r4 r |

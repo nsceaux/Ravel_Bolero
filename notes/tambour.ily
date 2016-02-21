@@ -3,7 +3,7 @@
   \set subdivideBeams = ##t
   \set baseMoment = #(ly:make-moment 1/8)
   <<
-    \repeat unfold 168 {
+    \repeat unfold 169 {
       tamb8 \tuplet 3/2 { 16 16 16 } 8 \tuplet 3/2 { 16 16 16 } 8 8 |
       8 \tuplet 3/2 { 16 16 16 } 8 \tuplet 3/2 { 16 16 16 16 16 16 16 16 16 } |
     }
@@ -44,4 +44,6 @@
       s8\noBeam s^"a 2" \ff s2 s2.*17
     }
   >>
+  tamb8 << tamb8 \new DrumVoice { \voiceOne tamb8 } >> r4 r16*2/3 tamb tamb tamb tamb tamb
+  tamb8 r r4 r
 }

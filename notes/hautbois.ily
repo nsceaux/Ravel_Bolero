@@ -300,7 +300,10 @@ do'8) <>\ff <<
     sold''8-. sold''16*2/3 mi''( sold'') sold''8-. sold''16*2/3 mi''( sold'') fad''8-. fad''-. |
     sold''8-. sold''16*2/3 mi''( sold'') sold''8-. sold''16*2/3 mi''( sold'')
     sol'' re''( sol'') sol'' re''( sol'') |
+    sol''8-> r do'''-> r do'''-> do'''-> |
+    \repeat unfold 3 { do'''8-> r do'''-> r do'''-> do'''-> }
+    r8 do'''-^~ do'''4~ do'''16*2/3 do''' do''' do''' do''' do''' |
+    do'''8-. r r4 r |
     \unset subdivideBeams
   }
-  \tag #'hautbois2 { s8 s2 s2.*17 s2.*18 }
 >>

@@ -219,4 +219,9 @@ do4 r <sol, sol>8 sol |
 }
 <sold>8 q16*2/3 q q q8 q16*2/3 q q <fad re'>8 q |
 <sold>8 q16*2/3 q q q8 q16*2/3 q q <re si> q q q q q |
-\unset subdivideBeams
+sol!8 <sol>16*2/3 q q q8 q16*2/3 q q <sol do'>8 q |
+<sol>8 q16*2/3 q q q8 q16*2/3 q q <sol do'> q q q q q |
+<sol>8 q16*2/3 q q q8 q16*2/3 q q <sol do'>8 q |
+<sol>8 q16*2/3 q q q8 q16*2/3 q q <sol do'> q q q q q |
+<fa, do lab>8 q~ <do lab>4~ q16*2/3 q q q q q |
+<do, sol, mi do'>8 r r4 r |

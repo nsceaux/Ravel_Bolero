@@ -109,3 +109,9 @@ R2.*2 |
     s4\< s8. s16\! s-> s-> s-> s->
   }
 >>
+\tuplet 3/2 { dod''16( re'' mib''~ } mib''8) si'16*2/3( sid' dod''~ dod''8) |
+\repeat unfold 3 {
+  r4 dod''16*2/3( re'' mib''~ mib''8) si'16*2/3( sid' dod''~ dod''8)
+}
+r8 sol''16*2/3( fad'' fa''~ fa''4~ fa''16*2/3 mib'' re'' do'' sib' lab' |
+sol'8) r r4 r |

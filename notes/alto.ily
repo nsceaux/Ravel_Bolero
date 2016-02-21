@@ -150,4 +150,9 @@ R2. |
 }
 <sold mi'>8 q16*2/3 q q q8 q16*2/3 q q <fad'>8 q |
 <sold mi'>8 q16*2/3 q q q8 q16*2/3 q q <re' si'> q q q q q |
-\unset subdivideBeams
+\repeat unfold 2 {
+  <mi' do''>8 q16*2/3 q q q8 q16*2/3 q q <re' si'>8 q |
+  <mi' do''>8 q16*2/3 q q q8 q16*2/3 q q <re' si'> q q q q q |
+}
+<do do'>8 do''~ do''4~ do''16*2/3 do'' do'' do'' do'' do'' |
+<do sol mi' do''>8 r r4 r |

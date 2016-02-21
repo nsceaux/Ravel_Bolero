@@ -57,3 +57,9 @@ R2. |
     s2 \once\override Script.avoid-slur = #'outside s16->( s8.)
     s2 s16-> s-> s-> s-> }
 >>
+<fa''>16*2/3 q q q8-. q16*2/3 q q q8-. q-. |
+q8-. q16*2/3 q q q8-. q16*2/3 q q q q q q q q |
+q8-. q16*2/3 q q q8-. q16*2/3 q q q8-. q-. |
+q8-. q16*2/3 q q q8-. q16*2/3 q q q q q q q q |
+r8 sib''16*2/3( la'' lab''~ lab''4~ lab''16*2/3 solb'' fa'' mib'' reb'' dob'' |
+sib'8-.) r r4 r |

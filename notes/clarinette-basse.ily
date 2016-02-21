@@ -61,3 +61,6 @@ re'8-> r8 r
 \repeat unfold 18 { re'8-> r re'-> r la-> la-> }
 %% 18
 \repeat unfold 4 { fad'8-> r fad'-> r dod'-> r | fad'-> r fad'-> r dod'-> dod'-> }
+\repeat unfold 2 { re'8-> r re'-> r re'-> r | re'8-> r re'-> r re'-> re'-> } |
+re'-> re'-^~ re'4~ re'8 re'16*2/3 re' re' |
+re'8-. r r4 r |

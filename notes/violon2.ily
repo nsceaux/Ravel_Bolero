@@ -177,4 +177,15 @@ r q <sol do' do''> |
 }
 <si' sold''>8 q16*2/3 q q q8 q16*2/3 q q <re'' fad''>8 q |
 <si' sold''>8 q16*2/3 q q q8 q16*2/3 q q <re'' sol''!> <re'' sol''> q q q q |
-\unset subdivideBeams
+<<
+  { \repeat unfold 2 {
+      <re'' sol''>8 q16*2/3 q q q8 q16*2/3 q q q8 q |
+      <re'' sol''>8 q16*2/3 q q q8 q16*2/3 q q q q q q q q |
+    }
+    r8 lab''16*2/3 sol'' fa''~ fa''4~ fa''16*2/3 mib'' reb'' do'' sib' lab' |
+    <sol sol' do''>8 r r4 r |
+  }
+  { s2.*4
+    \unset subdivideBeams
+    s8 s( s4 s16*2/3) s8*4/3( s16*2/3) }
+>>

@@ -129,6 +129,12 @@ r8 <>\f <<
     }
     red''8 red''16*2/3 red'' red'' red''8 red''16*2/3 red'' red'' dod''8 dod'' |
     red''8 red''16*2/3 red'' red'' red''8 red''16*2/3 red'' red'' re''!16*2/3 re'' re'' re'' re'' re'' |
+    \repeat unfold 2 {
+      <re''>8 q16*2/3 q q q8 q16*2/3 q q q8 q |
+      q8 q16*2/3 q q q8 q16*2/3 q q q q q q q q |
+    }
+    s8 sol''~ sol''4~ sol''16*2/3 sol'' sol'' sol'' sol'' sol'' |
+    sol''8
   }
   \tag #'(cor2 cors) {
     \repeat unfold 3 {
@@ -137,8 +143,15 @@ r8 <>\f <<
     }
     red'8 red'16*2/3 red' red' red'8 red'16*2/3 red' red' dod'8 dod' |
     red'8 red'16*2/3 red' red' red'8 red'16*2/3 red' red' re'!16*2/3 re' re' re' re' re' |
+    \repeat unfold 2 {
+      <sol'>8 q16*2/3 q q q8 q16*2/3 q q <fad'>8 q |
+      <sol'>8 q16*2/3 q q q8 q16*2/3 q q <fad'> q q q q q |
+    }
+    s8 sol'~ sol'4~ sol'16*2/3 sol' sol' sol' sol' sol' |
+    si'8
   }
-  
-  \repeat unfold 4 { s4-. s4-. s8-. s-. | s4-. s2-. | }
+  { \repeat unfold 6 { s4-. s4-. s8-. s-. | s4-. s2-. | }
+    r8 s-^ s2 |
+    s8-. r r4 r | }
 >>
 \unset subdivideBeams

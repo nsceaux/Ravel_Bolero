@@ -114,3 +114,7 @@ r q <do'' sol''> |
 <>^\markup { \smallCaps La \raise#0.6 \musicglyph#"accidentals.flat" }
 \repeat unfold 7 { <sold' si' mi'' sold''>4 q <fad' si' re'' fad''>8 q }
 <sold' si' mi'' sold''>4 q <re' sol' si' sol''>8 q |
+\repeat unfold 4 { <mi' sol' do'' sol''>4 q <re' sol' si' sol''>8 q | }
+\clef "bass" <do lab do'>8 \clef "treble" <si' do'' si'' do'''>\laissezVibrer r4 r |
+<do'' mi'' sol'' do'''>8 r r4 r |
+

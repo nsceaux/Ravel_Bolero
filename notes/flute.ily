@@ -381,10 +381,22 @@ R2. |
 >>
 <<
   \tag #'(flute1 flutes) {
-    \transpose do do' \themeFinalSixte { } | sol''8
+    \transpose do do' \themeFinalSixte { } |
+    sol''8 <mi'''>16*2/3 q q q8 q16*2/3 q q <re'''>8 q |
+    <mi'''>8 q16*2/3 q q q8 q16*2/3 q q <re'''> q q q q q |
+    <mi'''>8 q16*2/3 q q q8 q16*2/3 q q <re'''>8 q |
+    <mi'''>8 q16*2/3 q q q8 q16*2/3 q q <re'''> q q q q q |
+    s8 lab'''16*2/3 sol''' fa'''~ fa'''4~ fa'''16*2/3 mib''' reb''' do''' sib'' lab'' |
+    sol''8
   }
   \tag #'(flute2 flutes) {
-    \transpose do do' \themeFinalQuarte { } | mi''8
+    \transpose do do' \themeFinalQuarte { } |
+    mi''8 <do'''>16*2/3 q q q8 q16*2/3 q q <si''>8 q |
+    <do'''>8 q16*2/3 q q q8 q16*2/3 q q <si''> q q q q q |
+    <do'''>8 q16*2/3 q q q8 q16*2/3 q q <si''>8 q |
+    <do'''>8 q16*2/3 q q q8 q16*2/3 q q <si''> q q q q q |
+    s8 fa'''16*2/3 mi''' reb'''~ reb'''4~ reb'''16*2/3 do''' sib'' lab'' sol'' fa'' |
+    mi''8
   }
   { \scriptOutside s4->( s16 s-. s-. s-.) s8( s16-. s-.)
     s8( s16-. s-.) s4-> s16-.( s-. s-. s-.
@@ -410,5 +422,12 @@ R2. |
     s2) \scriptOutside s16->( s) s-.( s-.
     s2) \scriptOutside s16->( s) s-.( s-.
     s2) \scriptOutside s16->( s) s-.( s-.
-    s2) s16-> s-> s-> s-> }
+    s2) s16-> s-> s-> s->
+    s4 s-. s8-. s-.
+    s4-. s2-.
+    s4-. s-. s8-. s-.
+    s4-. s2-. |
+    r8 \scriptOutside s->( s2
+    s8-.) r r4 r
+  }
 >>

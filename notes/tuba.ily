@@ -17,3 +17,6 @@
 %% 18
 \repeat unfold 3 { mi,8-> r mi,-> r si,,-> r | mi,-> r mi,-> r si,,-> si,,-> }
 mi,8-> r mi,-> r si,,-> r | mi,-> r mi,-> r sol,,!-> r |
+\repeat unfold 4 { do,8 r do, r sol,, r }
+fa,8-> fa,-^~ fa,4~ fa,8 fa,16*2/3 fa, fa, |
+do,8 r r4 r |
