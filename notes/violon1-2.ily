@@ -238,7 +238,7 @@ R2. |
     s2.
     s2 \oneVoice s8 s\downbow
     s2.
-    \once\override Script.avoid-slur = #'outside s16->( s8.) s4 s8-> s->
+    \once\override Script.avoid-slur = #'outside s16->( s8.) s4 s8\downbow s8\downbow
     %% 18
     s4 s16 s8( s16) s8( s)
     s4 s16 s8( s16) s8( s)

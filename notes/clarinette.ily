@@ -115,14 +115,14 @@ R2.*2
     s2 s4)
     s4.( s8) s4(
     s4) s( s8*2/3-_ s-_ s)-_
-    s4( s8) \once \override Script.avoid-slur = #'outside s4.(->
+    s4( s8) \scriptOutside s4.(->
     s2 s8. s16)
     s4(-> s8)
   }
 >>
 \tag #'clarinettes <>^"à 2"
 \transpose sib do' {
-  \once \override Script.avoid-slur = #'outside
+  \scriptOutside
   do'->(~ do'4~ |
   do'~ do'16) re'( do' sib~ sib4~ |
   sib4) do'16( sib do' lab~ lab4~ |
@@ -265,23 +265,23 @@ R2.*2
     s4.) s8(-_ s-_ s-_
     s s4)-_ s8(-_ s-_ s-_
     s8*2/3-_ s-_ s)-_
-    \once\override Script.avoid-slur = #'outside
+    \scriptOutside
     s8.(-> s16)
-    \once \override Script.avoid-slur = #'outside
+    \scriptOutside
     s8.(-> s16)
-    s8.( s16) \once\override Script.avoid-slur = #'outside s2->(
+    s8.( s16) \scriptOutside s2->(
     s2 s4)
     s4.( s8) s4(
     s4) s( s8*2/3-_ s-_ s)-_
     s4( s8) \breathe
-    \once\override Script.avoid-slur = #'outside s4.(->
+    \scriptOutside s4.(->
     s2 s8. s16)
-    \once\override Script.avoid-slur = #'outside s4(-> s8) \breathe
+    \scriptOutside s4(-> s8) \breathe
   }
 >>
 \transpose do re {
   \tag #'clarinettes { \oneVoice <>\noBeam ^"à 2" }
-  \once \override Script.avoid-slur = #'outside do'->(~ do'4~ |
+  \scriptOutside do'->(~ do'4~ |
   do'~ do'16) re'( do' sib~ sib4~ |
   sib4) do'16( sib do' lab~ lab4~ |
   lab!~ lab16) lab( sib lab do' sib lab sol~ |
@@ -315,7 +315,10 @@ R2.*2
     mi''8-. mi''16*2/3 re''( mi'') mi''8-. mi''16*2/3 re''( mi'') re''8-. re''-. |
     mi''8-. mi''16*2/3 re''( mi'') mi''8-. mi''16*2/3 re''( mi'')
     re'' dod''( re'') re'' dod''( re'') |
-    \repeat unfold 4 {
+    mi''8-. mi''16*2/3 re''( mi'') mi''8-. mi''16*2/3 re''( mi'') re''8-. re''-. |
+    mi''8-. mi''16*2/3 re''( mi'') mi''8-. mi''16*2/3 re''( mi'')
+    re'' \ficta do''( re'') re'' do''( re'') |
+    \repeat unfold 3 {
       mi''8-. mi''16*2/3 re''( mi'') mi''8-. mi''16*2/3 re''( mi'') re''8-. re''-. |
       mi''8-. mi''16*2/3 re''( mi'') mi''8-. mi''16*2/3 re''( mi'')
       re'' do''( re'') re'' do''( re'') |

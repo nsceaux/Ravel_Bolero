@@ -63,7 +63,7 @@ R2.*2 <>\f
     la'!16 do'' la' sol'~ sol'8 sol'~ sol'4~ |
     sol'16 la' sol' la' sib'! do'' sib' la' sib' la' sol' mi' |
     \new Voice {
-      \once \override Script.avoid-slur = #'outside
+      \scriptOutside
       \tag #'hautbois \voiceTwo
       sol'8(->[ mi']~ mi')
     }
@@ -74,25 +74,25 @@ R2.*2 <>\f
     s4.) s8(-_ s-_ s-_
     s s4)-_ s8(-_ s-_ s-_
     s8*2/3-_ s-_ s)-_
-    \once\override Script.avoid-slur = #'outside
+    \scriptOutside
     s8.(-> s16)
-    \once \override Script.avoid-slur = #'outside
+    \scriptOutside
     s8.(-> s16)
     s2.(
     s2 s4)
     s4.( s8) s4(
     s4) s( s8*2/3-_ s-_ s)-_
     s4( s8)
-    \once \override Script.avoid-slur = #'outside
+    \scriptOutside
     s4.(->
     s2 s8. s16)
     \tag #'hautbois \voiceOne
-    \once \override Script.avoid-slur = #'outside
+    \scriptOutside
     s4(-> s8)
   }
 >>
 \tag #'hautbois { \oneVoice <>\noBeam ^"à 2" }
-\once \override Script.avoid-slur = #'outside
+\scriptOutside
 fa'(->~ fa'4~ |
 fa'4~ fa'16) sol'( fa' mib'~ mib'4~ |
 mib'!4) fa'16( mib' fa' reb'~ reb'4~ |
@@ -185,9 +185,9 @@ r8 <<
     s s4)
     s4.( s8) s4(
     s) s( s8*2/3 s s)
-    s4( s8) \once\override Script.avoid-slur = #'outside s4.->(
+    s4( s8) \scriptOutside s4.->(
     s2 s8. s16)
-    s4->( s8) \breathe \once\override Script.avoid-slur = #'outside s4.(->
+    s4->( s8) \breathe \scriptOutside s4.(->
     s4 s16) s8.( s4
     s) s2(
     s4 s16) s8( s16) s4(
@@ -214,7 +214,7 @@ R2. |
     la'!16 do'' la' sol'~ sol'8 sol'~ sol'4~ |
     sol'16 la' sol' la' sib'! do'' sib' la' sib' la' sol' mi' |
     \new Voice {
-      \once \override Script.avoid-slur = #'outside
+      \scriptOutside
       \tag #'hautbois \voiceTwo
       sol'8(->[ mi']~ mi')
     }
@@ -225,24 +225,24 @@ R2. |
     s4.) s8(-_ s-_ s-_
     s s4)-_ s8(-_ s-_ s-_
     s8*2/3-_ s-_ s)-_
-    \once\override Script.avoid-slur = #'outside
+    \scriptOutside
     s8.(-> s16)
-    \once \override Script.avoid-slur = #'outside
+    \scriptOutside
     s8.(-> s16)
-    s8.( s16) \once\override Script.avoid-slur = #'outside s2->(
+    s8.( s16) \scriptOutside s2->(
     s2 s4)
     s4.( s8) s4(
     s4) s( s8*2/3-_ s-_ s)-_
     s4( s8) \breathe
-    \once\override Script.avoid-slur = #'outside s4.(->
+    \scriptOutside s4.(->
     s2 s8. s16)
     \tag #'hautbois \voiceOne
-    \once \override Script.avoid-slur = #'outside
+    \scriptOutside
     s4(-> s8) \breathe
   }
 >>
 \tag #'hautbois { \oneVoice <>\noBeam ^"à 2" }
-\once \override Script.avoid-slur = #'outside
+\scriptOutside
 fa'(->~ fa'4~ |
 fa'4~ fa'16) sol'( fa' mib'~ mib'4~ |
 mib'!4) fa'16( mib' fa' reb'~ reb'4~ |

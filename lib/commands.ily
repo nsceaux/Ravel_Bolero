@@ -95,6 +95,12 @@ Then, use:
   \tag #(list tag1 tag2 tag-all) $rest-music
 >> #}))
 
+ficta = {
+  \once\set suggestAccidentals = ##t
+  \once\override AccidentalSuggestion.avoid-slur = #'outside
+}
+
+scriptOutside = { \once\override Script.avoid-slur = #'outside }
 
 %%%
 %%% Foot notes

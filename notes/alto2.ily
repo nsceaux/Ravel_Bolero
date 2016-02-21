@@ -91,7 +91,9 @@ R2. |
 <<
   { <do do' sol' mi''>8 <do' re'>16*2/3 q q q8 q16*2/3 q q <si>8 q |
     <do' re'>8 q16*2/3 q q q8 q16*2/3 q q <si> q q q q q |
-    \repeat unfold 4 {
+    <do' re'>8 q16*2/3 q q q8 q16*2/3 q q \ficta <sib>8 q |
+    <do' re'>8 q16*2/3 q q q8 q16*2/3 q q <sib> q q q q q |
+    \repeat unfold 3 {
       <do' re'>8 q16*2/3 q q q8 q16*2/3 q q <sib>8 q |
       <do' re'>8 q16*2/3 q q q8 q16*2/3 q q <sib> q q q q q |
     }

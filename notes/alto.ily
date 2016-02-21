@@ -124,18 +124,20 @@ R2. |
 <<
   { <do sol sol' mi''>8 <mi' do''>16*2/3 q q q8 q16*2/3 q q <re' si'>8 q |
     <mi' do''>8 q16*2/3 q q q8 q16*2/3 q q <re' si'> q q q q q |
-    \repeat unfold 4 {
+    <mi' do''>8 q16*2/3 q q q8 q16*2/3 q q \ficta <re' sib'>8 q |
+    <mi' do''>8 q16*2/3 q q q8 q16*2/3 q q <re' sib'> q q q q q |
+    \repeat unfold 3 {
       <mi' do''>8 q16*2/3 q q q8 q16*2/3 q q <re' sib'>8 q |
       <mi' do''>8 q16*2/3 q q q8 q16*2/3 q q <re' sib'> q q q q q |
     }
-    <mi' do''>8 q16*2/3 q q q8 q16*2/3 q q <re' si'!>8 q |
-    <mi' do''>8 q16*2/3 q q q8 q16*2/3 q q <re' si'> q q q q q |
+    <re' do''>8 q16*2/3 q q q8 q16*2/3 q q <re' si'!>8 q |
+    <re' do''>8 q16*2/3 q q q8 q16*2/3 q q <re' si'> q q q q q |
     <mi' do''>8 q16*2/3 q q q8 q16*2/3 q q <re' sib'>8 q |
     <mi' do''>8 q16*2/3 q q q8 q16*2/3 q q <re' sib'> q q q q q |
     <mi' do''>8 q16*2/3 q q q8 q16*2/3 q q <re' do''>8 q |
     <mi' do''>8 q16*2/3 q q q8 q16*2/3 q q <re' do''> q q q q q |
-    <mi' do''>8 q16*2/3 q q q8 q16*2/3 q q <re' si'!>8 q |
-    <mi' do''>8 q16*2/3 q q q8 q16*2/3 q q <re' si'> q q q q q |
+    <re' do''>8 q16*2/3 q q q8 q16*2/3 q q <re' si'!>8 q |
+    <re' do''>8 q16*2/3 q q q8 q16*2/3 q q <re' si'> q q q q q |
   }
   { s8 s^"arco" s4-.-> s8-.-> s-.->
     s4-.-> s2-.->

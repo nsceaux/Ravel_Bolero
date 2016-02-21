@@ -97,9 +97,9 @@ R2.*18 |
     do''4) r8 sol''\noBeam^_( la''^_ sib''^_~ |
     sib''! sib''4)^_ sib''8\noBeam^_( sib''^_ sib''^_ |
     \tuplet 3/2 { sib''8^_ sib''8^_ sib''8^_) }
-    \once\override Script.avoid-slur = #'outside
+    \scriptOutside
     sib''8^>( la''16 sol'')
-    \once \override Script.avoid-slur = #'outside
+    \scriptOutside
     sib''8(^> la''16 sol'') |
     sib''16( la'' sol'' fa'' mi''16 re'' do''!8~ do''4~ |
     do''2~ do''8) r |
@@ -107,9 +107,9 @@ R2.*18 |
     do''4) re''8( fa'' \tuplet 3/2 { si'8-_ re''8-_ si'-_) } |
     la'!16( do'' la' sol'~ sol'8) sol'->(~ sol'4~ |
     sol'16 la' sol' la' sib' do'' sib' la' sib' la' sol' mi') |
-    \once \override Script.avoid-slur = #'outside
+    \scriptOutside
     sol'8->([ mi']~ mi')
-    \once \override Script.avoid-slur = #'outside
+    \scriptOutside
     fa'(->~ fa'4~ |
     fa'4~ fa'16) sol'( fa' mib'~ mib'4~ |
     mib'!4) fa'16( mib' fa' reb'~ reb'4~ |
@@ -123,21 +123,21 @@ R2.*18 |
     sol'4) r8 re''\noBeam^_( mi''^_ mi''^_ ~ |
     mi'' 8 mi''4)^_ mi''8\noBeam^_( mi'' ^_ mi'' ^_ |
     \tuplet 3/2 { mi''8^_ mi'' ^_ mi'' ^_) }
-    \once \override Script.avoid-slur = #'outside
+    \scriptOutside
     mi''8^>( mib''16 reb'')
-    \once \override Script.avoid-slur = #'outside
+    \scriptOutside
     mi''8^>( mib''16 reb'') |
     mi''( mib'' reb'' do'' sib' lab' sol'8~ sol'4~ |
     sol'2~ sol'8) r |
     fa'4.( sol'8) fa'16( sol' la'8~ |
     la'4) si'8( re'' \tuplet 3/2 { lab'-_ si'-_ sol'-_) } |
     sol'16( la'! sol' mi'~ mi'8)
-    \once \override Script.avoid-slur = #'outside
+    \scriptOutside
     re'8->(~ re'4~ |
     re'16 mi' re' mi' sol' la' sol' mi' sol' mi' re' do') |
-    \once \override Script.avoid-slur = #'outside
+    \scriptOutside
     mi'8->([ do']~ do')[
-    \once \override Script.avoid-slur = #'outside
+    \scriptOutside
     do'->](~ do'4~ |
     do'~ do'16) re'( do' sib~ sib4~ |
     sib4) do'16( sib do' lab~ lab4~ |
@@ -251,14 +251,14 @@ r8 <<
     s s4)
     s4.( s8) s4(
     s) s( s8*2/3 s s)
-    s4( s8) \once\override Script.avoid-slur = #'outside s4.->(
+    s4( s8) \scriptOutside s4.->(
     s2 s8. s16)
     s4->( s8) \breathe }
 >>
 <<
   \tag #'(flute1 flutes) \transpose do do'' \filterMusic #'(ArticulationEvent SlurEvent) \themeBII
   \tag #'(flute2 flutes) \transpose do do' \filterMusic #'(ArticulationEvent SlurEvent) \themeBII
-  { \once\override Script.avoid-slur = #'outside s4.(->
+  { \scriptOutside s4.(->
     s4 s16) s8.( s4
     s) s2(
     s4 s16) s8( s16) s4(
@@ -275,18 +275,18 @@ R2. |
     do''4) r8 sol''\noBeam^_( la''^_ sib''^_~ |
     sib''! sib''4)^_ sib''8\noBeam^_( sib''^_ sib''^_ |
     \tuplet 3/2 { sib''8^_ sib''8^_ sib''8^_) }
-    \once\override Script.avoid-slur = #'outside sib''8^>( la''16 sol'')
-    \once\override Script.avoid-slur = #'outside sib''8(^> la''16 sol'') |
+    \scriptOutside sib''8^>( la''16 sol'')
+    \scriptOutside sib''8(^> la''16 sol'') |
     sib''16( la'' sol'' fa'')
-    \once\override Script.avoid-slur = #'outside mi''16->( re'' do''!8~ do''4~ |
+    \scriptOutside mi''16->( re'' do''!8~ do''4~ |
     do''2~ do''8) r |
     \ottava#0 la'!4.( si'8) la'16( si' do''8~ |
     do''4) re''8( fa'' \tuplet 3/2 { si'8-_ re''8-_ si'-_) } |
     la'!16( do'' la' sol'~ sol'8) \breathe
-    \once \override Script.avoid-slur = #'outside sol'->(~ sol'4~ |
+    \scriptOutside sol'->(~ sol'4~ |
     sol'16 la' sol' la' sib' do'' sib' la' sib' la' sol' mi') |
-    \once \override Script.avoid-slur = #'outside sol'8->([ mi']~ mi') \breathe
-    \once \override Script.avoid-slur = #'outside fa'(->~ fa'4~ |
+    \scriptOutside sol'8->([ mi']~ mi') \breathe
+    \scriptOutside fa'(->~ fa'4~ |
     fa'4~ fa'16) sol'( fa' mib'~ mib'4~ |
     mib'!4) fa'16( mib' fa' reb'~ reb'4~ |
     reb'!~ reb'16) reb'( mib' reb' fa' mib' reb' do'~ |
@@ -299,18 +299,18 @@ R2. |
     sol'4) r8 re''\noBeam^_( mi''^_ mi''^_ ~ |
     mi''8 mi''4)^_ mi''8\noBeam^_( mi'' ^_ mi'' ^_ |
     \tuplet 3/2 { mi''8^_ mi'' ^_ mi'' ^_) }
-    \once \override Script.avoid-slur = #'outside mi''8^>( mib''16 reb'')
-    \once \override Script.avoid-slur = #'outside mi''8^>( mib''16 reb'') |
+    \scriptOutside mi''8^>( mib''16 reb'')
+    \scriptOutside mi''8^>( mib''16 reb'') |
     mi''( mib'' reb'' do'')
-    \once\override Script.avoid-slur = #'outside sib'->( lab' sol'8~ sol'4~ |
+    \scriptOutside sib'->( lab' sol'8~ sol'4~ |
     sol'2~ sol'8) r |
     fa'4.( sol'8) fa'16( sol' la'8~ |
     la'4) si'8( re'' \tuplet 3/2 { lab'-_ si'-_ sol'-_) } |
     sol'16( la'! sol' mi'~ mi'8) \breathe
-    \once \override Script.avoid-slur = #'outside re'8->(~ re'4~ |
+    \scriptOutside re'8->(~ re'4~ |
     re'16 mi' re' mi' sol' la' sol' mi' sol' mi' re' do') |
-    \once \override Script.avoid-slur = #'outside mi'8->([ do']~ do') \breathe
-    \once \override Script.avoid-slur = #'outside do'->(~ do'4~ |
+    \scriptOutside mi'8->([ do']~ do') \breathe
+    \scriptOutside do'->(~ do'4~ |
     do'~ do'16) re'( do' sib~ sib4~ |
     sib4) do'16( sib do' lab~ lab4~ |
     lab!~ lab16) lab( sib lab do' sib lab sol~ |
@@ -342,21 +342,21 @@ R2. |
   \tag #'(flute2 flutes) {
     \transpose do do' \themeAbisTierce { \tag #'flutes \once\voiceTwo }
   }
-  { \once\override Script.avoid-slur = #'outside s4..->( s16) s8( s16-. s-.)
+  { \scriptOutside s4..->( s16) s8( s16-. s-.)
     s8 s16-.( s-.) s4. s16( s)
     s8( s16-. s-.) s2
     s16 s-.( s-. s-.) s8( s16-. s-.) s4
     s4 s16 s-.( s-. s-.) s8( s16-. s-.)
-    \once\override Script.avoid-slur = #'outside s16->( s8.) s8 s16( s) s4
+    \scriptOutside s16->( s8.) s8 s16( s) s4
     s4-- s2--
     s2.
     s2-> s8( s16-. s-.)
-    \once\override Script.avoid-slur = #'outside s16->( s8.) s16 s16-.( s-. s-.)
-    \once\override Script.avoid-slur = #'outside s8->( s16-. s-.) |
-    s4 s8-> s-> \once\override Script.avoid-slur = #'outside s8->( s16-. s-.) |
-    s4-. s8-> s-> \once\override Script.avoid-slur = #'outside s8->( s16-. s-.) |
+    \scriptOutside s16->( s8.) s16 s16-.( s-. s-.)
+    \scriptOutside s8->( s16-. s-.) |
+    s4 s8-> s-> \scriptOutside s8->( s16-. s-.) |
+    s4-. s8-> s-> \scriptOutside s8->( s16-. s-.) |
     s8-. s16( s) s2
-    s8-> s-> \once\override Script.avoid-slur = #'outside s8->( s16-. s-.) s8 s16( s) |
+    s8-> s-> \scriptOutside s8->( s16-. s-.) s8 s16( s) |
     s4. s16( s) s8 s16-> s->
     s2-> s16 s-.( s-. s-.)
     s8-.
@@ -370,7 +370,7 @@ R2. |
     re'''16*2/3 re''' re''' re''' re''' re''' |
   }
   \tag #'(flute2 flutes) {
-    do'''16*2/3 do''' do''' do'''8 do'''16*2/3 do''' do''' si''8 si'' |
+    do'''16*2/3 do''' do''' do'''8 do'''16*2/3 do''' do''' do'''8 do''' |
     do'''8 do'''16*2/3 do''' do''' do'''8 do'''16*2/3 do''' do'''
     do'''16*2/3 do''' do''' do''' do''' do''' |
   }
@@ -386,29 +386,29 @@ R2. |
   \tag #'(flute2 flutes) {
     \transpose do do' \themeFinalQuarte { } | mi''8
   }
-  { \once\override Script.avoid-slur = #'outside s4->( s16 s-. s-. s-.) s8( s16-. s-.)
+  { \scriptOutside s4->( s16 s-. s-. s-.) s8( s16-. s-.)
     s8( s16-. s-.) s4-> s16-.( s-. s-. s-.
     s4 s16) s8.( s4
     s) s8 s-> s-> s->
     s8 s4-> s8-> s-> s->
     s8*2/3-> s-> s-> s8-> s16( s) s8-> s16( s)
-    s8( s16-. s-.) \once\override Script.avoid-slur = #'outside s16->( s) s4.
+    s8( s16-. s-.) \scriptOutside s16->( s) s4.
     s2.
-    s4.-> s8-> \once\override Script.avoid-slur = #'outside s16->( s) s8
+    s4.-> s8-> \scriptOutside s16->( s) s8
     s4 s8-> s-> s8*2/3->( s-> s->)
-    \once\override Script.avoid-slur = #'outside s4->( s8) \breathe s4.
+    \scriptOutside s4->( s8) \breathe s4.
     s16 s-.( s-. s-.) s-.( s-. s-. s-.) s-.( s-. s-. s-.)
-    \once\override Script.avoid-slur = #'outside s2.->
+    \scriptOutside s2.->
     s2 s8 s->
     s4. s->
-    \once\override Script.avoid-slur = #'outside s16->( s) s4. s8-> s->
+    \scriptOutside s16->( s) s4. s8-> s->
     %% 18
     s4 s16 s-.( s-. s-.) s-.( s-. s-. s-.)
     s4 s16 s-.( s-. s-.) s-.( s-. s-. s-.)
-    \once\override Script.avoid-slur = #'outside s16->( s8.) s16 s-.( s-. s-.) s-. s-. s-. s-.
-    \once\override Script.avoid-slur = #'outside s16->( s8.) s4 \once\override Script.avoid-slur = #'outside s16->( s) s-.( s-.
-    s2) \once\override Script.avoid-slur = #'outside s16->( s) s-.( s-.
-    s2) \once\override Script.avoid-slur = #'outside s16->( s) s-.( s-.
-    s2) \once\override Script.avoid-slur = #'outside s16->( s) s-.( s-.
+    \scriptOutside s16->( s8.) s16 s-.( s-. s-.) s-. s-. s-. s-.
+    \scriptOutside s16->( s8.) s4 \scriptOutside s16->( s) s-.( s-.
+    s2) \scriptOutside s16->( s) s-.( s-.
+    s2) \scriptOutside s16->( s) s-.( s-.
+    s2) \scriptOutside s16->( s) s-.( s-.
     s2) s16-> s-> s-> s-> }
 >>

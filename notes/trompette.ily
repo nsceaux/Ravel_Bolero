@@ -188,7 +188,7 @@ R2.*18
 %% 17-18
 <<
   <<
-    \tag #'(trompette1 trompettes) { s8 mi'' s mi'' s  | s4 mi''8 s re'' s }
+    \tag #'(trompette1 trompettes) { s8 mi'' s re'' s  | s4 mi''8 s re'' s }
     \tag #'(trompette2 trompettes) { s8 re'' s do'' s | s4 re''8 s do'' s }
     \tag #'(trompette3 trompettes) { s do'' s si' s | s4 do''8 s si' s }
     { r8 s8-> r s-> r | r4 s8-> r s-> r }
