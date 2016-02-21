@@ -183,10 +183,13 @@ r8 <<
     s2) \once\override Script.avoid-slur = #'outside s16->( s) s-.( s-.
     s2) \once\override Script.avoid-slur = #'outside s16->( s) s-.( s-.
     s2) s16-> s-> s-> s->
+    \set subdivideBeams = ##t
+    \set baseMoment = #(ly:make-moment 1/8)
     s4 s-. s8-. s-.
     s4-. s2-.
     s4-. s-. s8-. s-.
     s4-. s2-. |
+    \unset subdivideBeams
     r8 \scriptOutside s->( s2
     s8-.) r r4 r
   }

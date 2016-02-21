@@ -216,7 +216,7 @@ r q <sol sol' do''> |
       <sol' mi''>8 q16*2/3 q q q8 q16*2/3 q q <sol' do''> q q q q q |
     }
     r8 fa''16*2/3 mi'' reb''~ reb''4~ reb''16*2/3 do'' sib' lab' sol' fa' |
-    <sol sol' do''>8 r r4 r |
+    <sol mi' do''>8 r r4 r |
   }
   { s2.*4
     \unset subdivideBeams

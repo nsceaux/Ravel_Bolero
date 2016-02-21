@@ -319,7 +319,7 @@
             %% 10
             \grace s8 { s2.*6\break s2.*6\break s2.*6\break }
             %% 11
-            \grace s4 { s2.*5\break s2.*5\break s2.*4\break s2.*4\break }
+            \grace s4 { s2.*6\break s2.*6\break s2.*6\break }
             %% 12
             { s2.*6\break s2.*6\break s2.*6\break }
             %% 13
@@ -333,7 +333,7 @@
             %% 17
             { s2.*6\break s2.*6\break s2.*6\break }
             %% 18
-            { s2.*4\break s2.*4\break }
+            { s2.*4\break s2.*5\break }
           }
         >>
         \new Staff \with { \haraKiriFirst } << \global { \include "cb2.ily" } >>

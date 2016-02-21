@@ -141,7 +141,7 @@ R2.*18
       \repeat unfold 3 {
         do'4 fad16*2/3 sol lab~ lab8 mi16*2/3 fa fad~ fad8 |
       }
-      fa8 si~ si4~ si16*2/3 si do' dod' re' red' |
+      fa8 si!~ si4~ si16*2/3 si do' dod' re' red' |
       mi'8
     }
     { <>^\markup\italic gliss s8( s) s( s)

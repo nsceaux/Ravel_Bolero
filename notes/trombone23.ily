@@ -101,7 +101,7 @@
       sold s sold s \new Voice { \tag #'trombones \voiceTwo fad-> fad-> } |
     }
     sold s sold s la s |
-    sold2 fa16 sol fa mi~ |
+    sold2 fa!16 sol fa mi~ |
     mi4
   }
   { s8-> r s-> r s-> r | s-> r s-> r s-> s-> |

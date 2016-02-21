@@ -17,5 +17,5 @@
 \mark\markup\box 14 s2.*18
 \mark\markup\box 15 s2.*18
 \mark\markup\box 16 s2.*18
-\mark\markup\box 17 s2.*14 \set Score.skipTypesetting = ##f s2.*4
+\mark\markup\box 17 s2.*18
 \mark\markup\box 18 s2.*14 \bar "|."

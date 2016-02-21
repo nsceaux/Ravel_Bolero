@@ -146,5 +146,5 @@ R2. |
 \repeat unfold 3 {
   r4 sid'16*2/3( dod'' re''~ re''8) si'16*2/3( sid' dod''~ dod''8) |
 }
-r8 re'''16*2/3( dod''' do'''~ do'''4~ do'''16*2/3 sib'' la'' sol'' fa'' mib'' |
+r8 re'''16*2/3( dod'''! do'''~ do'''4~ do'''16*2/3 sib'' la'' sol'' fa'' mib'' |
 re''8) r r4 r |
