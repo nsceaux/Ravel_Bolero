@@ -5,7 +5,7 @@
 %% Page de titre
 \bookpart {
   \paper {
-    bookTitleMarkup = \nenuvarBookTitleMarkup
+    bookTitleMarkup = \leadsheetBookTitleMarkup
     #(define page-breaking ly:minimal-breaking)
   }
   \markup\null

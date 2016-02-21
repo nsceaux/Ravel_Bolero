@@ -12,30 +12,38 @@
 %%% Title page
 %%%
 \paper {
-  nenuvarBookTitleMarkup =
-  \markup\when-property #'header:title \abs-fontsize #12 \column {
-    \null \null \null \null \null \null
-    \fill-line { \fontsize #6 \italic \fromproperty #'header:composer }
-    \null \null \null \null \null \null
-    \fontsize #12 \fill-line {
-                 \apply-fromproperty #make-smallCaps-markup #'header:title }
-    \null \null \null \null \null \null
+  partBookTitleMarkup =
+  \markup\when-property #'header:title \abs-fontsize#12 \column {
+    \vspace#8
+    \fill-line { \fontsize#6 \italic \fromproperty #'header:composer }
+    \vspace#8
+    \fontsize#12 \fill-line {
+      \apply-fromproperty #make-smallCaps-markup #'header:title
+    }
+    \vspace#8
     \fill-line { \postscript #(format #f "~a 0 moveto ~a 0 rlineto stroke"
-                               (/ -400 16)
-                               (/ 800 16))
-                             }
-    \null \null \null \null \null \null
+                                      (/ -400 16)
+                                      (/ 800 16)) }
+    \vspace#8
+    \fill-line { \fontsize#4 \fromproperty #'header:date }
+    \vspace#8
+    \fill-line { \fontsize#4 \fromproperty #'header:part }
+  }
+
+  leadsheetBookTitleMarkup =
+  \markup\when-property #'header:title \abs-fontsize #16 \column {
+    \vspace#12
+    \fill-line { \fontsize #6 \italic \fromproperty #'header:composer }
+    \vspace#16
+    \fontsize#12 \fill-line {
+      \apply-fromproperty #make-smallCaps-markup #'header:title
+    }
+    \vspace#16
+    \fill-line { \postscript #(format #f "~a 0 moveto ~a 0 rlineto stroke"
+                                      (/ -400 16)
+                                      (/ 800 16)) }
+    \vspace#18
     \fill-line { \fontsize #4 \fromproperty #'header:date }
-    \null
-    %\on-the-fly #(lambda (layout props arg)
-    %               (if (*part*)
-    %                   (interpret-markup layout props
-    %                     (markup #:column (#:null #:null
-    %                                       #:fill-line (#:fontsize 4 (*part-name*)))))
-    %                   empty-stencil))
-    \null \null \null \null
-    \fill-line { \fontsize #2 \fromproperty #'header:editions }
-    \fill-line { \fontsize #2 \fromproperty #'header:arrangement }
   }
 }
 %%%

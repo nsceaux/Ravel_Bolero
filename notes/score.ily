@@ -220,7 +220,8 @@
           instrumentName = \markup\center-column\smallCaps {
             2 Tambours
             3 Timbales
-            Cymbales & Tam-Tam
+            Cymbales
+            Tam-Tam
           }
           shortInstrumentName = \markup\shortinstr Tamb.
         } << \global { \include "tambour.ily" } >>
@@ -313,7 +314,7 @@
       } <<
         \new Staff <<
           \global { \include "cb.ily" }
-          { s2.*5\pageBreak s2.*5\break s2.*5\break s2.*5\break
+          { s2.*5\break s2.*5\break s2.*5\break s2.*5\break
             %% 1
             \repeat unfold 9 { s2.*6\break s2.*6\break s2.*6\break }
             %% 10
