@@ -1,6 +1,5 @@
 \clef "bass" R2.*38 |
 %% 2
-\noHaraKiri
 r4
 \once\override Staff.TextScript.extra-offset = #'(-1 . -1.5)
 \grace s8\p <re mi>4 ^\markup\twoOpens
@@ -38,7 +37,7 @@ r4 <lab,\open do\open> <sol,\open do\open>
 %% 3
 R2.*18 |
 %% 4
-\revertNoHaraKiri R2.*18
+R2.*18
 %% 5
 R2.*18
 %% 6

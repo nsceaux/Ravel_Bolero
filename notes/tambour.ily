@@ -1,5 +1,5 @@
 \drummode {
-  <>\pp ^\markup "1°"
+  <>\pp ^\markup "1° tambour"
   \set subdivideBeams = ##t
   \set baseMoment = #(ly:make-moment 1/8)
   <<

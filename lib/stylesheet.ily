@@ -9,9 +9,20 @@
 }
 
 %%%
-%%% Title page
+%%% Titles
 %%%
 \paper {
+  bookTitleMarkup =
+  \markup\when-property #'header:title \abs-fontsize#12 \column {
+    \fill-line { \fontsize#6 \fromproperty #'header:title }
+    \vspace#2
+    \fontsize#3 \fill-line {
+      \null
+      \apply-fromproperty #make-smallCaps-markup #'header:composer
+    }
+    \vspace#1
+  }
+
   partBookTitleMarkup =
   \markup\when-property #'header:title \abs-fontsize#12 \column {
     \vspace#8
