@@ -21,29 +21,38 @@
 %% 8
 R2.*18
 %% 9
-R2.*2
-<< <>\mf \transpose do do' \filterMusic #'(SlurEvent) \themeA
-  { s2.(
-    s8) s( s2
-    s2.
-    s16) s8.( s2
-    s4 s16) s8.( s s16)
-    s4( s8) s4.(
-    s2.
-    s2 s4)
-    s2( s8. s16)
-    s4..( s16) s4(
-    s8) s( s2
-    s8) s( s2
-    s8) s4.( s8) s(
-    s2 s8) s(
-    s4 s8) s4.(
-    s2.
-    s8)
-  } >>
-%% 10
-r8 r4 r4 |
-R2.*17
+<<
+  \tag #'hautbois1 {
+    R2.*18
+    %% 10
+    R2.*18
+  }
+  \tag #'(hautbois2 hautbois) {
+    R2.*2
+    << <>\mf \transpose do do' \filterMusic #'(SlurEvent) \themeA
+      { s2.(
+        s8) s( s2
+        s2.
+        s16) s8.( s2
+        s4 s16) s8.( s s16)
+        s4( s8) s4.(
+        s2.
+        s2 s4)
+        s2( s8. s16)
+        s4..( s16) s4(
+        s8) s( s2
+        s8) s( s2
+        s8) s4.( s8) s(
+        s2 s8) s(
+        s4 s8) s4.(
+        s2.
+        s8) }
+    >>
+    %% 10
+    r8 r4 r4 |
+    R2.*17
+  }
+>>
 %% 11
 R2.*2 <>\f
 <<
@@ -86,9 +95,11 @@ R2.*2 <>\f
     \scriptOutside
     s4.(->
     s2 s8. s16)
-    \tag #'hautbois \voiceOne
-    \scriptOutside
-    s4(-> s8)
+    \tag #'(hautbois1 hautbois) {
+      \tag #'hautbois \voiceOne
+      \scriptOutside
+      s4(-> s8)
+    }
   }
 >>
 \tag #'hautbois { \oneVoice <>\noBeam ^"à 2" }
@@ -236,9 +247,11 @@ R2. |
     s4( s8) \breathe
     \scriptOutside s4.(->
     s2 s8. s16)
-    \tag #'hautbois \voiceOne
-    \scriptOutside
-    s4(-> s8) \breathe
+    \tag #'(hautbois1 hautbois) {
+      \tag #'hautbois \voiceOne
+      \scriptOutside
+      s4(-> s8) \breathe
+    }
   }
 >>
 \tag #'hautbois { \oneVoice <>\noBeam ^"à 2" }
@@ -248,9 +261,11 @@ fa'4~ fa'16) sol'( fa' mib'~ mib'4~ |
 mib'!4) fa'16( mib' fa' reb'~ reb'4~ |
 reb'!~ reb'16) reb'( mib' reb' fa' mib' reb' do'~ |
 %% 16
-do'8) <>\ff <<
+do'8)-\tag #'hautbois1 \noBeam
+<<
+  %% Hautbois 2 -> hautbois2.ily
   \tag #'(hautbois1 hautbois) {
-    \set subdivideBeams = ##t
+    <>\ff \set subdivideBeams = ##t
     \set baseMoment = #(ly:make-moment 1/8)
     sol''16*2/3 mi''( sol'') sol''8-. sol''16*2/3 mi''( sol'') sol''8-. sol''-. |
     sol''8-. sol''16*2/3 mi''( sol'') sol''8-. sol''16*2/3 mi''( sol'')

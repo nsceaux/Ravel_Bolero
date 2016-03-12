@@ -1,3 +1,4 @@
+\once\override Score.MetronomeMark.outside-staff-priority = #9999
 \tempo "Tempo di Bolero moderato assai" \midiTempo#72
 \key do \major
 \set Score.markFormatter =

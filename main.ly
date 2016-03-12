@@ -1,6 +1,15 @@
 #(ly:set-option 'relative-includes #t)
 \include "common.ily"
-%#(ly:set-option 'point-and-click #t)
+#(ly:set-option 'point-and-click #f)
+
+%% Paper and staff size
+#(set-default-paper-size "a3")
+#(set-global-staff-size 13)
+
+%% Line/page breaking algorithm
+\paper {
+  #(define page-breaking ly:optimal-breaking)
+}
 
 %% Page de titre
 \bookpart {

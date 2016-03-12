@@ -6,27 +6,8 @@
   date = "1928"
 }
 
-%% Paper and staff size
-#(set-default-paper-size 
-  (cond (;; lead sheet
-         (not (symbol? (ly:get-option 'part))) "a3")
-        ;; parts
-        (else "a4")))
-#(set-global-staff-size
-  (cond (;; lead sheet
-         (not (symbol? (ly:get-option 'part))) 13)
-        ;; parts
-        (else 18)))
+\bookOutputName "Ravel_Bolero"
 
-%% Line/page breaking algorithm
-%%  optimal   for lead sheets
-%%  page-turn for instruments and vocal parts
-\paper {
-  #(define page-breaking
-     (if (symbol? (ly:get-option 'part))
-         ly:page-turn-breaking
-         ly:optimal-breaking))
-}
 \language "italiano"
 \include "lib/stylesheet.ily"
 

@@ -1,5 +1,4 @@
 \include "commands.ily"
-\include "toc-columns.ily"
 
 %% Font
 \paper {
@@ -25,20 +24,12 @@
 
   partBookTitleMarkup =
   \markup\when-property #'header:title \abs-fontsize#12 \column {
-    \vspace#8
-    \fill-line { \fontsize#6 \italic \fromproperty #'header:composer }
-    \vspace#8
-    \fontsize#12 \fill-line {
-      \apply-fromproperty #make-smallCaps-markup #'header:title
+    \fill-line { \fontsize#6 \fromproperty #'header:title }
+    \fill-line {
+      \fromproperty #'header:instrument
+      \fontsize#2 \apply-fromproperty #make-smallCaps-markup #'header:composer
     }
-    \vspace#8
-    \fill-line { \postscript #(format #f "~a 0 moveto ~a 0 rlineto stroke"
-                                      (/ -400 16)
-                                      (/ 800 16)) }
-    \vspace#8
-    \fill-line { \fontsize#4 \fromproperty #'header:date }
-    \vspace#8
-    \fill-line { \fontsize#4 \fromproperty #'header:part }
+    \vspace#1
   }
 
   leadsheetBookTitleMarkup =
@@ -145,37 +136,6 @@
   
   ragged-bottom = ##f
   ragged-last-bottom = ##f
-}
-
-%%%
-%%% TOC
-%%%
-\paper {
-  tocTitleMarkup = \markup \column {
-    \vspace #2
-    \fontsize #6 \fill-line { \paper-prop #'tocTitle "TABLE DES MATIÈRES" }
-    \vspace #2
-  }
-  tocItemMarkup = \markup {
-    \toc-filled-line
-    ""
-    \fromproperty #'toc:text
-    \fromproperty #'toc:page
-  }
-
-}
-%%%
-%%% Foot notes
-%%%
-\paper {
-  footnote-auto-numbering = ##t
-  footnote-numbering-function =
-  #(lambda (num)
-     #{ \markup\small\parenthesize $(number->string (+ 1 num)) #})
-  footnote-separator-markup =
-  \markup\override #'(span-factor . 1/4) \draw-hline
-  footnote-padding = 2\mm
-  footnote-footer-padding = 1\mm
 }
 
 %%%
