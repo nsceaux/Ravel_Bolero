@@ -164,7 +164,7 @@
               \line { \concat { P \super te } Tr } en Ré
             }
           } <<
-            \global \keepWithTag #'trompettes { \include "petite-trompette.ily" }
+            \global { \include "petite-trompette.ily" }
           >>
           \new StaffGroupNoBracket \with {
             shortInstrumentName = \markup\shortinstr Tromp.

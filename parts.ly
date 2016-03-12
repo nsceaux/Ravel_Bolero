@@ -122,9 +122,33 @@
     page-count = 2
   }
 }
-%}
+
 \book {
   \bookOutputSuffix "cor4"
   \include "notes/score-cor4.ily"
   \header { instrument = "Cor 4 en fa" }
+}
+
+\book {
+  \bookOutputSuffix "petite-trompette"
+  \include "notes/score-petite-trompette.ily"
+  \header { instrument = "Petite trompette en ré" }
+}
+
+\book {
+  \bookOutputSuffix "trompette1"
+  \include "notes/score-trompette1.ily"
+  \header { instrument = "Trompette 1 en ut" }
+}
+
+\book {
+  \bookOutputSuffix "trompette2"
+  \include "notes/score-trompette2.ily"
+  \header { instrument = "Trompette 2 en ut" }
+}
+%}
+\book {
+  \bookOutputSuffix "trompette3"
+  \include "notes/score-trompette3.ily"
+  \header { instrument = "Trompette 3 en ut" }
 }
