@@ -61,10 +61,29 @@
   \header { instrument = "Basson 2" }
   \paper { #(define page-breaking ly:optimal-breaking) }
 }
-%}
+
 \book {
   \bookOutputSuffix "contrebasson"
   \include "notes/score-contrebasson.ily"
   \header { instrument = "Contrebasson" }
+  \paper { #(define page-breaking ly:optimal-breaking) }
+}
+
+\book {
+  \bookOutputSuffix "clarinette1"
+  \include "notes/score-clarinette1.ily"
+  \header { instrument = "Clarinette 1, petite clarinette" }
+}
+
+\book {
+  \bookOutputSuffix "clarinette2"
+  \include "notes/score-clarinette2.ily"
+  \header { instrument = "Clarinette 2, petite clarinette" }
+}
+%}
+\book {
+  \bookOutputSuffix "clarinette-basse"
+  \include "notes/score-clarinette-basse.ily"
+  \header { instrument = "Clarinette basse" }
   \paper { #(define page-breaking ly:optimal-breaking) }
 }
