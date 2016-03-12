@@ -4,33 +4,33 @@ R2.*164
 <<
   \tag #'(cor4 cors) {
     r8^\markup "4°" \grace s8\mf \transpose do sol, \rythmique
+    %% 10
+    r8 r4 r4 |
+    R2.*17 |
   }
-  \tag #'cor3 { R2.*18 }
+  \tag #'cor3 { R2.*18 R2.*18 }
 >>
-%% 10
-r8 r4 r4 |
-R2.*17 |
 %% 11
 <<
   \tag #'(cor4 cors) {
-    r8^\markup "4°" \grace s8\f \transpose do sol, \rythmique
+    r8^\markup "4°" \grace s8\f \transpose do sol, \rythmique r8
   }
-  \tag #'cor3 { R2.*18 }
+  \tag #'cor3 { R2.*18 r4 }
 >>
 %% 12
 <<
   \tag #'(cor3 cors) {
-    s8 si' s la' s |
+    si'8 s la' s |
     \repeat unfold 7 { s4 si'8 s la' s }
     \repeat unfold 9 { s4 do''8 s la' s }
     s4 si'8 s la' s
   }
   \tag #'(cor4 cors) {
-    s8 la' s fad' s |
+    la'8 s fad' s |
     \repeat unfold 16 { s4 la'8 s fad' s }
     s4 la'8 s sol' s
   }
-  { r8 <>\f s-> r s-> r |
+  { <>\f s8-> r s-> r |
     \repeat unfold 17 { r4 s8-> r s-> r } }
 >>
 %% 13
@@ -39,7 +39,7 @@ r8 <<
   \tag #'(cor4 cors) \transpose do sol, \rythmique 
 >>
 %% 14
-r8 <>^\markup\right-align "a 2" sol'-> r sol'-> r |
+r8 <>-\tag #'cors ^\markup\right-align "a 2" sol'-> r sol'-> r |
 \repeat unfold 9 {
   << \tag #'(cor3 cors) si'8-> \tag #'(cor4 cors) sol'-> >> r8 sol'-> r sol'-> r |
 }
@@ -124,7 +124,7 @@ r8 <>^\markup\right-align "a 2" sol'-> r sol'-> r |
 >>
 %% 18
 <<
-  \tag #'(cor1 cors) {
+  \tag #'(cor3 cors) {
     \repeat unfold 3 {
       red''8 red''16*2/3 red'' red'' red''8 red''16*2/3 red'' red'' dod''8 dod'' |
       red''8 red''16*2/3 red'' red'' red''8 red''16*2/3 red'' red'' dod''16*2/3 dod'' dod'' dod'' dod'' dod'' |
@@ -138,7 +138,7 @@ r8 <>^\markup\right-align "a 2" sol'-> r sol'-> r |
     s8 fad''~ fad''4~ fad''16*2/3 fad'' fad'' fad'' fad'' fad'' |
     re''8
   }
-  \tag #'(cor2 cors) {
+  \tag #'(cor4 cors) {
     \repeat unfold 3 {
       red'8 red'16*2/3 red' red' red'8 red'16*2/3 red' red' dod'8 dod' |
       red'8 red'16*2/3 red' red' red'8 red'16*2/3 red' red' dod'16*2/3 dod' dod' dod' dod' dod' |

@@ -93,10 +93,38 @@
   \include "notes/score-sax-soprano.ily"
   \header { instrument = "Saxophone soprano" }
 }
-%}
+
 \book {
   \bookOutputSuffix "saxophone-tenor"
   \include "notes/score-sax-tenor.ily"
   \header { instrument = "Saxophone tenor" }
   \paper { #(define page-breaking ly:optimal-breaking) }
+}
+
+\book {
+  \bookOutputSuffix "cor1"
+  \include "notes/score-cor1.ily"
+  \header { instrument = "Cor 1 en fa" }
+}
+
+\book {
+  \bookOutputSuffix "cor2"
+  \include "notes/score-cor2.ily"
+  \header { instrument = "Cor 2 en fa" }
+}
+
+\book {
+  \bookOutputSuffix "cor3"
+  \include "notes/score-cor3.ily"
+  \header { instrument = "Cor 3 en fa" }
+  \paper {
+    #(define page-breaking ly:optimal-breaking)
+    page-count = 2
+  }
+}
+%}
+\book {
+  \bookOutputSuffix "cor4"
+  \include "notes/score-cor4.ily"
+  \header { instrument = "Cor 4 en fa" }
 }

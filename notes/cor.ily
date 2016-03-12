@@ -3,7 +3,7 @@ R2.*92 |
 %% 5
 <<
   \tag #'(cor1 cors) {
-    r8^\markup "1°" \grace s8\p \transpose do sol \rythmique
+    r8-\tag #'cors ^\markup "1°" \grace s8\p \transpose do sol \rythmique
     %% 6
     r8 r4 r |
     R2.*17 |
@@ -45,21 +45,21 @@ R2.*18 |
       }
     >>
   }
-  { r8 -\markup "2°" \grace s8\mf \transpose do sol, \rythmique r8 }
+  { r8-\tag #'cors -\markup "2°" \grace s8\mf \transpose do sol, \rythmique r8 }
 >>
 %% 9
 r4 r |
 R2.*17 |
 %% 10
 <<
-  \tag #'cor1 { R2.*18 }
+  \tag #'cor1 { R2.*18 R2.*18 }
   \tag #'(cor2 cors) {
-    r8 ^\markup "2°" \grace s8\mf \transpose do sol, \rythmique r8
+    r8-\tag #'cors ^\markup "2°" \grace s8\mf \transpose do sol, \rythmique r8
+    %% 11
+    r4 r |
+    R2.*17 |
   }
 >>
-%% 11
-r4 r |
-R2.*17 |
 %% 12
 r8 <>\f <<
   \tag #'(cor1 cors) \transpose do sol \rythmique 
