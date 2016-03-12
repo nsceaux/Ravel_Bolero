@@ -56,8 +56,9 @@
           } << \transpose fa do \global { \include "cor-anglais.ily" } >>
         >>
         %% Clarinettes
-        \new StaffGroup \with { \haraKiriFirst } <<
+        \new StaffGroup <<
           \new Staff \with {
+             \haraKiriFirst
             shortInstrumentName = \markup\shortinstr { \concat { P \super te } Cl. }
           } << \transpose mib do \global { \include "petite-clarinette.ily" } >>
           \new StaffGroupNoBracket \with {
@@ -71,7 +72,7 @@
             }
             shortInstrumentName = \markup\shortinstr Clar.
           } <<
-            \new Staff <<
+            \new Staff \with { \haraKiri } <<
               \transpose sib do \global
               \keepWithTag #'clarinettes { \include "clarinette.ily" }
             >>

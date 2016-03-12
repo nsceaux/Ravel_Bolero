@@ -1,9 +1,22 @@
-\clef "tenor" R2.*40 |
-<>_\mp ^\markup { 1° Solo }
-<< \themeB { s2.*12 | s4. \clef "bass" } >>
-%% 3
-r4 r |
-R2.*17 |
+\clef "tenor" R2.*20 |
+%% 1
+R2.*18
+%% 2
+<<
+  \tag #'(basson1 bassons) {
+    R2.*2
+    <>_\mp ^\markup { 1° Solo }
+    << \themeB { s2.*12 | s4. \clef "bass" } >>
+    %% 3
+    r4 r |
+    R2.*17 |
+  }
+  \tag #'basson2 {
+    R2.*18
+    %% 3
+    R2.*18
+  }
+>>
 %% 4
 \twoVoices #'(basson1 basson2 bassons) <<
   { \clef "tenor"

@@ -42,9 +42,29 @@
   \include "notes/score-hautbois2.ily"
   \header { instrument = "Hautbois 2" }
 }
-%}
+
 \book {
   \bookOutputSuffix "cor-anglais"
   \include "notes/score-cor-anglais.ily"
   \header { instrument = "Cor anglais" }
+}
+
+\book {
+  \bookOutputSuffix "basson1"
+  \include "notes/score-basson1.ily"
+  \header { instrument = "Basson 1" }
+}
+
+\book {
+  \bookOutputSuffix "basson2"
+  \include "notes/score-basson2.ily"
+  \header { instrument = "Basson 2" }
+  \paper { #(define page-breaking ly:optimal-breaking) }
+}
+%}
+\book {
+  \bookOutputSuffix "contrebasson"
+  \include "notes/score-contrebasson.ily"
+  \header { instrument = "Contrebasson" }
+  \paper { #(define page-breaking ly:optimal-breaking) }
 }
