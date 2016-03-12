@@ -33,16 +33,16 @@ R2.*2
     s s4)-_ s8(-_ s-_ s-_
     s8*2/3-_ s-_ s)-_ s8.(-> s16) \acciaccatura do'''8\glissando s8.(-> s16)
     \acciaccatura do'''8\glissando s8.( s16)
-    \once \override Script.avoid-slur = #'outside s2->(
+    \scriptOutside s2->(
     s2 s4)
     s4.( s8) s4(
     s4) s( s8*2/3-_ s-_ s)-_
     s4.
-    \once \override Script.avoid-slur = #'outside
+    \scriptOutside
     s4.(->
     s2 s8. s16)
     s4( s8)
-    \once \override Script.avoid-slur = #'outside
+    \scriptOutside
     s4.(->
     s4 s16) s8.( s4
     s4) s2(
@@ -80,7 +80,7 @@ r8 la''-> r la''-> r |
 R2.*14 |
 r4 r8 <<
   \transpose sib do'' \themeBII
-  { s4.(
+  { \scriptOutside s4.(
     s4 s2) }
 >>
 %% 16
@@ -88,21 +88,21 @@ r4 r |
 R2. |
 <<
   \transpose do re' \filterMusic #'(ArticulationEvent SlurEvent) \themeA
-  { \once\override Script.avoid-slur = #'outside s4.-> s16( s) s8( s16-. s-.)
+  { \scriptOutside s4.-> s16( s) s8( s16-. s-.)
     s8 s16-.( s-.) s4. s16( s)
     s8( s16-. s-.) s2
     s16 s8( s16) s8( s) s4
     s4 s16 s( s-. s-. s8 s16-. s-.)
-    \once\override Script.avoid-slur = #'outside s16->( s8.) s8 s16( s) s4
+    \scriptOutside s16->( s8.) s8 s16( s) s4
     s4-- s2--
     s2.
     s2-> s8( s16-. s-.)
-    \once\override Script.avoid-slur = #'outside s16->( s8.) s16 s16( s-. s-.)
-    \once\override Script.avoid-slur = #'outside s8->( s16-. s) |
-    s4 s8-> s-> \once\override Script.avoid-slur = #'outside s8->( s16-. s-.) |
-    s4 s8-> s-> \once\override Script.avoid-slur = #'outside s8->( s16-. s-.) |
+    \scriptOutside s16->( s8.) s16 s16( s-. s-.)
+    \scriptOutside s8->( s16-. s) |
+    s4 s8-> s-> \scriptOutside s8->( s16-. s-.) |
+    s4 s8-> s-> \scriptOutside s8->( s16-. s-.) |
     s8 s16( s) s2
-    s8-> s-> \once\override Script.avoid-slur = #'outside s8->( s16-. s-.) s8 s16( s) |
+    s8-> s-> \scriptOutside s8->( s16-. s-.) s8 s16( s) |
     s4. s16( s) s8 s16-> s->
     s2 s16 s( s-. s-.)
   }
@@ -113,32 +113,32 @@ R2. |
   { r8 s-> r s-> r | r4 s8-> r s-> r | }
 >>
 \transpose do re <<
-  { \themeFinal{ \once\override Script.avoid-slur = #'outside s16->( s) }
+  { \themeFinal{ \scriptOutside s16->( s) }
     do''4 }
-  { \once\override Script.avoid-slur = #'outside s4->( s16 s-. s-. s-.) s8.( s16)
-    \once\override Script.avoid-slur = #'outside s8->( s16-. s-.) s4-> s8( s)
+  { \scriptOutside s4->( s16 s-. s-. s-.) s8.( s16)
+    \scriptOutside s8->( s16-. s-.) s4-> s8( s)
     s4 s16 s8.( s4
     s4.) s8-> s-> s->
     s s4-> s8-> s-> s->
     s8*2/3-> s-> s-> s8-> s16( s) \acciaccatura sib''8\glissando s8 s16( s)
-    \acciaccatura sib''8\glissando s8.( s16) \once\override Script.avoid-slur = #'outside s16->( s8.) s4
+    \acciaccatura sib''8\glissando s8.( s16) \scriptOutside s16->( s8.) s4
     s2.
-    s4.-> s8-> \once\override Script.avoid-slur = #'outside s16->( s8.)
+    s4.-> s8-> \scriptOutside s16->( s8.)
     s4 s8-> s-> s8*2/3->( s-> s->)
-    \once\override Script.avoid-slur = #'outside s4->( s8) \breathe s4.->
+    \scriptOutside s4->( s8) \breathe s4.->
     s16 s8( s16) s8.( s16) s8.( s16)
     s2.
     s2 s8 s->
     s4. s->
-    \once\override Script.avoid-slur = #'outside s16->( s8.) s4 s8-> s->
+    \scriptOutside s16->( s8.) s4 s8-> s->
     %% 18
     s4 s16 s8( s16) s8.( s16)
     s4 s16 s8( s16) s8.( s16)
-    \once\override Script.avoid-slur = #'outside s16->( s8.) s16 s8( s16) s8.( s16)
-    \once\override Script.avoid-slur = #'outside s16->( s8.) s4 \once\override Script.avoid-slur = #'outside s16->( s8.)
-    s2 \once\override Script.avoid-slur = #'outside s16->( s8.)
-    s2 \once\override Script.avoid-slur = #'outside s16->( s8.)
-    s2 \once\override Script.avoid-slur = #'outside s16->( s8) s16\>
+    \scriptOutside s16->( s8.) s16 s8( s16) s8.( s16)
+    \scriptOutside s16->( s8.) s4 \scriptOutside s16->( s8.)
+    s2 \scriptOutside s16->( s8.)
+    s2 \scriptOutside s16->( s8.)
+    s2 \scriptOutside s16->( s8) s16\>
     s4\< s8. s16\! s-> s-> s-> s->
   }
 >>

@@ -80,10 +80,23 @@
   \include "notes/score-clarinette2.ily"
   \header { instrument = "Clarinette 2, petite clarinette" }
 }
-%}
+
 \book {
   \bookOutputSuffix "clarinette-basse"
   \include "notes/score-clarinette-basse.ily"
   \header { instrument = "Clarinette basse" }
+  \paper { #(define page-breaking ly:optimal-breaking) }
+}
+
+\book {
+  \bookOutputSuffix "saxophone-soprano"
+  \include "notes/score-sax-soprano.ily"
+  \header { instrument = "Saxophone soprano" }
+}
+%}
+\book {
+  \bookOutputSuffix "saxophone-tenor"
+  \include "notes/score-sax-tenor.ily"
+  \header { instrument = "Saxophone tenor" }
   \paper { #(define page-breaking ly:optimal-breaking) }
 }

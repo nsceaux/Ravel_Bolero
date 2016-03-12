@@ -28,6 +28,8 @@ noHaraKiri = \set Staff.keepAliveInterfaces =
    percent-repeat-interface
    stanza-number-interface)
 revertNoHaraKiri = \unset Staff.keepAliveInterfaces
+startHaraKiri = \set Staff.keepAliveInterfaces = #'()
+stopHaraKiri = \unset Staff.keepAliveInterfaces
 
 %%%
 %%% Music functions

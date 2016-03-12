@@ -10,10 +10,20 @@ R2.*2 |
     \acciaccatura fa''8\glissando
   }
   \transpose do sol \themeBI
->> r8 r4 |
-R2.*3 |
-%% 8
-R2.*18 |
+>>
+<<
+  \tag #'sopranino {
+    r8 r4 | R2.*3 |
+    %% 8
+    R2.*18 |
+  }
+  \tag #'soprano {
+    \breathe \transpose do sol \themeBII
+    %% 8
+    r4 r |
+    R2.*17
+  }
+>>
 %% 9
 R2.*18
 %% 10

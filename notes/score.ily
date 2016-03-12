@@ -111,7 +111,10 @@
           shortInstrumentName = \markup\shortinstr {
             Sax. \concat { S \super ino }
           }
-        } << \transpose fa do \global { \include "sax-sopranino.ily" } >>
+        } <<
+          \transpose fa do \global
+          \keepWithTag #'sopranino { \include "sax-sopranino.ily" }
+        >>
         \new Staff \with {
           \haraKiriFirst
           shortInstrumentName = \markup\shortinstr {
