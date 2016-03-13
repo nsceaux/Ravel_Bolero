@@ -94,7 +94,7 @@ R2. |
     s2 s8*2/3( s) s
     s4( s8) \once \override Script.avoid-slur = #'outside s4.->(
     s8. s16) s8.( s16) s8.( s16)
-    s4.->_"Div." s4.->
+    s4.-> -\tag #'conducteur _"Div." s4.->
     s4 s16 s( s8) s4
     s4 s8( s) s4
     s4 s16 s8( s16) s8( s) }

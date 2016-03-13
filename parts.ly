@@ -217,7 +217,7 @@
   \include "notes/score-violon1-2.ily"
   \header { instrument = "Violon 1-2" }
 }
-%}
+
 \book {
   \bookOutputSuffix "violon2-1"
   \include "notes/score-violon2-1.ily"
@@ -236,4 +236,16 @@
     #(define page-breaking ly:optimal-breaking)
     systems-per-page = 11
   }
+}
+%}
+\book {
+  \bookOutputSuffix "alto1"
+  \include "notes/score-alto1.ily"
+  \header { instrument = "Alto 1" }
+}
+
+\book {
+  \bookOutputSuffix "alto2"
+  \include "notes/score-alto2.ily"
+  \header { instrument = "Alto 2" }
 }
