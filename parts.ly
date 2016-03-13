@@ -164,9 +164,28 @@
   \include "notes/score-trombone2.ily"
   \header { instrument = "Trombone 2" }
 }
-%}
+
 \book {
   \bookOutputSuffix "trombone3"
   \include "notes/score-trombone3.ily"
   \header { instrument = "Trombone 3" }
+}
+
+\book {
+  \bookOutputSuffix "tuba"
+  \include "notes/score-tuba.ily"
+  \header { instrument = "Tuba" }
+}
+
+\book {
+  \bookOutputSuffix "timbales"
+  \include "notes/score-timbales.ily"
+  \header { instrument = "Timbales" }
+}
+%}
+\book {
+  \bookOutputSuffix "percussions"
+  \include "notes/score-percussions.ily"
+  \header { instrument = "Percussions" }
+  \paper { #(define page-breaking ly:optimal-breaking) }
 }

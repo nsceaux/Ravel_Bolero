@@ -213,7 +213,7 @@
             Tam-Tam
           }
           shortInstrumentName = \markup\shortinstr Tamb.
-        } << \global { \include "tambour.ily" } >>
+        } << \global \keepWithTag #'conducteur { \include "tambour.ily" } >>
         %% Tam-tam
         \new DrumStaff \with {
           drumStyleTable = #percussion-style
