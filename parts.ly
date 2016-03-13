@@ -182,10 +182,26 @@
   \include "notes/score-timbales.ily"
   \header { instrument = "Timbales" }
 }
-%}
+
 \book {
   \bookOutputSuffix "percussions"
   \include "notes/score-percussions.ily"
   \header { instrument = "Percussions" }
   \paper { #(define page-breaking ly:optimal-breaking) }
+}
+
+\book {
+  \bookOutputSuffix "celesta"
+  \include "notes/score-celesta.ily"
+  \header { instrument = "Celesta" }
+}
+%}
+\book {
+  \bookOutputSuffix "harpe"
+  \include "notes/score-harpe.ily"
+  \header { instrument = "Harpe" }
+  \paper {
+    #(define page-breaking ly:optimal-breaking)
+    systems-per-page = 7
+  }
 }
