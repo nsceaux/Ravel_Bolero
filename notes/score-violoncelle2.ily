@@ -11,5 +11,5 @@
         s2.*18 \newSpacingSection s2.*18 \newSpacingSection }
     >>
   >>
-  \layout { }
+  \layout { #(layout-set-staff-size 16) }
 }

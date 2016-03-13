@@ -22,16 +22,6 @@
     \vspace#1
   }
 
-  partBookTitleMarkup =
-  \markup\when-property #'header:title \abs-fontsize#12 \column {
-    \fill-line { \fontsize#6 \fromproperty #'header:title }
-    \fill-line {
-      \fromproperty #'header:instrument
-      \fontsize#2 \apply-fromproperty #make-smallCaps-markup #'header:composer
-    }
-    \vspace#1
-  }
-
   leadsheetBookTitleMarkup =
   \markup\when-property #'header:title \abs-fontsize #16 \column {
     \vspace#12
@@ -47,6 +37,34 @@
     \vspace#18
     \fill-line { \fontsize #4 \fromproperty #'header:date }
   }
+
+  partBookTitleMarkup =
+  \markup\when-property #'header:title \abs-fontsize#12 \column {
+    \fill-line { \fontsize#6 \fromproperty #'header:title }
+    \fill-line {
+      \fromproperty #'header:instrument
+      \fontsize#2 \apply-fromproperty #make-smallCaps-markup #'header:composer
+    }
+    \vspace#1
+  }
+  partTitlePageMarkup =
+  \markup\when-property #'header:title \abs-fontsize #12 \column {
+    \vspace#8
+    \fill-line { \fontsize #6 \italic \fromproperty #'header:composer }
+    \vspace#10
+    \fontsize#8 \fill-line {
+      \apply-fromproperty #make-smallCaps-markup #'header:title
+    }
+    \vspace#10
+    \fill-line { \postscript #(format #f "~a 0 moveto ~a 0 rlineto stroke"
+                                      (/ -400 16)
+                                      (/ 800 16)) }
+    \vspace#10
+    \fill-line { \fontsize #4 \fromproperty #'header:date }
+    \vspace#5
+    \fill-line { \fontsize #4 \fromproperty #'header:instrument }
+  }
+
 }
 %%%
 %%% Footers

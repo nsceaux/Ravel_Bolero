@@ -15,7 +15,7 @@
 <<
   \tag #'(flute1 flutes) {
     \tag #'flutes \stemUp
-    <>\p ^"1°" \rythmique
+    <>\p -\tag #'flutes ^"1°" \rythmique
   }
   \tag #'flute2 { r8 r4 r | R2.*17 | r8 }
 >>
@@ -23,7 +23,7 @@
 <<
   \tag #'(flute2 flutes) {
     \tag #'flutes \stemDown
-    <>^"2°" \rythmique
+    <>-\tag #'flutes ^"2°" \rythmique
     \stemNeutral r8 r4 r | R2.*17 |
   }
   \tag #'flute1 { r8 r4 r | R2.*17 | R2.*18 }
@@ -32,7 +32,7 @@
 <<
   \tag #'(flute1 flutes) {
     R2.*2 |
-    <>\pp ^"1°"
+    <>\pp -\tag #'flutes ^"1°"
     <<
       { \transpose do do' \themeA r8 }
       \tag #'flutes { s2.*16 | \voiceOne \new Voice { \voiceTwo r4 } }
@@ -56,7 +56,7 @@
 >>
 <<
   \tag #'(flute1 flutes) {
-    r4 <>^"1°" mi'8-> r re'-> r |
+    r4 <> -\tag #'flutes ^"1°" mi'8-> r re'-> r |
     r4 re'8-> r do'-> r |
     \repeat unfold 2 { r4 do'8-> r do'-> r | }
   }
@@ -67,7 +67,7 @@ R2.*18 |
 %% 8
 <<
   \tag #'(flute1 flutes) {
-    r8^"1°" <>\mp \rythmique
+    r8-\tag #'flutes ^"1°" <>\mp \rythmique
     r8 r4 r |
     R2.*17 \allowPageTurn
   }
@@ -76,11 +76,10 @@ R2.*18 |
 %% 10
 <<
   \tag #'(flute1 flutes) {
-    r8^"1°" <>\mf \rythmique
+    r8-\tag #'flutes ^"1°" <>\mf \rythmique
     %% 11
     r8 r4 r |
     R2.
-    
   }
   \tag #'flute2 {
     R2.*18 \allowPageTurn
@@ -239,7 +238,7 @@ r8 <<
   { s8-> r s-> r | r4 s8-> r s-> r | }
 >>
 <<
-  <>^\markup\right-align "a 2"
+  <>-\tag #'flutes ^\markup\right-align "a 2"
   \transpose do do' \filterMusic #'(ArticulationEvent SlurEvent) \themeBI
   { s2.(
     s8) s( s2

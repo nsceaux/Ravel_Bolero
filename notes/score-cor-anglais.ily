@@ -2,7 +2,7 @@
   \new Staff <<
     \transpose fa do \global
     { \include "cor-anglais.ily" }
-    { s2.*236\break }
+    { s2.*236\allowPageTurn }
   >>
   \layout { }
 }

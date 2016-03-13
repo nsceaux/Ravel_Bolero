@@ -9,7 +9,7 @@
     \new Staff \with { \haraKiriFirst } <<
       \global
       { \include "petite-flute3.ily" }
-      { s2.*200 \noHaraKiri }
+      { s2.*200 \noHaraKiri s2.*15\allowPageTurn }
     >>
   >>
   \layout { }
