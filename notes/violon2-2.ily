@@ -8,7 +8,18 @@ r4 <sol mi'> <sol re'> |
 %% 5
 R2.*18
 %% 6
-R2.*18
+\tag #'conducteur R2.*18
+\tag #'part {
+  << { s4 <>\mp } \repeat unfold 2 { r4 <do' mi'> <si re'> } >>
+  \repeat unfold 8 { r4 <do' mi'> <sib re'> } |
+  r4 <do' fa'> <si! re'> |
+  r4 <do' fa'> <si re'> |
+  \repeat unfold 2 { r4 <do' mi'> <sib re'> } |
+  r4 <do' mi'> <lab re'> |
+  r <lab re'> do' |
+  r do' do' |
+  r do' do' |
+}
 %% 7
 R2.*18
 %% 8

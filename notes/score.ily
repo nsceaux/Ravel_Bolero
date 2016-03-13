@@ -277,7 +277,7 @@
       } <<
         \new Staff << \global { \include "violon2.ily" } >>
         \new Staff \with { \haraKiriFirst } <<
-          \global { \include "violon2-2.ily" }
+          \global \keepWithTag #'conducteur { \include "violon2-2.ily" }
         >>
       >>
       %% Altos

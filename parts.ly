@@ -195,7 +195,7 @@
   \include "notes/score-celesta.ily"
   \header { instrument = "Celesta" }
 }
-%}
+
 \book {
   \bookOutputSuffix "harpe"
   \include "notes/score-harpe.ily"
@@ -203,5 +203,37 @@
   \paper {
     #(define page-breaking ly:optimal-breaking)
     systems-per-page = 7
+  }
+}
+
+\book {
+  \bookOutputSuffix "violon1-1"
+  \include "notes/score-violon1-1.ily"
+  \header { instrument = "Violon 1-1" }
+}
+
+\book {
+  \bookOutputSuffix "violon1-2"
+  \include "notes/score-violon1-2.ily"
+  \header { instrument = "Violon 1-2" }
+}
+%}
+\book {
+  \bookOutputSuffix "violon2-1"
+  \include "notes/score-violon2-1.ily"
+  \header { instrument = "Violon 2-1" }
+  \paper {
+    #(define page-breaking ly:optimal-breaking)
+    systems-per-page = 11
+  }
+}
+
+\book {
+  \bookOutputSuffix "violon2-2"
+  \include "notes/score-violon2-2.ily"
+  \header { instrument = "Violon 2-2" }
+  \paper {
+    #(define page-breaking ly:optimal-breaking)
+    systems-per-page = 11
   }
 }
