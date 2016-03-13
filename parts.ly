@@ -11,7 +11,7 @@
   %% Titling
   bookTitleMarkup = \partBookTitleMarkup
 }
-%{
+
 \book {
   \bookOutputSuffix "petites-flutes"
   \include "notes/score-petites-flutes.ily"
@@ -248,7 +248,7 @@
   \include "notes/score-alto2.ily"
   \header { instrument = "Alto 2" }
 }
-%}
+
 \book {
   \bookOutputSuffix "violoncelle1"
   \include "notes/score-violoncelle1.ily"
@@ -267,4 +267,10 @@
     #(define page-breaking ly:optimal-breaking)
     page-count = 3
   }
+}
+
+\book {
+  \bookOutputSuffix "contrebasse"
+  \include "notes/score-cb.ily"
+  \header { instrument = "Contrebasse" }
 }
