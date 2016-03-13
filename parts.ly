@@ -146,9 +146,27 @@
   \include "notes/score-trompette2.ily"
   \header { instrument = "Trompette 2 en ut" }
 }
-%}
+
 \book {
   \bookOutputSuffix "trompette3"
   \include "notes/score-trompette3.ily"
   \header { instrument = "Trompette 3 en ut" }
+}
+
+\book {
+  \bookOutputSuffix "trombone1"
+  \include "notes/score-trombone1.ily"
+  \header { instrument = "Trombone 1" }
+}
+
+\book {
+  \bookOutputSuffix "trombone2"
+  \include "notes/score-trombone2.ily"
+  \header { instrument = "Trombone 2" }
+}
+%}
+\book {
+  \bookOutputSuffix "trombone3"
+  \include "notes/score-trombone3.ily"
+  \header { instrument = "Trombone 3" }
 }

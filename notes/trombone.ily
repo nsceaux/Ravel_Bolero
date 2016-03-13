@@ -52,9 +52,11 @@ R2.*18
     s4 sib8 s lab s |
     s4 lab8 s sol s |
   }
+  \tag #'(trombone1 trombone2 trombones) {
+    r4 s8->\f r s-> r |
+    \repeat unfold 17 { r4 s8-> r s-> r | }
+  }
   \tag #'trombone3 { R2.*18 }
-  { r4 s8->\f r s-> r |
-    \repeat unfold 17 { r4 s8-> r s-> r | } }
 >>
 \tag #'trombone2 { %{15%} s2.*18 %{16%} s2.*18 %{17%} s2.*18 %{18%} s2.*8 s4 }
 \tag #'(trombone1 trombones) {
@@ -127,26 +129,26 @@ R2.*18
       s2 \once\override Script.avoid-slur = #'outside s16->( s8.)
       s2 s16-> s-> s-> s-> }
   >>
-  %% 6 dernières mesures
-  <<
-    \tag #'(trombone1 trombones) {
-      \tuplet 3/2 { fad'16 sol' lab'~ } lab'8 mi'16*2/3 fa' fad'~ fad'8 |
-      \repeat unfold 3 {
-        mi'4 fad'16*2/3 sol' lab'~ lab'8 mi'16*2/3 fa' fad'~ fad'8 |
-      }
-      lab8 reb'~ reb'4~ reb'16*2/3 re' mib' mi' fa' fad' |
-      sol'8 }
-    \tag #'(trombone2 trombones) {
-      \tuplet 3/2 { fad16 sol lab~ } lab8 mi16*2/3 fa fad~ fad8 |
-      \repeat unfold 3 {
-        do'4 fad16*2/3 sol lab~ lab8 mi16*2/3 fa fad~ fad8 |
-      }
-      fa8 si!~ si4~ si16*2/3 si do' dod' re' red' |
-      mi'8
-    }
-    { <>^\markup\italic gliss s8( s) s( s)
-      \repeat unfold 3 { s4 s8( s) s( s) }
-      s8-> s-^ s4 s16*2/3 s16*10/3(^\markup\concat { VII \super e } |
-      s8-.) r r4 r | }
-  >>
 }
+%% 6 dernières mesures (trb 1&2)
+\tag #'(trombone1 trombone2 trombones) <<
+  \tag #'(trombone1 trombones) {
+    \tuplet 3/2 { fad'16 sol' lab'~ } lab'8 mi'16*2/3 fa' fad'~ fad'8 |
+    \repeat unfold 3 {
+      mi'4 fad'16*2/3 sol' lab'~ lab'8 mi'16*2/3 fa' fad'~ fad'8 |
+    }
+    lab8 reb'~ reb'4~ reb'16*2/3 re' mib' mi' fa' fad' |
+    sol'8 }
+  \tag #'(trombone2 trombones) {
+    \tuplet 3/2 { fad16 sol lab~ } lab8 mi16*2/3 fa fad~ fad8 |
+    \repeat unfold 3 {
+      do'4 fad16*2/3 sol lab~ lab8 mi16*2/3 fa fad~ fad8 |
+    }
+    fa8 si!~ si4~ si16*2/3 si do' dod' re' red' |
+    mi'8
+  }
+  { <>-\markup\italic gliss s8( s) s( s)
+    \repeat unfold 3 { s4 s8( s) s( s) }
+    s8-> s-^ s4 s16*2/3 s16*10/3(^\markup\concat { VII \super e } |
+    s8-.) r r4 r | }
+>>

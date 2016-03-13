@@ -110,16 +110,13 @@
     s2 s16-> s-> s-> s-> }
 >>
 %% 6 dernières mesures
-<<
-  \tag #'(trombone3 trombones) {
-    \tuplet 3/2 { re'16 red' mi'~ } mi'8 do'16*2/3 dod' re'~ re'8 |
+\tag #'(trombone3 trombones) <<
+  { \tuplet 3/2 { re'16 red' mi'~ } mi'8 do'16*2/3 dod' re'~ re'8 |
     \repeat unfold 3 { sol4 re'16*2/3 red' mi'~ mi'8 do'16*2/3 dod' re'~ re'8 } |
     do8 lab~ lab4~ lab8 la16*2/3 sib si |
-    do'8
-  }
-  { <>^\markup\italic gliss s8( s) s( s)
+    do'8 }
+  { <>-\markup\italic gliss s8( s) s( s)
     \repeat unfold 3 { s4 s8( s) s( s) }
     s8-> s-^ s4 s8 s(^\markup\concat { VI \super e }
-    s8-.) r r4 r |
-  }
+    s8-.) r r4 r | }
 >>
