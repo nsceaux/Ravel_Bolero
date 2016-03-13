@@ -19,10 +19,12 @@
   \context {
     \Staff
     \override TupletBracket.bracket-visibility = #'if-no-beam
+    countPercentRepeats = ##t
   }
   \context {
     \DrumStaff
     \override TupletBracket.bracket-visibility = #'if-no-beam
+    countPercentRepeats = ##t
   }
 }
 

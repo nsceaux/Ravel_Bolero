@@ -1,6 +1,5 @@
 #(ly:set-option 'relative-includes #t)
 \include "common.ily"
-#(ly:set-option 'point-and-click #t)
 
 %% Paper and staff size
 #(set-default-paper-size "a4")
@@ -237,7 +236,7 @@
     systems-per-page = 11
   }
 }
-%}
+
 \book {
   \bookOutputSuffix "alto1"
   \include "notes/score-alto1.ily"
@@ -248,4 +247,24 @@
   \bookOutputSuffix "alto2"
   \include "notes/score-alto2.ily"
   \header { instrument = "Alto 2" }
+}
+%}
+\book {
+  \bookOutputSuffix "violoncelle1"
+  \include "notes/score-violoncelle1.ily"
+  \header { instrument = "Violoncelle 1" }
+  \paper {
+    #(define page-breaking ly:optimal-breaking)
+    page-count = 3
+  }
+}
+
+\book {
+  \bookOutputSuffix "violoncelle2"
+  \include "notes/score-violoncelle2.ily"
+  \header { instrument = "Violoncelle 2" }
+  \paper {
+    #(define page-breaking ly:optimal-breaking)
+    page-count = 3
+  }
 }

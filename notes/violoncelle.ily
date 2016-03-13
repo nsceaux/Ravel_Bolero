@@ -1,26 +1,49 @@
 \clef "bass"
 <>\pp ^\markup pizz.
-\repeat unfold 10 {
-  do4 r <sol, sol> |
-  do4 r <sol, sol>8 sol |
-}
+<<
+  \tag #'conducteur \repeat unfold 10 {
+    do4 r <sol, sol> |
+    do4 r <sol, sol>8 sol |
+  }
+  \tag #'part \repeat percent 10 {
+    do4 r <sol, sol> |
+    do4 r <sol, sol>8 sol |
+  }
+>>
 %% 1
-\repeat unfold 9 {
-  do4 r <sol, sol> |
-  do4 r <sol, sol>8 sol |
-}
+<<
+  \tag #'conducteur \repeat unfold 9 {
+    do4 r <sol, sol> |
+    do4 r <sol, sol>8 sol |
+  }
+  \tag #'part \repeat percent 9 {
+    do4 r <sol, sol> |
+    do4 r <sol, sol>8 sol |
+  }
+>>
 %% 2
-do4 r <sol, sol>\p |
-do4 r <sol, sol>8 sol |
-\repeat unfold 8 {
-  do4 r <sol, sol> |
-  do4 r <sol, sol>8 sol |
-}
+<<
+  { s2 s4\p }
+  \tag #'conducteur \repeat unfold 9 {
+    do4 r <sol, sol> |
+    do4 r <sol, sol>8 sol |
+  }
+  \tag #'part \repeat percent 9 {
+    do4 r <sol, sol> |
+    do4 r <sol, sol>8 sol |
+  }
+>>
 %% 3
-\repeat unfold 9 {
-  <do, do>4 r <sol, sol> |
-  <do, do>4 r <sol, sol>8 sol |
-}
+<<
+  \tag #'conducteur \repeat unfold 9 {
+    <do, do>4 r <sol, sol> |
+    <do, do>4 r <sol, sol>8 sol |
+  }
+  \tag #'part \repeat percent 9 {
+    <do, do>4 r <sol, sol> |
+    <do, do>4 r <sol, sol>8 sol |
+  }
+>>
 %% 4
 \repeat unfold 4 {
   <do, sol, mi>4 r <sol, sol> |

@@ -293,8 +293,12 @@
         instrumentName = \markup\smallCaps Violoncelles
         shortInstrumentName = \markup\shortinstr\concat { V \super elles }
       } <<
-        \new Staff << \global { \include "violoncelle.ily" } >>
-        \new Staff \with { \haraKiriFirst } << \global { \include "violoncelle2.ily" } >>
+        \new Staff <<
+          \global \keepWithTag #'conducteur { \include "violoncelle.ily" }
+        >>
+        \new Staff \with { \haraKiriFirst } <<
+          \global { \include "violoncelle2.ily" }
+        >>
       >>
       %% Contrebasses
       \new StaffGroup \with {
